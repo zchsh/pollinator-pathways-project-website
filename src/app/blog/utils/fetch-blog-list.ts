@@ -10,7 +10,7 @@ export async function fetchBlogList() {
 	for (const blogEntry of blogListData.data.blogConnection.edges) {
 		const blogNode = blogEntry?.node;
 		if (!blogNode) {
-			throw new Error("Failed to grab filename off blog entry");
+			throw new Error("Failed to grab node off blog entry");
 		}
 		const { title } = blogNode;
 		const { filename } = blogNode._sys;

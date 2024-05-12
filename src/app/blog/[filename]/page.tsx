@@ -1,6 +1,6 @@
 import client from "@/../tina/__generated__/client";
 import { fetchBlogList } from "../utils/fetch-blog-list";
-import { draftMode } from "next/headers";
+import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
 import PageClient from "./page-client";
 import PageServer from "./page-server";
 
@@ -11,8 +11,10 @@ import PageServer from "./page-server";
  */
 export default async function Page({ params: { filename } }: $TSFixMe) {
 	const res = await client.queries.blog({ relativePath: `${filename}.md` });
-	const { isEnabled } = draftMode();
-	return <>{isEnabled ? <PageClient {...res} /> : <PageServer {...res} />}</>;
+	const isPreviewEnabled = getIsPreviewEnabled();
+	return (
+		<>{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}</>
+	);
 }
 
 export async function generateStaticParams() {
