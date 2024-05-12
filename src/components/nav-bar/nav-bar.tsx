@@ -9,6 +9,30 @@ function NavBar() {
 				<li>
 					<Link href="/">{`/ (Home)`}</Link>
 				</li>
+				<li>
+					<Link href="/blog">{`Blog`}</Link>
+				</li>
+				<li>
+					<Link href="/central-london-pathway">{`Central London Pathway`}</Link>
+				</li>
+				<li>
+					<Link href="/connect">{`Connect`}</Link>
+				</li>
+				<li>
+					<Link href="/donate">{`Donate`}</Link>
+				</li>
+				<li>
+					<Link href="/faq">{`FAQ`}</Link>
+				</li>
+				<li>
+					<Link href="/photos">{`Photos`}</Link>
+				</li>
+				<li>
+					<Link href="/pollinator-kits">{`Pollinator Kits`}</Link>
+				</li>
+				<li>
+					<Link href="/resources">{`Resources`}</Link>
+				</li>
 			</ul>
 		</nav>
 	);

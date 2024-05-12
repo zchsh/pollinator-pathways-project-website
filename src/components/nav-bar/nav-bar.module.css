@@ -1,10 +1,14 @@
 .placeholder {
+	border: 1px solid magenta;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
-	border: 1px solid magenta;
 }
 
 .navList {
+	border: 1px solid magenta;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
 	list-style: none;
 }
