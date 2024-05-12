@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Next Steps
+
+- [ ] Get `Visual Editing` working for individual blog posts
+- [ ] Get `Visual Editing` working for some trivial content on the home page
+- [ ] Set up `Tina Cloud` so that you can edit without running things locally
+  - In other words, `/admin/index.html` should work off the [current deploy](https://pollinator-pathways-project-website.vercel.app/)
+
 ## Getting Started
 
 First, run the development server:
