@@ -1,0 +1,10 @@
+.placeholder {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	border: 1px solid magenta;
+}
+
+.navList {
+	list-style: none;
+}
