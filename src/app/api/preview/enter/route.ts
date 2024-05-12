@@ -2,7 +2,7 @@ import { isUserAuthorized } from "@tinacms/auth";
 import { draftMode } from "next/headers";
 import { redirect } from "next/navigation";
 
-export default async function GET(request: Request) {
+export async function GET(request: Request) {
 	if (typeof request.url !== "string") {
 		throw new Error("Expected request.url to be a string");
 	}
