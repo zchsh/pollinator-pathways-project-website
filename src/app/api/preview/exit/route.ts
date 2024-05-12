@@ -1,8 +1,7 @@
-import { NextApiRequest } from "next";
 import { draftMode } from "next/headers";
 import { redirect } from "next/navigation";
 
-export async function handler(request: NextApiRequest) {
+export async function GET(request: Request) {
 	if (typeof request.url !== "string") {
 		throw new Error("Expected request.url to be a string");
 	}
