@@ -16,6 +16,10 @@ export default defineConfig({
 	token: process.env.TINA_TOKEN,
 
 	admin: {
+		// This should match the value in your .env file
+		token: process.env.TINA_TOKEN,
+		// This should match the value in your .env file
+		clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
 		// TODO: investigate whether all properties need to be defined here
 		// @ts-expect-error - I don't think all properties are needed here?
 		auth: {
