@@ -7,6 +7,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [ ] Set up `Tina Cloud` so that you can edit without running things locally
   - In other words, `/admin/index.html` should work off the [current deploy](https://pollinator-pathways-project-website.vercel.app/)
 
+## Tech Stack
+
+> 🚧 TODO: write some more detailed beginner-friendly documentation on the
+> tooling in this codebase.
+
+- [React](https://react.dev/)
+  - A JavaScript library for building web components
+- [NextJS](https://nextjs.org/)
+  - A framework for using React for websites
+- [CSS Modules](https://github.com/css-modules/css-modules)
+  - An approach to writing CSS for React components
+- [Tina CMS](https://tina.io/)
+  - A content management system, intended to make it easier for folks who aren't into coding to edit the words and images shown on the website
+
 ## Getting Started
 
 First, run the development server:
