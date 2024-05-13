@@ -52,6 +52,26 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
+				label: "Home Page",
+				name: "homepage",
+				path: "content/home",
+				format: "json",
+				ui: {
+					allowedActions: {
+						create: false,
+						delete: false,
+					},
+					router: () => `/`,
+				},
+				fields: [
+					{
+						type: "string",
+						label: "Foobar",
+						name: "foobar",
+					},
+				],
+			},
+			{
 				name: "blog",
 				label: "Blog",
 				path: "content/blog",
@@ -71,7 +91,6 @@ export default defineConfig({
 					},
 				],
 				ui: {
-					// This is an DEMO router. You can remove this to fit your site
 					router: ({ document }) => `/blog/${document._sys.filename}`,
 				},
 			},

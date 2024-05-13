@@ -5,9 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [x] Get `Visual Editing` working for individual blog posts
 - [x] Set up `Tina Cloud` so that you can edit without running things locally
   - In other words, `/admin/index.html` should work off the [current deploy](https://pollinator-pathways-project-website.vercel.app/)
-- [ ] Fix issues with failed deploys as of 2024-05-12 at 18:15
+- [x] Fix issues with failed deploys as of 2024-05-12 at 18:15
   - Currently failing due to NextJS API route typing issues... maybe other issues beyond that, have yet to fully debug
-- [ ] Get `Visual Editing` working for some trivial content on the home page
+- [x] Get `Visual Editing` working for some trivial content on the home page
+- [ ] Get `Visual Editing` working for a _new_ blog post
+  - Is this possible? Or maybe should have `Publish` toggle as part of the model or something?
 
 ## Tech Stack
 
