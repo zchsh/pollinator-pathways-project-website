@@ -2,14 +2,28 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Next Steps
 
+- [ ] Proof of concept for `Subscribe to newsletter` type functionality
+  - API endpoint to receive a request, POST new subscriber... for now, to val.town
+  - Front-end component to send new subscriber request to backend (POST most likely)
+- [ ] Build out home page, with editing facets
+  - [ ] Mock up in Figma, split up into components
+  - [ ] Proof of concept for video inclusion - video downloaded in Obsidian... maybe possible to upload through TinaCMS media library?
+  - [ ] Ensure all proof-of-concepts are accounted for
+  - [ ] Build out `NavBar` component to match current site
+- [ ] Get `Visual Editing` working for a _new_ blog post
+  - Is this possible? Or maybe should have `Publish` toggle as part of the model or something?
+
+## Updates
+
+### 2024-05-12 - got the project kickstarted
+
 - [x] Get `Visual Editing` working for individual blog posts
 - [x] Set up `Tina Cloud` so that you can edit without running things locally
   - In other words, `/admin/index.html` should work off the [current deploy](https://pollinator-pathways-project-website.vercel.app/)
 - [x] Fix issues with failed deploys as of 2024-05-12 at 18:15
   - Currently failing due to NextJS API route typing issues... maybe other issues beyond that, have yet to fully debug
 - [x] Get `Visual Editing` working for some trivial content on the home page
-- [ ] Get `Visual Editing` working for a _new_ blog post
-  - Is this possible? Or maybe should have `Publish` toggle as part of the model or something?
+- [x] Proof of concept for photo-gallery type page
 
 ## Tech Stack
 
