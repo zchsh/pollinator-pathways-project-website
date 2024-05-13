@@ -1,3 +1,20 @@
 {
-  "foobar": "This is a string used on the home page"
+  "homestring": "This is some TinaCMS value",
+  "homeimage": "/uploads/2024-05-12-test-image-02.png",
+  "photo_sections": [
+    {
+      "title": "First album section",
+      "images": [
+        "/uploads/2024-05-12-test-image.png",
+        "/uploads/2024-05-12-test-image-02.png"
+      ]
+    },
+    {
+      "title": "Second album section",
+      "images": [
+        "/uploads/2024-05-12-test-image-04.png",
+        "/uploads/2024-05-12-test-image-03.png"
+      ]
+    }
+  ]
 }

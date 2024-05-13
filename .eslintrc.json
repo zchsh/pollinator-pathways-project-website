@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"rules": {
+		// Hard to get next/image to play nice with TinaCMS, so, disabling it!
+		"@next/next/no-img-element": "off"
+	}
 }

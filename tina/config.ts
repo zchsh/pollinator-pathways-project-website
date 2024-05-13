@@ -40,7 +40,7 @@ export default defineConfig({
 	},
 	media: {
 		tina: {
-			mediaRoot: "",
+			mediaRoot: "uploads",
 			publicFolder: "public",
 		},
 	},
@@ -58,7 +58,7 @@ export default defineConfig({
 				format: "json",
 				ui: {
 					allowedActions: {
-						create: false,
+						create: true,
 						delete: false,
 					},
 					router: () => `/`,
@@ -66,8 +66,33 @@ export default defineConfig({
 				fields: [
 					{
 						type: "string",
-						label: "Foobar",
-						name: "foobar",
+						label: "Home page string",
+						name: "homestring",
+					},
+					{
+						type: "image",
+						label: "Home page image",
+						name: "homeimage",
+					},
+					{
+						list: true,
+						type: "object",
+						label: "Photo Sections",
+						name: "photo_sections",
+						ui: { itemProps: (item) => ({ label: item?.title }) },
+						fields: [
+							{
+								type: "string",
+								label: "Title",
+								name: "title",
+							},
+							{
+								type: "image",
+								label: "Images",
+								name: "images",
+								list: true,
+							},
+						],
 					},
 				],
 			},
