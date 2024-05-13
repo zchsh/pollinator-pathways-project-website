@@ -1,5 +1,5 @@
 ---
-title: This is the first post
+title: Edit made with Tina Cloud
 ---
 
 This is a blog post that I'm writing in TinaCMS.
