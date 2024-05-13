@@ -23,7 +23,7 @@ import { draftMode } from "next/headers";
  *
  * @returns {boolean} Returns true if we should enable preview mode.
  */
-export default function getIsPreviewEnabled() {
+export default function getIsPreviewEnabled(): boolean {
 	// If the user is logged in to TinaCMS, as indicated by a "draftMode" cookie,
 	// then we'll enable the extra client code needed to support preview mode.
 	const { isEnabled } = draftMode();
