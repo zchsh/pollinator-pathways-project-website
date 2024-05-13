@@ -24,13 +24,13 @@ export default defineConfig({
 		// @ts-expect-error - I don't think all properties are needed here?
 		auth: {
 			onLogin: async ({ token }) => {
-				//  When the user logs in enter preview mode
+				//  When the user logs, we in enter preview mode
 				location.href =
 					`/api/preview/enter?token=${token.id_token}&slug=` + location;
 			},
 			onLogout: async () => {
-				// When the user logs out exit preview mode
-				location.href = `/api/preview/exit?slug=` + location;
+				// When the user logs out, exit preview mode, and redirect to home
+				location.href = `/api/preview/exit`;
 			},
 		},
 	},
