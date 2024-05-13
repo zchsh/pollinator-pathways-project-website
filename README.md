@@ -10,6 +10,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   - [ ] Proof of concept for video inclusion - video downloaded in Obsidian... maybe possible to upload through TinaCMS media library?
   - [ ] Ensure all proof-of-concepts are accounted for
   - [ ] Build out `NavBar` component to match current site
+- [ ] Build out decent-looking `Under Construction` view, to use on all other views
+- [ ] Build out `/blog` in more detail, with content authoring
+  - Content authoring feels like a key part of the experience for folks running the project
 - [ ] Get `Visual Editing` working for a _new_ blog post
   - Is this possible? Or maybe should have `Publish` toggle as part of the model or something?
 
