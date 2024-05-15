@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 interface ResponseData {
-	status: "success" | "existingSubscriber" | "error" | "idle";
+	status: "success" | "existingSubscriber" | "error" | "idle" | "loading";
 	email?: string;
 }
 
