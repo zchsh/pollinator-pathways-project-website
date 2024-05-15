@@ -1,4 +1,4 @@
-import Image from "next/image";
+import EmailSubscribeForm from "./email-subscribe-form/email-subscribe-form";
 import s from "./page.module.css";
 
 export default function Home({ data }: $TSFixMe) {
@@ -22,6 +22,7 @@ export default function Home({ data }: $TSFixMe) {
 						</div>
 					);
 				})}
+				<EmailSubscribeForm />
 				{/* <pre>
 					<code>
 						{JSON.stringify({ homestring, homeimage, photo_sections }, null, 2)}

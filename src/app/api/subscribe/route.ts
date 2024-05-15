@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 			body: JSON.stringify({ email, name }),
 		});
 		const data = await res.json();
-		return Response.json(data);
+		return Response.json({ ...data, email });
 	} catch {
 		return Response.json({ status: "error" }, { status: 500 });
 	}
