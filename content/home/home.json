@@ -1,7 +1,15 @@
 {
   "homestring": "This is some TinaCMS value",
-  "homeimage": "/uploads/2024-05-12-test-image-02.png",
+  "homeimage": "/uploads/2024-05-12-test-image-03.png",
   "photo_sections": [
+    {
+      "title": "New Photo section",
+      "images": [
+        "/uploads/2024-05-12-test-image-02.png",
+        "/uploads/test-image-03.png",
+        "/uploads/test-image-04.png"
+      ]
+    },
     {
       "title": "First album section",
       "images": [
