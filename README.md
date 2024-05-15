@@ -2,9 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Next Steps
 
-- [ ] Proof of concept for `Subscribe to newsletter` type functionality
+- [x] Proof of concept for `Subscribe to newsletter` type functionality
   - API endpoint to receive a request, POST new subscriber... for now, to val.town
   - Front-end component to send new subscriber request to backend (POST most likely)
+- [x] Build out super basic email susbcribe form
 - [ ] Build out home page, with editing facets
   - [ ] Mock up in Figma, split up into components
   - [ ] Proof of concept for video inclusion - video downloaded in Obsidian... maybe possible to upload through TinaCMS media library?
