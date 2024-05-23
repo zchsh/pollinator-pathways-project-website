@@ -1,38 +1,30 @@
-import Link from "next/link";
+import NextLink from "next/link";
+import NavDropdown from "./nav-dropdown/nav-dropdown";
 import s from "./nav-bar.module.css";
+
+import { NAV_BAR_ITEMS } from "./content";
 
 function NavBar() {
 	return (
-		<nav className={s.placeholder}>
-			<div>NAV BAR</div>
+		<nav className={s.root} aria-label="Main navigation">
 			<ul className={s.navList}>
-				<li>
-					<Link href="/">{`/ (Home)`}</Link>
-				</li>
-				<li>
-					<Link href="/blog">{`Blog`}</Link>
-				</li>
-				<li>
-					<Link href="/central-london-pathway">{`Central London Pathway`}</Link>
-				</li>
-				<li>
-					<Link href="/connect">{`Connect`}</Link>
-				</li>
-				<li>
-					<Link href="/donate">{`Donate`}</Link>
-				</li>
-				<li>
-					<Link href="/faq">{`FAQ`}</Link>
-				</li>
-				<li>
-					<Link href="/photos">{`Photos`}</Link>
-				</li>
-				<li>
-					<Link href="/pollinator-kits">{`Pollinator Kits`}</Link>
-				</li>
-				<li>
-					<Link href="/resources">{`Resources`}</Link>
-				</li>
+				{NAV_BAR_ITEMS.map((item) => {
+					if ("items" in item) {
+						return (
+							<li key={item.label}>
+								<NavDropdown label={item.label} items={item.items} />
+							</li>
+						);
+					} else {
+						return (
+							<li key={item.label}>
+								<NextLink href={item.href} target={item.target}>
+									{item.label}
+								</NextLink>
+							</li>
+						);
+					}
+				})}
 			</ul>
 		</nav>
 	);

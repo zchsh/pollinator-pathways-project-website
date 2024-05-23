@@ -1,0 +1,15 @@
+.root {
+	position: relative;
+}
+
+.list {
+	position: absolute;
+	top: 100%;
+	border: 1px solid magenta;
+	background: white;
+	display: none;
+
+	&.isOpen {
+		display: block;
+	}
+}
