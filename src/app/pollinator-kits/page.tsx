@@ -1,9 +1,5 @@
-import s from "./pollinator-kits.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function PollinatorKits() {
-	return (
-		<main>
-			<div className={s.placeholder}>POLLINATOR KITS PAGE PLACEHOLDER</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="Pollinator Kits" />;
 }

@@ -30,7 +30,7 @@ export default function Home({ data }: $TSFixMe) {
 			<div className={s.sectionPlaceholder}>
 				<p>
 					Interested in creating a pollinator garden for your backyard, within
-					your community, or at your workplace? We are here to help.
+					your community, or at your workplace? We&apos;re here to help.
 				</p>
 				<p>
 					<Link
@@ -42,7 +42,7 @@ export default function Home({ data }: $TSFixMe) {
 				</p>
 			</div>
 			<div className={s.sectionPlaceholder}>
-				<p>We&apos;re on Instagram! Follow us to find out more!</p>
+				<p>We&apos;re on Instagram! Follow us for our latest updates.</p>
 				<Link
 					href="https://www.instagram.com/pollinatorpathwaysproject/"
 					target="_blank"
@@ -50,24 +50,6 @@ export default function Home({ data }: $TSFixMe) {
 					Instagram
 				</Link>
 			</div>
-
-			{/* <div className={s.placeholder}>
-				HOME PAGE PLACEHOLDER
-				<img className={s.image} src={homeimage} alt="" />
-				{photo_sections?.map((section: $TSFixMe, index: number) => {
-					if (!section.images?.length) return null;
-					return (
-						<div key={index}>
-							<h2>{section.title}</h2>
-							<div className={s.imageList}>
-								{section.images.map((image: string, index: number) => (
-									<img className={s.image} key={index} src={image} alt="" />
-								))}
-							</div>
-						</div>
-					);
-				})}
-			</div> */}
 		</main>
 	);
 }

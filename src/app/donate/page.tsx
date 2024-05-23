@@ -1,9 +1,5 @@
-import s from "./donate.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function Donate() {
-	return (
-		<main>
-			<div className={s.placeholder}>DONATE PAGE PLACEHOLDER</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="Donate" />;
 }

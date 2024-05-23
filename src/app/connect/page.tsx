@@ -1,9 +1,5 @@
-import s from "./connect.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function Connect() {
-	return (
-		<main>
-			<div className={s.placeholder}>CONNECT PAGE PLACEHOLDER</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="Connect" />;
 }

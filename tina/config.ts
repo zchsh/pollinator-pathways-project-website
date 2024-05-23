@@ -97,6 +97,41 @@ export default defineConfig({
 				],
 			},
 			{
+				label: "Photos",
+				name: "photos",
+				path: "content/photos",
+				format: "json",
+				ui: {
+					allowedActions: {
+						create: true,
+						delete: false,
+					},
+					router: () => `/photos`,
+				},
+				fields: [
+					{
+						list: true,
+						type: "object",
+						label: "Photo Sections",
+						name: "photoSections",
+						ui: { itemProps: (item) => ({ label: item?.title }) },
+						fields: [
+							{
+								type: "string",
+								label: "Title",
+								name: "title",
+							},
+							{
+								type: "image",
+								label: "Images",
+								name: "images",
+								list: true,
+							},
+						],
+					},
+				],
+			},
+			{
 				name: "blog",
 				label: "Blog",
 				path: "content/blog",

@@ -1,11 +1,5 @@
-import s from "./central-london-pathway.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function CentralLondonPathway() {
-	return (
-		<main>
-			<div className={s.placeholder}>
-				CENTRAL LONDON PATHWAY PAGE PLACEHOLDER
-			</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="Central London Pathway" />;
 }

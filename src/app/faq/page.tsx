@@ -1,9 +1,5 @@
-import s from "./faq.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function Faq() {
-	return (
-		<main>
-			<div className={s.placeholder}>FAQ PAGE PLACEHOLDER</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="FAQ" />;
 }

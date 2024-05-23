@@ -1,9 +1,5 @@
-import s from "./resources.module.css";
+import PagePlaceholder from "@/components/page-placeholder/page";
 
-export default function Resources() {
-	return (
-		<main>
-			<div className={s.placeholder}>RESOURCES PAGE PLACEHOLDER</div>
-		</main>
-	);
+export default function Placeholder() {
+	return <PagePlaceholder name="Resources" />;
 }
