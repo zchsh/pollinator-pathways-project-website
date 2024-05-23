@@ -74,26 +74,6 @@ export default defineConfig({
 						label: "Home page image",
 						name: "homeimage",
 					},
-					{
-						list: true,
-						type: "object",
-						label: "Photo Sections",
-						name: "photo_sections",
-						ui: { itemProps: (item) => ({ label: item?.title }) },
-						fields: [
-							{
-								type: "string",
-								label: "Title",
-								name: "title",
-							},
-							{
-								type: "image",
-								label: "Images",
-								name: "images",
-								list: true,
-							},
-						],
-					},
 				],
 			},
 			{

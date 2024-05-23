@@ -1,6 +1,4 @@
 {
-  "homestring": "This is some TinaCMS value",
-  "homeimage": "/uploads/2024-05-12-test-image-03.png",
   "photo_sections": [
     {
       "title": "New Photo section",
@@ -24,5 +22,7 @@
         "/uploads/2024-05-12-test-image-03.png"
       ]
     }
-  ]
+  ],
+  "homestring": "This is an updated TinaCMS value",
+  "homeimage": "/uploads/1-1.jpeg"
 }
