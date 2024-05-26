@@ -6,6 +6,8 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import s from "./nav-dropdown.module.css";
 import useOnClickOutside from "@/lib/hooks/use-on-click-outside";
+import IconChevronDown from "@/icons/icon-chevron-down";
+
 // Types
 import type { NavLink } from "../types";
 
@@ -37,17 +39,25 @@ export default function NavDropdown({
 			<button
 				aria-expanded={isOpen}
 				aria-controls={dropdownId}
-				className={s.navDropdownTrigger}
+				className={clsx(s.trigger, { [s.isOpen]: isOpen })}
 				onClick={() => setIsOpen(!isOpen)}
-				style={{ cursor: "pointer" }}
 			>
 				{label}
+				<span className={clsx(s.triggerIcon, { [s.isOpen]: isOpen })}>
+					<IconChevronDown />
+				</span>
 			</button>
 			<ul id={dropdownId} className={clsx(s.list, { [s.isOpen]: isOpen })}>
 				{items.map((item) => {
+					const isCurrentPage = pathname === item.href;
+
 					return (
 						<li key={item.label}>
-							<NextLink href={item.href} target={item.target}>
+							<NextLink
+								className={clsx(s.link, { [s.isCurrentPage]: isCurrentPage })}
+								href={item.href}
+								target={item.target}
+							>
 								{item.label}
 							</NextLink>
 						</li>

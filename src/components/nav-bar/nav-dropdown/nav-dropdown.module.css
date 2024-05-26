@@ -2,14 +2,70 @@
 	position: relative;
 }
 
-.list {
-	position: absolute;
-	top: 100%;
-	border: 1px solid magenta;
-	background: white;
-	display: none;
+.trigger {
+	align-items: center;
+	background: none;
+	border-radius: 32px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	gap: 8px;
+	padding: 8px 12px;
+
+	&:hover {
+		background: var(--nav-secondary-color);
+	}
 
 	&.isOpen {
-		display: block;
+		background: var(--nav-secondary-color);
+	}
+}
+
+.triggerIcon {
+	display: block;
+	transform: rotate(0deg);
+	transition: transform 0.2s;
+
+	&.isOpen {
+		transform: rotate(-180deg);
+	}
+}
+
+.list {
+	background: var(--nav-secondary-color);
+	border-radius: 32px;
+	display: none;
+	flex-direction: column;
+	gap: 4px;
+	left: 50%;
+	list-style: none;
+	min-width: 200px;
+	padding: 12px;
+	position: absolute;
+	top: calc(100% + 8px);
+	transform: translateX(-50%);
+	width: max-content;
+	z-index: 1;
+
+	&.isOpen {
+		display: flex;
+	}
+}
+
+.link {
+	border-radius: 32px;
+	display: block;
+	padding: 8px 12px;
+	line-height: 20px;
+	text-decoration: none;
+	color: var(--black);
+	text-align: center;
+
+	&:hover {
+		background: var(--white);
+	}
+
+	&.isCurrentPage {
+		background: var(--white);
 	}
 }

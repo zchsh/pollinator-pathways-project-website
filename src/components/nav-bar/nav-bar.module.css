@@ -1,10 +1,12 @@
 .navList {
-	border: 1px solid magenta;
+	--nav-secondary-color: var(--green-faded);
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
-	list-style: none;
-	align-items: center;
-	padding: 0;
+	isolation: isolate;
 	justify-content: center;
+	list-style: none;
+	padding: 0 0 16px 0;
+	border-bottom: 4px solid var(--yellow-primary);
 }

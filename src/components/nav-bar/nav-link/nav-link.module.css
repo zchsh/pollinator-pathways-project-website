@@ -1,0 +1,16 @@
+.link {
+	align-items: center;
+	border-radius: 32px;
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: var(--black);
+
+	&:hover {
+		background: var(--nav-secondary-color);
+	}
+
+	&.isCurrentPage {
+		background: var(--nav-secondary-color);
+	}
+}

@@ -1,8 +1,10 @@
 import NextLink from "next/link";
+import clsx from "clsx";
 import NavDropdown from "./nav-dropdown/nav-dropdown";
 import s from "./nav-bar.module.css";
 
 import { NAV_BAR_ITEMS } from "./content";
+import NavLink from "./nav-link/nav-link";
 
 function NavBar() {
 	return (
@@ -18,9 +20,11 @@ function NavBar() {
 					} else {
 						return (
 							<li key={item.label}>
-								<NextLink href={item.href} target={item.target}>
-									{item.label}
-								</NextLink>
+								<NavLink
+									href={item.href}
+									label={item.label}
+									target={item.target}
+								/>
 							</li>
 						);
 					}
