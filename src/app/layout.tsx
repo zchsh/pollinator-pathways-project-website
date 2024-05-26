@@ -1,12 +1,22 @@
+// Components
 import Footer from "@/components/footer/footer";
 import Min100Layout from "@/components/min-100-layout/min-100-layout";
 import NavBar from "@/components/nav-bar/nav-bar";
-import { Inter } from "next/font/google";
+import SiteHeader from "@/components/site-header/site-header";
+// Font faces
+import { Inter, Orelega_One } from "next/font/google";
+// Styles
 import "../styles/reset.css";
 import "../styles/globals.css";
-import Link from "next/link";
+import { CSSProperties } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
+const orelegaOne = Orelega_One({ weight: "400", subsets: ["latin"] });
+
+const fontFamilyCssVariables = {
+	"--font-display": `${orelegaOne.style.fontFamily}`,
+	"--font-body": `${inter.style.fontFamily}`,
+} as CSSProperties;
 
 export const metadata = {
 	title: "Pollinator Pathways Project | London",
@@ -21,31 +31,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body style={fontFamilyCssVariables} className={inter.className}>
 				<Min100Layout footer={<Footer />}>
-					<div
-						style={{
-							display: "flex",
-							flexDirection: "column",
-							alignItems: "center",
-						}}
-					>
-						<Link href="/" tabIndex={-1}>
-							<span
-								style={{
-									display: "block",
-									width: "100px",
-									height: "100px",
-									border: "1px solid magenta",
-								}}
-							>
-								LOGO
-							</span>
-						</Link>
-						<h1 style={{ border: "1px solid magenta" }}>
-							<Link href="/">Pollinator Pathways Project</Link>
-						</h1>
-					</div>
+					<SiteHeader />
 					<NavBar />
 					{children}
 				</Min100Layout>
