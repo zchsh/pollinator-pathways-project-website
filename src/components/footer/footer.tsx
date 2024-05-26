@@ -5,6 +5,7 @@ import Link from "next/link";
 function Footer() {
 	return (
 		<div className={s.root}>
+			<EmailSubscribeForm />
 			<ul className={s.list}>
 				<li>
 					<Link
@@ -31,7 +32,6 @@ function Footer() {
 					</Link>
 				</li>
 			</ul>
-			<EmailSubscribeForm />
 		</div>
 	);
 }

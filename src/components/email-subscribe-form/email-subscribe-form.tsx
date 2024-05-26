@@ -29,6 +29,7 @@ export default function EmailSubscribeForm() {
 
 	return (
 		<div>
+			<p>Our monthly newsletter has updates, contests, and more!</p>
 			{responseData.status === "success" ? (
 				<p>Success! 🎉 {responseData.email} is now subscribed.</p>
 			) : responseData.status === "existingSubscriber" ? (
@@ -39,12 +40,6 @@ export default function EmailSubscribeForm() {
 				<p>❌ Error, oops</p>
 			) : (
 				<form>
-					<input
-						type="text"
-						placeholder="Your Name"
-						value={name}
-						onChange={(e) => setName(e.target.value)}
-					/>
 					<input
 						type="email"
 						placeholder="your@email.com"
