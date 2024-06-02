@@ -1,5 +1,6 @@
-import Link from "next/link";
-import EmailSubscribeForm from "@/components/email-subscribe-form/email-subscribe-form";
+// Components
+import VideoHero from "./components/video-hero";
+// Styles
 import s from "./page.module.css";
 
 export default function Home({ data }: $TSFixMe) {
@@ -7,10 +8,12 @@ export default function Home({ data }: $TSFixMe) {
 
 	return (
 		<main className={s.root}>
-			<div className={s.sectionPlaceholder}>
-				<p>A non-profit helping to educate the public about pollinators.</p>
-				<p>{`[VIDEO]`}</p>
-			</div>
+			<VideoHero
+				videoSrc={"/pollinator-pathways-video.mp4"}
+				heading={
+					"A grassroots organization helping to educate the public about pollinators."
+				}
+			/>
 			<div className={s.sectionPlaceholder}>
 				<p>[IMAGE]</p>
 				<p>Pollinators keep ecosystem alive</p>

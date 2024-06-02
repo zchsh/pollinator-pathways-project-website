@@ -36,8 +36,10 @@ export default function RootLayout({
 			<body style={fontFamilyCssVariables} className={gFontLato.className}>
 				<Min100Layout footer={<Footer />}>
 					<SiteHeader />
-					<NavBar />
-					{children}
+					<div style={{ zIndex: 1 }}>
+						<NavBar />
+					</div>
+					<div style={{ zIndex: 0 }}>{children}</div>
 				</Min100Layout>
 			</body>
 		</html>

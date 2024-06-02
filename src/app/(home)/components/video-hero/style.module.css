@@ -1,0 +1,65 @@
+.root {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	isolation: isolate;
+}
+
+.videoContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	aspect-ratio: 2 / 1;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	border: 1px solid magenta;
+}
+
+.video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	background-size: cover;
+}
+
+.pageContainer {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	height: 100%;
+	transform: translateX(-50%);
+	max-width: 1000px;
+	border: 2px solid magenta;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid magenta;
+	background: white;
+	max-width: 200px;
+}
+
+.muteButton {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	border: 1px solid magenta;
+	cursor: pointer;
+}
+
+.playButton {
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	border: 1px solid magenta;
+	cursor: pointer;
+}
