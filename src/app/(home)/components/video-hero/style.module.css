@@ -45,6 +45,7 @@
 	left: 0;
 	border: 1px solid magenta;
 	background: white;
+	padding: 1rem;
 	max-width: 200px;
 }
 
