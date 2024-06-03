@@ -7,7 +7,7 @@ import SiteHeader from "@/components/site-header/site-header";
 import { Inter, Orelega_One, Lato } from "next/font/google";
 // Styles
 import "../styles/reset.css";
-import "../styles/colors.css";
+import "../styles/custom-properties.css";
 import "../styles/globals.css";
 import { CSSProperties } from "react";
 

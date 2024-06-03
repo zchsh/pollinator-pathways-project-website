@@ -1,0 +1,23 @@
+.root {
+	position: relative;
+}
+
+.stripe {
+	position: absolute;
+	isolation: isolate;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+
+	&.overflow_right {
+		left: 0;
+	}
+
+	&.overflow_left {
+		right: 0;
+	}
+}
+
+.children {
+	position: relative;
+}

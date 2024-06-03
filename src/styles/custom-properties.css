@@ -1,0 +1,15 @@
+:root {
+	/* Typography */
+	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+		"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+		"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+	/* Colors */
+	--black: #000000;
+	--white: #ffffff;
+	--text-black: #333333;
+	--yellow-faded: #fff5c0;
+	--yellow-primary: #f9ce33;
+	--green-faded: #dff9c2;
+	/* Layout */
+	--content-max-width: 1000px;
+}
