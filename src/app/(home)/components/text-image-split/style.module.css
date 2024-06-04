@@ -1,0 +1,28 @@
+.splitImage {
+	border: 1px solid magenta;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.hideOverflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+.stripeBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--green-faded);
+}
+
+.stripeHeading {
+	padding: 1rem 1rem 1rem 2rem;
+}
+
+.children {
+	padding: 1rem;
+}

@@ -58,7 +58,7 @@ export default defineConfig({
 				format: "json",
 				ui: {
 					allowedActions: {
-						create: true,
+						create: false,
 						delete: false,
 					},
 					router: () => `/`,
@@ -66,13 +66,57 @@ export default defineConfig({
 				fields: [
 					{
 						type: "string",
-						label: "Home page string",
-						name: "homestring",
+						label: "Heading",
+						name: "heading",
 					},
 					{
-						type: "image",
-						label: "Home page image",
-						name: "homeimage",
+						type: "string",
+						label: "Video URL",
+						name: "videoUrl",
+					},
+					{
+						list: true,
+						type: "object",
+						label: "Info Sections",
+						name: "infoSections",
+						ui: { itemProps: (item) => ({ label: item?.title }) },
+						fields: [
+							{
+								type: "string",
+								label: "Title",
+								name: "title",
+							},
+							{
+								type: "image",
+								label: "Image",
+								name: "image",
+							},
+							{
+								type: "rich-text",
+								name: "body",
+								label: "Body",
+								isBody: true,
+							},
+							{
+								type: "object",
+								label: "Link",
+								name: "link",
+								required: false,
+								ui: { itemProps: (item) => ({ label: item?.text }) },
+								fields: [
+									{
+										type: "string",
+										label: "Text",
+										name: "text",
+									},
+									{
+										type: "string",
+										label: "URL",
+										name: "url",
+									},
+								],
+							},
+						],
 					},
 				],
 			},

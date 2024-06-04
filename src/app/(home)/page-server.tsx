@@ -1,140 +1,38 @@
+// Third-party
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 // Components
 import Spacer from "@/components/spacer";
-import OverflowStripe from "./components/overflow-stripe";
-import SplitSection from "./components/split-section";
 import VideoHero from "./components/video-hero";
+import TextImageSplit from "./components/text-image-split";
 // Styles
 import s from "./page.module.css";
 
 export default function Home({ data }: $TSFixMe) {
-	// const { homestring, homeimage, photo_sections } = data.homepage;
+	const { heading, videoUrl, infoSections } = data.homepage;
 
 	return (
 		<main className={s.root}>
-			<VideoHero
-				videoSrc={"/pollinator-pathways-video.mp4"}
-				heading={
-					"A grassroots organization helping to educate the public about pollinators."
-				}
-			/>
-			<Spacer h="2rem" />
-			<div className={s.hideOverflow}>
-				<SplitSection
-					firstSection={
-						<img
-							className={s.splitImage}
-							width="480"
-							height="320"
-							src="https://plchldr.co/i/480x320?&bg=DDDDDD&fc=666666"
-							alt=""
-						/>
-					}
-					secondSection={
-						<>
-							<OverflowStripe
-								overflow="right"
-								stripeSlot={<div className={s.stripeBackground} />}
-							>
-								<h2 className={s.stripeHeading}>
-									Pollinators keep ecosystems alive
-								</h2>
-							</OverflowStripe>
-							<p>
-								Donating helps us build more gardens, and keep our ecosystems
-								healthy. Your help makes this all happen.
-							</p>
-							<a href="https://www.example.com">Donate</a>
-						</>
-					}
-				/>
-			</div>
-			<Spacer h="2rem" />
-			<div className={s.hideOverflow}>
-				<SplitSection
-					flipOrder
-					firstSection={
-						<img
-							className={s.splitImage}
-							width="480"
-							height="320"
-							src="https://plchldr.co/i/480x320?&bg=DDDDDD&fc=666666"
-							alt=""
-						/>
-					}
-					secondSection={
-						<>
-							<OverflowStripe
-								overflow="left"
-								stripeSlot={<div className={s.stripeBackground} />}
-							>
-								<h2 className={s.stripeHeading}>Why do pollinators matter?</h2>
-							</OverflowStripe>
-
-							<p>
-								Pollinator species are responsible for 1 out of every 3 bites of
-								food we eat. Pollination is a crucial process in the
-								reproductive system of most flowering plants. These plants:
-							</p>
-							<ul>
-								<li>Supply nearly all our fruits, vegetables, and nuts</li>
-								<li>
-									Supply half the world’s natural oils, fibres, and raw
-									materials
-								</li>
-								<li>Prevent soil erosion</li>
-								<li>Increase carbon sequestration</li>
-							</ul>
-							<p>
-								A healthy ecosystem of pollinator species is incredibly
-								important not just for the species themselves, but for humanity
-								as well.
-							</p>
-						</>
-					}
-				/>
-			</div>
-			<Spacer h="2rem" />
-			<div className={s.hideOverflow}>
-				<SplitSection
-					firstSection={
-						<img
-							className={s.splitImage}
-							width="480"
-							height="320"
-							src="https://plchldr.co/i/480x320?&bg=DDDDDD&fc=666666"
-							alt=""
-						/>
-					}
-					secondSection={
-						<>
-							<OverflowStripe
-								overflow="right"
-								stripeSlot={<div className={s.stripeBackground} />}
-							>
-								<h2 className={s.stripeHeading}>
-									What are pollinator pathways?
-								</h2>
-							</OverflowStripe>
-
-							<p>
-								Pollinator pathways are interconnected green areas where
-								pollinators can find food and shelter and go about their
-								day-to-day pollination.
-							</p>
-							<p>
-								These areas allow species such as birds, bees, bats,
-								butterflies, beetles, and other small mammals to travel safely
-								through cities and neighbourhoods, carrying pollen between
-								plants.
-							</p>
-							<p>
-								Without these pathways, it’s difficult for pollinators to
-								survive. Our aim is to help pollinating species by encouraging
-								the public to plant more native flower species.
-							</p>
-						</>
-					}
-				/>
+			{/* <pre>
+				<code>{JSON.stringify({ heading, videoUrl }, null, 2)}</code>
+			</pre> */}
+			<VideoHero videoSrc={videoUrl} heading={heading} />
+			<div className={s.infoSections}>
+				{infoSections.map((section: $TSFixMe, index: number) => {
+					const flipOrder = index % 2 !== 0;
+					return (
+						<TextImageSplit
+							key={index}
+							flipOrder={flipOrder}
+							heading={section.title}
+							image={section.image}
+						>
+							<TinaMarkdown content={section.body} />
+							{section.link ? (
+								<a href={section.link.url}>{section.link.text}</a>
+							) : null}
+						</TextImageSplit>
+					);
+				})}
 			</div>
 			<Spacer h="2rem" />
 			<div style={{ display: "flex" }}>

@@ -24,5 +24,28 @@
     }
   ],
   "homestring": "This is an updated TinaCMS value",
-  "homeimage": "/uploads/1-1.jpeg"
+  "homeimage": "/uploads/1-1.jpeg",
+  "heading": "A grassroots organization helping to educate the public about pollinators.",
+  "videoUrl": "/pollinator-pathways-video.mp4",
+  "infoSections": [
+    {
+      "title": "Pollinators keep ecosystems alive",
+      "image": "/uploads/DSC_0268 1.jpg",
+      "body": "Donating helps us build more gardens, and keep our ecosystems healthy. Your help makes this all happen.\n",
+      "link": {
+        "text": "Donate",
+        "url": "/donate"
+      }
+    },
+    {
+      "title": "Why do pollinators matter?",
+      "image": "/uploads/2024-05-26-pathways-photo-garden-01.jpg",
+      "body": "Pollinator species are responsible for 1 out of every 3 bites of food we eat. Pollination is a crucial process in the reproductive system of most flowering plants. These plants:\n\n* Supply nearly all our fruits, vegetables, and nuts\n* Supply half the world’s natural oils, fibres, and raw materials\n* Prevent soil erosion\n* Increase carbon sequestration\n\nA healthy ecosystem of pollinator species is incredibly important not just for the species themselves, but for humanity as well.\n"
+    },
+    {
+      "title": "What are pollinator pathways?",
+      "image": "/uploads/2024-05-26-pathways-photo-butterfly.jpg",
+      "body": "Pollinator pathways are interconnected green areas where pollinators can find food and shelter and go about their day-to-day pollination.\n\nThese areas allow species such as birds, bees, bats, butterflies, beetles, and other small mammals to travel safely through cities and neighbourhoods, carrying pollen between plants.\n\nWithout these pathways, it’s difficult for pollinators to survive. Our aim is to help pollinating species by encouraging the public to plant more native flower species.\n"
+    }
+  ]
 }
