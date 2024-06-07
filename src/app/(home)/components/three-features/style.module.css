@@ -1,0 +1,48 @@
+.root {
+	background: var(--green-faded);
+	padding: 3rem 2rem;
+	container-type: inline-size;
+}
+
+.items {
+	margin: 0 auto;
+	display: flex;
+	max-width: var(--content-max-width);
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+
+	@container (min-width: 666px) {
+		flex-direction: row;
+		align-items: stretch;
+	}
+}
+
+.item {
+	flex-basis: 33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid magenta;
+	gap: 1rem;
+	text-align: center;
+	max-width: 400px;
+}
+
+.itemIcon {
+	display: block;
+	border: 1px solid magenta;
+}
+
+.itemTitle {
+	border: 1px solid magenta;
+}
+
+.itemBody {
+	border: 1px solid magenta;
+}
+
+.itemLink {
+	margin-top: auto;
+	border: 1px solid magenta;
+}

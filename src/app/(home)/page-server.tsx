@@ -6,6 +6,7 @@ import VideoHero from "./components/video-hero";
 import TextImageSplit from "./components/text-image-split";
 // Styles
 import s from "./page.module.css";
+import ThreeFeatures from "./components/three-features";
 
 export default function Home({ data }: $TSFixMe) {
 	const { heading, videoUrl, infoSections } = data.homepage;
@@ -35,36 +36,7 @@ export default function Home({ data }: $TSFixMe) {
 				})}
 			</div>
 			<Spacer h="2rem" />
-			<div style={{ display: "flex" }}>
-				<div className={s.sectionPlaceholder} style={{ width: "33.3%" }}>
-					<p>[ICON]</p>
-					<p>Start your garden</p>
-					<p>
-						Interested in creating a pollinator garden for your backyard or
-						within your community? Our kits are one way to get started!
-					</p>
-					<p>[Browse garden kits]</p>
-				</div>
-				<div className={s.sectionPlaceholder} style={{ width: "33.3%" }}>
-					<p>[ICON]</p>
-					<p>Work with use</p>
-					<p>
-						For larger projects for your community or workplace, we can help
-						plan and plant gardens on a case by case basis. We do charge a fee
-						for these services.
-					</p>
-					<p>[Help me plan]</p>
-				</div>
-				<div className={s.sectionPlaceholder} style={{ width: "33.3%" }}>
-					<p>[ICON]</p>
-					<p>Sponsor us</p>
-					<p>
-						Interested in supporting our vision, within your community, or at
-						your workplace? We’re here to help!
-					</p>
-					<p>[Get in touch]</p>
-				</div>
-			</div>
+			<ThreeFeatures />
 
 			<div className={s.sectionPlaceholder}>
 				<p>Contributing Artists & Project Sponsors</p>
