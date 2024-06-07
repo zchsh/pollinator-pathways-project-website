@@ -1,48 +1,47 @@
 .root {
-	background: var(--green-faded);
+	background: var(--white);
 	padding: 3rem 1.5rem;
 	container-type: inline-size;
+	border: 1px solid magenta;
 }
 
-.items {
+.content {
 	margin: 0 auto;
 	display: flex;
 	max-width: var(--content-max-width);
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
-
-	@container (min-width: 666px) {
-		flex-direction: row;
-		align-items: stretch;
-	}
+	gap: 1rem;
 }
 
-.item {
-	flex-basis: 33%;
+.textContent {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	border: 1px solid magenta;
 	gap: 1rem;
+	border: 1px solid magenta;
 	text-align: center;
-	max-width: 400px;
+	max-width: 35rem;
 }
 
-.itemIcon {
-	display: block;
+.heading {
 	border: 1px solid magenta;
 }
 
-.itemTitle {
+.text {
 	border: 1px solid magenta;
 }
 
-.itemText {
+.sponsors {
+	display: flex;
+	flex-wrap: wrap;
 	border: 1px solid magenta;
+	width: 100%;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
-.itemLink {
-	margin-top: auto;
+.sponsorLogo {
 	border: 1px solid magenta;
+	width: 180px;
+	height: 70px;
 }
