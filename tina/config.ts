@@ -118,6 +118,40 @@ export default defineConfig({
 							},
 						],
 					},
+					{
+						list: true,
+						type: "object",
+						label: "Calls To Action",
+						name: "callsToAction",
+						ui: { itemProps: (item) => ({ label: item?.title }) },
+						fields: [
+							{
+								type: "image",
+								label: "Icon",
+								name: "iconSrc",
+							},
+							{
+								type: "string",
+								label: "Title",
+								name: "title",
+							},
+							{
+								type: "string",
+								label: "Text",
+								name: "text",
+							},
+							{
+								type: "string",
+								label: "Link Text",
+								name: "linkText",
+							},
+							{
+								type: "string",
+								label: "Link URL",
+								name: "linkUrl",
+							},
+						],
+					},
 				],
 			},
 			{

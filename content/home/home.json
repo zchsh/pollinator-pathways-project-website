@@ -47,5 +47,28 @@
       "image": "/uploads/2024-05-26-pathways-photo-butterfly.jpg",
       "body": "Pollinator pathways are interconnected green areas where pollinators can find food and shelter and go about their day-to-day pollination.\n\nThese areas allow species such as birds, bees, bats, butterflies, beetles, and other small mammals to travel safely through cities and neighbourhoods, carrying pollen between plants.\n\nWithout these pathways, it’s difficult for pollinators to survive. Our aim is to help pollinating species by encouraging the public to plant more native flower species.\n"
     }
+  ],
+  "callsToAction": [
+    {
+      "iconSrc": "/uploads/icon-house.png",
+      "title": "Start your garden",
+      "text": "Interested in creating a pollinator garden for your backyard or within your community? Our kits are one way to get started!",
+      "linkText": "Browse garden kits",
+      "linkUrl": "/pollinator-kits"
+    },
+    {
+      "iconSrc": "/uploads/icon-potted-plant.png",
+      "title": "Work with us",
+      "text": "For larger projects for your community or workplace, we can help plan and plant gardens on a case by case basis. We do charge a fee for these services.",
+      "linkText": "Help me plan",
+      "linkUrl": "/connect"
+    },
+    {
+      "iconSrc": "/uploads/icon-handshake.png",
+      "title": "Sponsor us",
+      "text": "Interested in supporting our vision, within your community, or at your workplace? We’re here to help!",
+      "linkText": "Get in touch",
+      "linkUrl": "/connect"
+    }
   ]
 }
