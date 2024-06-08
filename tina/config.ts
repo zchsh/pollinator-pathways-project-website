@@ -184,6 +184,36 @@ export default defineConfig({
 				],
 			},
 			{
+				label: "Connect Page",
+				name: "connect",
+				path: "content/connect",
+				format: "json",
+				ui: {
+					allowedActions: {
+						create: true,
+						delete: false,
+					},
+					router: () => `/connect`,
+				},
+				fields: [
+					{
+						type: "string",
+						label: "Email",
+						name: "email",
+					},
+					{
+						type: "string",
+						label: "Email Link Text",
+						name: "emailLinkText",
+					},
+					{
+						type: "string",
+						label: "Email Subject",
+						name: "emailSubject",
+					},
+				],
+			},
+			{
 				label: "Photos",
 				name: "photos",
 				path: "content/photos",
