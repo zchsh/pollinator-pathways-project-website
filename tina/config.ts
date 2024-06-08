@@ -152,6 +152,35 @@ export default defineConfig({
 							},
 						],
 					},
+					{
+						type: "string",
+						label: "Sponsors Heading",
+						name: "sponsorsHeading",
+					},
+					{
+						type: "string",
+						label: "Sponsors Text",
+						name: "sponsorsText",
+					},
+					{
+						type: "object",
+						label: "Sponsors",
+						name: "sponsors",
+						ui: { itemProps: (item) => ({ label: item?.name }) },
+						fields: [
+							{
+								type: "string",
+								label: "Name",
+								name: "name",
+							},
+							{
+								type: "image",
+								label: "Logo",
+								name: "logo",
+							},
+						],
+						list: true,
+					},
 				],
 			},
 			{

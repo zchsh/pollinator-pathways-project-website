@@ -2,21 +2,31 @@
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 // Components
 import Spacer from "@/components/spacer";
-import VideoHero from "./components/video-hero";
+import SponsorsSection from "./components/sponsors-section";
 import TextImageSplit from "./components/text-image-split";
 import ThreeFeatures from "./components/three-features";
+import VideoHero from "./components/video-hero";
 // Styles
 import s from "./page.module.css";
-import SponsorsSection from "./components/sponsors-section";
 
 export default function Home({ data }: $TSFixMe) {
-	const { heading, videoUrl, infoSections, callsToAction } = data.homepage;
+	const {
+		heading,
+		videoUrl,
+		infoSections,
+		callsToAction,
+		sponsorsHeading,
+		sponsorsText,
+		sponsors,
+	} = data.homepage;
 
 	return (
 		<main className={s.root}>
-			{/* <pre>
-				<code>{JSON.stringify({ callsToAction }, null, 2)}</code>
-			</pre> */}
+			<pre>
+				<code>
+					{JSON.stringify({ sponsorsHeading, sponsorsText, sponsors }, null, 2)}
+				</code>
+			</pre>
 			<VideoHero videoSrc={videoUrl} heading={heading} />
 			<div className={s.infoSections}>
 				{infoSections.map((section: $TSFixMe, index: number) => {
@@ -38,7 +48,11 @@ export default function Home({ data }: $TSFixMe) {
 			</div>
 			<Spacer h="2rem" />
 			<ThreeFeatures items={callsToAction} />
-			<SponsorsSection />
+			<SponsorsSection
+				heading={sponsorsHeading}
+				text={sponsorsText}
+				sponsors={sponsors}
+			/>
 		</main>
 	);
 }

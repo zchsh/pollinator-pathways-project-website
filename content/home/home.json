@@ -70,5 +70,29 @@
       "linkText": "Get in touch",
       "linkUrl": "/connect"
     }
+  ],
+  "sponsorsHeading": "Contributing Artists & Project Sponsors",
+  "sponsorsText": "We extend our deepest gratitude to the sponsors who support our vision for a greener city, and to the artists who lent their talent and passion to create beautiful signage for our installations.",
+  "sponsors": [
+    {
+      "name": "TD Bank",
+      "logo": "/uploads/td-bank.png"
+    },
+    {
+      "name": "Lush",
+      "logo": "/uploads/lush.png"
+    },
+    {
+      "name": "London Environmental Network",
+      "logo": "/uploads/london-environmental-network.png"
+    },
+    {
+      "name": "Wilson Family Foundation",
+      "logo": "/uploads/wilson-family-foundation.png"
+    },
+    {
+      "name": "Rick and Carol Richardson Family Fund",
+      "logo": "/uploads/rick-and-carol-richardson-family-fund.png"
+    }
   ]
 }
