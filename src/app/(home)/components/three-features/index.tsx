@@ -1,3 +1,4 @@
+import PrimaryButtonLink from "@/components/primary-button-link";
 import s from "./style.module.css";
 
 interface Item {
@@ -24,9 +25,9 @@ export default function ThreeFeatures({ items }: { items: Item[] }) {
 							/>
 							<h2 className={s.itemTitle}>{item.title}</h2>
 							<p className={s.itemText}>{item.text}</p>
-							<a className={s.itemLink} href={item.linkUrl}>
+							<PrimaryButtonLink className={s.itemLink} href={item.linkUrl}>
 								{item.linkText}
-							</a>
+							</PrimaryButtonLink>
 						</div>
 					);
 				})}

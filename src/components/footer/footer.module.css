@@ -3,7 +3,6 @@
 }
 
 .content {
-	border: 1px solid magenta;
 	padding: 40px 1rem 80px 1rem;
 	display: flex;
 	align-items: flex-end;
@@ -20,4 +19,18 @@
 	padding: 0;
 	list-style: none;
 	gap: 1rem;
+}
+
+.iconAndText {
+	display: flex;
+	gap: 16px;
+	min-height: 32px;
+	align-items: center;
+}
+
+.buttonIcon {
+	border: 1px solid magenta;
+	display: block;
+	width: 24px;
+	height: 24px;
 }

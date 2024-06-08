@@ -1,0 +1,14 @@
+.button {
+	border: none;
+	font-size: 1.25rem;
+	background: var(--yellow-primary);
+	color: var(--black);
+	font-family: var(--font-display);
+	padding: 4px 20px;
+	border-radius: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--yellow-primary-hover);
+	}
+}

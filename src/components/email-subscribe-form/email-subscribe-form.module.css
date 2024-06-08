@@ -9,7 +9,7 @@
 }
 
 .emailInput {
-	border: 1px solid magenta;
+	border: none;
 	font-size: 1rem;
 	background: white;
 	border-top-left-radius: 32px;

@@ -19,12 +19,13 @@ export default function SponsorsSection({
 				<div className={s.sponsors}>
 					{sponsors.map((sponsor) => {
 						return (
-							<img
-								key={sponsor.name}
-								className={s.sponsorLogo}
-								src={sponsor.logo}
-								alt={sponsor.name}
-							/>
+							<div key={sponsor.name} className={s.sponsorLogo}>
+								<img
+									className={s.sponsorLogoImg}
+									src={sponsor.logo}
+									alt={sponsor.name}
+								/>
+							</div>
 						);
 					})}
 				</div>

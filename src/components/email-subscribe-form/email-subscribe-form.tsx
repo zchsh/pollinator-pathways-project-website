@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PrimaryButton from "../primary-button";
 import s from "./email-subscribe-form.module.css";
 
 interface ResponseData {
@@ -55,13 +56,9 @@ export default function EmailSubscribeForm() {
 						onChange={(e) => setEmail(e.target.value)}
 					/>
 					<div className={s.submitButtonContainer}>
-						<button
-							className={s.submitButton}
-							type="button"
-							onClick={() => handleSubmit()}
-						>
+						<PrimaryButton type="button" onClick={() => handleSubmit()}>
 							Subscribe
-						</button>
+						</PrimaryButton>
 					</div>
 				</form>
 			)}

@@ -8,6 +8,7 @@ import ThreeFeatures from "./components/three-features";
 import VideoHero from "./components/video-hero";
 // Styles
 import s from "./page.module.css";
+import PrimaryButtonLink from "@/components/primary-button-link";
 
 export default function Home({ data }: $TSFixMe) {
 	const {
@@ -40,7 +41,12 @@ export default function Home({ data }: $TSFixMe) {
 						>
 							<TinaMarkdown content={section.body} />
 							{section.link ? (
-								<a href={section.link.url}>{section.link.text}</a>
+								<PrimaryButtonLink
+									className={s.textImageLink}
+									href={section.link.url}
+								>
+									{section.link.text}
+								</PrimaryButtonLink>
 							) : null}
 						</TextImageSplit>
 					);
