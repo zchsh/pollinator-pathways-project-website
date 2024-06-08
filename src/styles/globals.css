@@ -1,3 +1,5 @@
-html {
-	/* Nothing here yet, no global styles needed so far. */
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
 }

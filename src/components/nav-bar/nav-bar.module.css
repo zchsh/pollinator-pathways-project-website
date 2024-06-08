@@ -1,10 +1,13 @@
+.root {
+	isolation: isolate;
+}
+
 .navList {
 	--nav-secondary-color: var(--green-faded);
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
-	isolation: isolate;
+	gap: 12px;
 	justify-content: center;
 	list-style: none;
 	padding: 0 0 16px 0;

@@ -4,6 +4,7 @@
 	flex-direction: column;
 	position: relative;
 	isolation: isolate;
+	overflow: hidden;
 }
 
 .videoContainer {
@@ -11,9 +12,10 @@
 	top: 0;
 	left: 0;
 	aspect-ratio: 2 / 1;
+	min-height: 400px;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
+	min-width: 100%;
 	border: 1px solid magenta;
 }
 
