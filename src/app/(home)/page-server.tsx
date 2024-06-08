@@ -22,11 +22,11 @@ export default function Home({ data }: $TSFixMe) {
 
 	return (
 		<main className={s.root}>
-			<pre>
+			{/* <pre>
 				<code>
 					{JSON.stringify({ sponsorsHeading, sponsorsText, sponsors }, null, 2)}
 				</code>
-			</pre>
+			</pre> */}
 			<VideoHero videoSrc={videoUrl} heading={heading} />
 			<div className={s.infoSections}>
 				{infoSections.map((section: $TSFixMe, index: number) => {
