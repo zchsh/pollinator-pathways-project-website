@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import s from "./email-subscribe-form.module.css";
 
 interface ResponseData {
 	status: "success" | "existingSubscriber" | "error" | "idle" | "loading";
@@ -9,7 +10,6 @@ interface ResponseData {
 
 export default function EmailSubscribeForm() {
 	const [email, setEmail] = useState("");
-	const [name, setName] = useState("");
 	const [responseData, setResponseData] = useState<ResponseData>({
 		status: "idle",
 	});
@@ -21,15 +21,20 @@ export default function EmailSubscribeForm() {
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify({ email, name }),
+			body: JSON.stringify({ email }),
 		});
 		const data = await response.json();
 		setResponseData(data);
 	}
 
 	return (
-		<div>
-			<p>Our monthly newsletter has updates, contests, and more!</p>
+		<div className={s.root}>
+			{/* <pre>
+				<code>{JSON.stringify({ email, responseData }, null, 2)}</code>
+			</pre> */}
+			<p className={s.message}>
+				Our monthly newsletter has updates, contests, and more!
+			</p>
 			{responseData.status === "success" ? (
 				<p>Success! 🎉 {responseData.email} is now subscribed.</p>
 			) : responseData.status === "existingSubscriber" ? (
@@ -38,17 +43,26 @@ export default function EmailSubscribeForm() {
 				</p>
 			) : responseData.status === "error" ? (
 				<p>❌ Error, oops</p>
+			) : responseData.status === "loading" ? (
+				<div>Loading...</div>
 			) : (
-				<form>
+				<form className={s.form}>
 					<input
+						className={s.emailInput}
 						type="email"
-						placeholder="your@email.com"
+						placeholder="you@mail.com"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
-					<button type="button" onClick={() => handleSubmit()}>
-						Subscribe
-					</button>
+					<div className={s.submitButtonContainer}>
+						<button
+							className={s.submitButton}
+							type="button"
+							onClick={() => handleSubmit()}
+						>
+							Subscribe
+						</button>
+					</div>
 				</form>
 			)}
 		</div>

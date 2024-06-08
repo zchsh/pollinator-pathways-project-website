@@ -6,10 +6,12 @@
 	/* Colors */
 	--black: #000000;
 	--white: #ffffff;
-	--text-black: #333333;
+	--black-text: #333333;
 	--yellow-faded: #fff5c0;
 	--yellow-primary: #f9ce33;
+	--yellow-primary-hover: #f7b128;
 	--green-faded: #dff9c2;
+	--green-text: #3a650b;
 	/* Layout */
 	--content-max-width: 1000px;
 }

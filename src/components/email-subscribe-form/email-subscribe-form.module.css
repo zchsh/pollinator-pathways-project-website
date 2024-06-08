@@ -1,3 +1,41 @@
-.placeholder {
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form {
+	display: flex;
+}
+
+.emailInput {
 	border: 1px solid magenta;
+	font-size: 1rem;
+	background: white;
+	border-top-left-radius: 32px;
+	border-bottom-left-radius: 32px;
+	padding: 0 40px 0 20px;
+}
+
+.submitButtonContainer {
+	margin-left: -20px;
+}
+
+.submitButton {
+	border: none;
+	font-size: 1.25rem;
+	background: var(--yellow-primary);
+	color: var(--black);
+	font-family: var(--font-display);
+	padding: 4px 20px;
+	border-radius: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--yellow-primary-hover);
+	}
+}
+
+.message {
+	color: var(--green-text);
 }

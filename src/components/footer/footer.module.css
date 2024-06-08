@@ -1,11 +1,18 @@
 .root {
+	background: var(--green-faded);
+}
+
+.content {
 	border: 1px solid magenta;
-	padding: 1rem;
+	padding: 40px 1rem 80px 1rem;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-end;
+	justify-content: space-between;
 	gap: 32px;
 	flex-wrap: wrap;
+	width: 100%;
+	max-width: var(--content-max-width);
+	margin: 0 auto;
 }
 
 .list {
