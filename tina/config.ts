@@ -58,8 +58,8 @@ export default defineConfig({
 				format: "json",
 				ui: {
 					allowedActions: {
-						create: true,
-						delete: true,
+						create: false,
+						delete: false,
 					},
 					router: () => `/sitewide`,
 				},
