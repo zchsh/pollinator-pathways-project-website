@@ -1,72 +1,71 @@
 {
-  "heading": "A non-profit helping to educate the public about pollinators.",
-  "videoUrl": "/pollinator-pathways-video.mp4",
-  "infoSections": [
-    {
-      "title": "Pollinators keep ecosystems alive",
-      "image": "/uploads/Home Page/2024-05-26-pollinator-ecosystems.jpg",
-      "body": "Donating helps us build more gardens, and keep our ecosystems healthy. Your help makes this all happen.\n",
-      "linkText": "Donate",
-      "linkUrl": "/donate"
-    },
-    {
-      "title": "Why do pollinators matter?",
-      "image": "/uploads/Home Page/2024-05-26-pathways-photo-garden-01.jpg",
-      "body": "Pollinator species are responsible for 1 out of every 3 bites of food we eat. Pollination is a crucial process in the reproductive system of most flowering plants. These plants:\n\n* Supply nearly all our fruits, vegetables, and nuts\n* Supply half the world’s natural oils, fibres, and raw materials\n* Prevent soil erosion\n* Increase carbon sequestration\n\nA healthy ecosystem of pollinator species is incredibly important not just for the species themselves, but for humanity as well.\n",
-      "linkText": "",
-      "linkUrl": ""
-    },
-    {
-      "title": "What are pollinator pathways?",
-      "image": "/uploads/Home Page/2024-05-26-pathways-photo-butterfly.jpg",
-      "body": "Pollinator pathways are interconnected green areas where pollinators can find food and shelter and go about their day-to-day pollination.\n\nThese areas allow species such as birds, bees, bats, butterflies, beetles, and other small mammals to travel safely through cities and neighbourhoods, carrying pollen between plants.\n\nWithout these pathways, it’s difficult for pollinators to survive. Our aim is to help pollinating species by encouraging the public to plant more native flower species.\n"
-    }
-  ],
-  "callsToAction": [
-    {
-      "iconSrc": "/uploads/Home Page/icon-house.png",
-      "title": "Start your garden",
-      "text": "Interested in creating a pollinator garden for your backyard or within your community? Our kits are one way to get started!",
-      "linkText": "Browse garden kits",
-      "linkUrl": "/pollinator-kits"
-    },
-    {
-      "iconSrc": "/uploads/Home Page/icon-potted-plant.png",
-      "title": "Work with us",
-      "text": "For larger projects for your community or workplace, we can help plan and plant gardens on a case by case basis. We do charge a fee for these services.",
-      "linkText": "Help me plan",
-      "linkUrl": "/connect"
-    },
-    {
-      "iconSrc": "/uploads/Home Page/icon-handshake.png",
-      "title": "Sponsor us",
-      "text": "Interested in supporting our vision, within your community, or at your workplace? We’re here to help!",
-      "linkText": "Get in touch",
-      "linkUrl": "/connect"
-    }
-  ],
-  "sponsorsHeading": "Contributing Artists & Project Sponsors",
-  "sponsorsText": "We extend our deepest gratitude to the sponsors who support our vision for a greener city, and to the artists who lent their talent and passion to create beautiful signage for our installations.",
-  "sponsors": [
-    {
-      "name": "TD Bank",
-      "logo": "/uploads/Sponsor Logos/td-bank.png"
-    },
-    {
-      "name": "Lush",
-      "logo": "/uploads/Sponsor Logos/lush.png"
-    },
-    {
-      "name": "London Environmental Network",
-      "logo": "/uploads/Sponsor Logos/london-environmental-network.png"
-    },
-    {
-      "name": "Wilson Family Foundation",
-      "logo": "/uploads/Sponsor Logos/wilson-family-foundation.png"
-    },
-    {
-      "name": "Rick and Carol Richardson Family Fund",
-      "logo": "/uploads/Sponsor Logos/rick-and-carol-richardson-family-fund.png"
-    }
-  ]
+	"heading": "A non-profit helping to educate the public about pollinators.",
+	"infoSections": [
+		{
+			"title": "Pollinators keep ecosystems alive",
+			"image": "/uploads/Home Page/2024-05-26-pollinator-ecosystems.jpg",
+			"body": "Donating helps us build more gardens, and keep our ecosystems healthy. Your help makes this all happen.\n",
+			"linkText": "Donate",
+			"linkUrl": "/donate"
+		},
+		{
+			"title": "Why do pollinators matter?",
+			"image": "/uploads/Home Page/2024-05-26-pathways-photo-garden-01.jpg",
+			"body": "Pollinator species are responsible for 1 out of every 3 bites of food we eat. Pollination is a crucial process in the reproductive system of most flowering plants. These plants:\n\n* Supply nearly all our fruits, vegetables, and nuts\n* Supply half the world’s natural oils, fibres, and raw materials\n* Prevent soil erosion\n* Increase carbon sequestration\n\nA healthy ecosystem of pollinator species is incredibly important not just for the species themselves, but for humanity as well.\n",
+			"linkText": "",
+			"linkUrl": ""
+		},
+		{
+			"title": "What are pollinator pathways?",
+			"image": "/uploads/Home Page/2024-05-26-pathways-photo-butterfly.jpg",
+			"body": "Pollinator pathways are interconnected green areas where pollinators can find food and shelter and go about their day-to-day pollination.\n\nThese areas allow species such as birds, bees, bats, butterflies, beetles, and other small mammals to travel safely through cities and neighbourhoods, carrying pollen between plants.\n\nWithout these pathways, it’s difficult for pollinators to survive. Our aim is to help pollinating species by encouraging the public to plant more native flower species.\n"
+		}
+	],
+	"callsToAction": [
+		{
+			"iconSrc": "/uploads/Home Page/icon-house.png",
+			"title": "Start your garden",
+			"text": "Interested in creating a pollinator garden for your backyard or within your community? Our kits are one way to get started!",
+			"linkText": "Browse garden kits",
+			"linkUrl": "/pollinator-kits"
+		},
+		{
+			"iconSrc": "/uploads/Home Page/icon-potted-plant.png",
+			"title": "Work with us",
+			"text": "For larger projects for your community or workplace, we can help plan and plant gardens on a case by case basis. We do charge a fee for these services.",
+			"linkText": "Help me plan",
+			"linkUrl": "/connect"
+		},
+		{
+			"iconSrc": "/uploads/Home Page/icon-handshake.png",
+			"title": "Sponsor us",
+			"text": "Interested in supporting our vision, within your community, or at your workplace? We’re here to help!",
+			"linkText": "Get in touch",
+			"linkUrl": "/connect"
+		}
+	],
+	"sponsorsHeading": "Contributing Artists & Project Sponsors",
+	"sponsorsText": "We extend our deepest gratitude to the sponsors who support our vision for a greener city, and to the artists who lent their talent and passion to create beautiful signage for our installations.",
+	"sponsors": [
+		{
+			"name": "TD Bank",
+			"logo": "/uploads/Sponsor Logos/td-bank.png"
+		},
+		{
+			"name": "Lush",
+			"logo": "/uploads/Sponsor Logos/lush.png"
+		},
+		{
+			"name": "London Environmental Network",
+			"logo": "/uploads/Sponsor Logos/london-environmental-network.png"
+		},
+		{
+			"name": "Wilson Family Foundation",
+			"logo": "/uploads/Sponsor Logos/wilson-family-foundation.png"
+		},
+		{
+			"name": "Rick and Carol Richardson Family Fund",
+			"logo": "/uploads/Sponsor Logos/rick-and-carol-richardson-family-fund.png"
+		}
+	]
 }
