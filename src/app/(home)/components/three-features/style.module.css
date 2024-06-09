@@ -12,8 +12,8 @@
 	gap: 2rem;
 
 	@media (min-width: 666px) {
-		flex-direction: row;
-		align-items: stretch;
+		flex-direction: row !important;
+		align-items: stretch !important;
 	}
 }
 
