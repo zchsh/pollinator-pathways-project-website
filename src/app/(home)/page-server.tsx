@@ -24,10 +24,8 @@ export default function Home({ data }: $TSFixMe) {
 	return (
 		<main className={s.root}>
 			{/* <pre>
-				<code>
-					{JSON.stringify({ sponsorsHeading, sponsorsText, sponsors }, null, 2)}
-				</code>
-			</pre> */}
+					<code>{JSON.stringify(data.homepage, null, 2)}</code>
+				</pre> */}
 			<VideoHero videoSrc={videoUrl} heading={heading} />
 			<div className={s.infoSections}>
 				{infoSections.map((section: $TSFixMe, index: number) => {

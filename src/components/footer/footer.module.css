@@ -23,14 +23,18 @@
 
 .iconAndText {
 	display: flex;
-	gap: 16px;
+	gap: 12px;
 	min-height: 32px;
 	align-items: center;
 }
 
 .buttonIcon {
-	border: 1px solid magenta;
 	display: block;
 	width: 24px;
 	height: 24px;
+}
+
+.iconOnlyButton {
+	padding-left: 0.625rem !important;
+	padding-right: 0.625rem !important;
 }

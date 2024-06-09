@@ -3,13 +3,43 @@ import s from "./footer.module.css";
 import PrimaryButtonLink from "../primary-button-link";
 import VisuallyHidden from "../visually-hidden";
 
-function Footer() {
+/**
+ * TODO: remove placeholders once all pages are wired up
+ */
+function Footer({
+	subscribeHeading = "Subscribe to our newsletter",
+	subscribePlaceholder = "you@mail.com",
+	links = [],
+}: $TSFixMe) {
 	return (
 		<div className={s.root}>
 			<div className={s.content}>
-				<EmailSubscribeForm />
+				<EmailSubscribeForm
+					subscribeHeading={subscribeHeading}
+					subscribePlaceholder={subscribePlaceholder}
+				/>
 				<ul className={s.list}>
-					<li>
+					{links.map(
+						({ text, url, icon, showIconOnly }: $TSFixMe, idx: number) => (
+							<li key={idx}>
+								<PrimaryButtonLink
+									href={url}
+									target="_blank"
+									className={showIconOnly ? s.iconOnlyButton : ""}
+								>
+									<span className={s.iconAndText}>
+										<img className={s.buttonIcon} src={icon} alt="" />
+										{showIconOnly ? (
+											<VisuallyHidden>{text}</VisuallyHidden>
+										) : (
+											text
+										)}
+									</span>
+								</PrimaryButtonLink>
+							</li>
+						)
+					)}
+					{/* <li>
 						<PrimaryButtonLink
 							href="mailto:pollinatorpathwaysproject@gmail.com"
 							target="_blank"
@@ -41,7 +71,7 @@ function Footer() {
 								<VisuallyHidden>Facebook</VisuallyHidden>
 							</span>
 						</PrimaryButtonLink>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</div>

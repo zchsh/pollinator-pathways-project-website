@@ -1,5 +1,3 @@
-import NextLink from "next/link";
-import clsx from "clsx";
 import NavDropdown from "./nav-dropdown/nav-dropdown";
 import s from "./nav-bar.module.css";
 

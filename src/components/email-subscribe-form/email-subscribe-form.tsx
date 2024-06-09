@@ -9,7 +9,13 @@ interface ResponseData {
 	email?: string;
 }
 
-export default function EmailSubscribeForm() {
+export default function EmailSubscribeForm({
+	subscribeHeading,
+	subscribePlaceholder,
+}: {
+	subscribeHeading: string;
+	subscribePlaceholder: string;
+}) {
 	const [email, setEmail] = useState("");
 	const [responseData, setResponseData] = useState<ResponseData>({
 		status: "idle",
@@ -33,9 +39,7 @@ export default function EmailSubscribeForm() {
 			{/* <pre>
 				<code>{JSON.stringify({ email, responseData }, null, 2)}</code>
 			</pre> */}
-			<p className={s.message}>
-				Our monthly newsletter has updates, contests, and more!
-			</p>
+			<p className={s.message}>{subscribeHeading}</p>
 			{responseData.status === "success" ? (
 				<p>Success! 🎉 {responseData.email} is now subscribed.</p>
 			) : responseData.status === "existingSubscriber" ? (
@@ -51,7 +55,7 @@ export default function EmailSubscribeForm() {
 					<input
 						className={s.emailInput}
 						type="email"
-						placeholder="you@mail.com"
+						placeholder={subscribePlaceholder}
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>

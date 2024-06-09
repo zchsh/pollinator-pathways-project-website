@@ -52,6 +52,67 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
+				label: "Site-wide",
+				name: "sitewide",
+				path: "content/sitewide",
+				format: "json",
+				ui: {
+					allowedActions: {
+						create: true,
+						delete: true,
+					},
+					router: () => `/sitewide`,
+				},
+				fields: [
+					{
+						type: "object",
+						label: "Footer",
+						name: "footer",
+						fields: [
+							{
+								type: "string",
+								label: "Subscribe Heading",
+								name: "subscribeHeading",
+							},
+							{
+								type: "string",
+								label: "Subscribe Placeholder",
+								name: "subscribePlaceholder",
+							},
+							{
+								list: true,
+								type: "object",
+								label: "Links",
+								name: "links",
+								ui: { itemProps: (item) => ({ label: item?.text }) },
+								fields: [
+									{
+										type: "string",
+										label: "Text",
+										name: "text",
+									},
+									{
+										type: "string",
+										label: "URL",
+										name: "url",
+									},
+									{
+										type: "image",
+										label: "Icon",
+										name: "icon",
+									},
+									{
+										type: "boolean",
+										label: "Show Icon Only",
+										name: "showIconOnly",
+									},
+								],
+							},
+						],
+					},
+				],
+			},
+			{
 				label: "Home Page",
 				name: "homepage",
 				path: "content/home",

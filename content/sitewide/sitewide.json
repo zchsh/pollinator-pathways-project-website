@@ -1,0 +1,25 @@
+{
+  "footer": {
+    "subscribeHeading": "Our occasional newsletter has updates, contests, and more!",
+    "subscribePlaceholder": "your@email.com",
+    "links": [
+      {
+        "text": "Email us",
+        "url": "pollinatorpathwaysproject@gmail.com",
+        "icon": "/uploads/icon-email.png"
+      },
+      {
+        "text": "Instagram",
+        "url": "https://www.instagram.com/pollinatorpathwaysproject/",
+        "icon": "/uploads/icon-instagram.png",
+        "showIconOnly": true
+      },
+      {
+        "text": "Facebook",
+        "url": "https://www.facebook.com/pollinatorpathwaysproject/",
+        "icon": "/uploads/icon-facebook.png",
+        "showIconOnly": true
+      }
+    ]
+  }
+}
