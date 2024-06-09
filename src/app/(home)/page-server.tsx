@@ -13,7 +13,6 @@ import PrimaryButtonLink from "@/components/primary-button-link";
 export default function Home({ data }: $TSFixMe) {
 	const {
 		heading,
-		videoUrl,
 		infoSections,
 		callsToAction,
 		sponsorsHeading,
@@ -26,7 +25,10 @@ export default function Home({ data }: $TSFixMe) {
 			{/* <pre>
 					<code>{JSON.stringify(data.homepage, null, 2)}</code>
 				</pre> */}
-			<VideoHero videoSrc={videoUrl} heading={heading} />
+			<VideoHero
+				videoSrc={"/pollinator-pathways-video.mp4"}
+				heading={heading}
+			/>
 			<div className={s.infoSections}>
 				{infoSections.map((section: $TSFixMe, index: number) => {
 					const flipOrder = index % 2 !== 0;

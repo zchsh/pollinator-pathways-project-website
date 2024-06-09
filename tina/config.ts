@@ -131,11 +131,6 @@ export default defineConfig({
 						name: "heading",
 					},
 					{
-						type: "string",
-						label: "Video URL",
-						name: "videoUrl",
-					},
-					{
 						list: true,
 						type: "object",
 						label: "Info Sections",
