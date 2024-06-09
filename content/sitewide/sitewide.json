@@ -1,24 +1,24 @@
 {
   "footer": {
-    "subscribeHeading": "Our monthly newsletter has updates, contests, and more!",
+    "subscribeHeading": "Our occasional newsletter has updates, contests, and more!",
     "subscribePlaceholder": "you@mail.com",
     "links": [
       {
-        "text": "Email us",
-        "url": "pollinatorpathwaysproject@gmail.com",
-        "icon": "/uploads/icon-email.png"
-      },
-      {
         "text": "Instagram",
         "url": "https://www.instagram.com/pollinatorpathwaysproject/",
-        "icon": "/uploads/icon-instagram.png",
+        "icon": "/uploads/Site-wide/icon-instagram.png",
         "showIconOnly": true
       },
       {
         "text": "Facebook",
         "url": "https://www.facebook.com/pollinatorpathwaysproject/",
-        "icon": "/uploads/icon-facebook.png",
+        "icon": "/uploads/Site-wide/icon-facebook.png",
         "showIconOnly": true
+      },
+      {
+        "text": "Email us",
+        "url": "pollinatorpathwaysproject@gmail.com",
+        "icon": "/uploads/Site-wide/icon-email.png"
       }
     ]
   }

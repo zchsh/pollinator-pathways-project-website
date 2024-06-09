@@ -12,7 +12,9 @@ export default function PageServer({ data }: $TSFixMe) {
 				<div>{data.blog.title}</div>
 			</div>
 			<h1>{data.blog.title}</h1>
-			<TinaMarkdown content={data.blog.body} />
+			<div className={s.blogBody}>
+				<TinaMarkdown content={data.blog.body} />
+			</div>
 		</PagePlaceholder>
 	);
 }
