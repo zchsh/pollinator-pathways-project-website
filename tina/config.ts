@@ -98,23 +98,14 @@ export default defineConfig({
 								isBody: true,
 							},
 							{
-								type: "object",
-								label: "Link",
-								name: "link",
-								required: false,
-								ui: { itemProps: (item) => ({ label: item?.text }) },
-								fields: [
-									{
-										type: "string",
-										label: "Text",
-										name: "text",
-									},
-									{
-										type: "string",
-										label: "URL",
-										name: "url",
-									},
-								],
+								type: "string",
+								label: "Link Text",
+								name: "linkText",
+							},
+							{
+								type: "string",
+								label: "Link URL",
+								name: "linkUrl",
 							},
 						],
 					},
@@ -160,6 +151,9 @@ export default defineConfig({
 					{
 						type: "string",
 						label: "Sponsors Text",
+						ui: {
+							component: "textarea",
+						},
 						name: "sponsorsText",
 					},
 					{

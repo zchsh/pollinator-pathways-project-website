@@ -16,7 +16,6 @@
 	overflow: hidden;
 	position: relative;
 	min-width: 100%;
-	border: 1px solid magenta;
 }
 
 .video {
@@ -38,31 +37,42 @@
 	height: 100%;
 	transform: translateX(-50%);
 	max-width: var(--content-max-width);
-	border: 2px solid magenta;
 }
 
 .text {
 	position: absolute;
 	top: 0;
 	left: 0;
-	border: 1px solid magenta;
-	background: white;
-	padding: 1rem;
-	max-width: 200px;
+	color: var(--black);
+	font-family: var(--font-display);
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1;
+	background: var(--yellow-primary);
+	padding: 1.5rem;
+	max-width: 8em;
 }
 
-.muteButton {
+.iconButtons {
 	position: absolute;
+	bottom: 1rem;
 	right: 1rem;
-	bottom: 1rem;
-	border: 1px solid magenta;
-	cursor: pointer;
+	display: flex;
+	gap: 0.25rem;
 }
 
-.playButton {
-	position: absolute;
-	left: 1rem;
-	bottom: 1rem;
-	border: 1px solid magenta;
+.iconButton {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	border: none;
 	cursor: pointer;
+
+	& svg {
+		width: 1rem;
+		height: 1rem;
+	}
 }

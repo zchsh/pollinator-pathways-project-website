@@ -39,13 +39,15 @@ export default function Home({ data }: $TSFixMe) {
 							heading={section.title}
 							image={section.image}
 						>
-							<TinaMarkdown content={section.body} />
-							{section.link ? (
+							<div className={s.textImageBody}>
+								<TinaMarkdown content={section.body} />
+							</div>
+							{section.linkText && section.linkUrl ? (
 								<PrimaryButtonLink
 									className={s.textImageLink}
-									href={section.link.url}
+									href={section.linkUrl}
 								>
-									{section.link.text}
+									{section.linkText}
 								</PrimaryButtonLink>
 							) : null}
 						</TextImageSplit>

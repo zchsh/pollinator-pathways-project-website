@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef, useState } from "react";
+import IconVolumeHigh from "@/icons/icon-volume-high";
+import IconVolumeMute from "@/icons/icon-volume-mute";
+import IconPause from "@/icons/icon-pause";
+import IconPlay from "@/icons/icon-play";
 import s from "./style.module.css";
+import VisuallyHidden from "@/components/visually-hidden";
 
 export default function VideoHero({
 	heading,
@@ -46,12 +51,34 @@ export default function VideoHero({
 			</div>
 			<div className={s.pageContainer}>
 				<div className={s.text}>{heading}</div>
-				<button className={s.muteButton} onClick={() => setMuted(!muted)}>
-					{muted ? "Unmute" : "Mute"}
-				</button>
-				<button className={s.playButton} onClick={() => handlePlayPause()}>
-					{playing ? "Pause" : "Play"}
-				</button>
+				<div className={s.iconButtons}>
+					<button className={s.iconButton} onClick={() => handlePlayPause()}>
+						{playing ? (
+							<>
+								<IconPause />
+								<VisuallyHidden>Pause</VisuallyHidden>
+							</>
+						) : (
+							<>
+								<IconPlay />
+								<VisuallyHidden>Play</VisuallyHidden>
+							</>
+						)}
+					</button>
+					<button className={s.iconButton} onClick={() => setMuted(!muted)}>
+						{muted ? (
+							<>
+								<IconVolumeMute />
+								<VisuallyHidden>Unmute</VisuallyHidden>
+							</>
+						) : (
+							<>
+								<IconVolumeHigh />
+								<VisuallyHidden>Mute</VisuallyHidden>
+							</>
+						)}
+					</button>
+				</div>
 			</div>
 		</div>
 	);

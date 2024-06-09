@@ -25,3 +25,9 @@
 .textImageLink {
 	margin-top: 1rem;
 }
+
+.textImageBody {
+	& p {
+		margin: 1rem 0;
+	}
+}
