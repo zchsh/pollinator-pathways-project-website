@@ -1,8 +1,8 @@
 import client from "@/../tina/__generated__/client";
 import { fetchBlogList } from "../utils/fetch-blog-list";
-import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
+// import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
 import PageClient from "./page-client";
-import PageServer from "./page-server";
+// import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
 
@@ -14,10 +14,10 @@ import getFooterData from "@/lib/get-footer-data";
 export default async function Page({ params: { filename } }: $TSFixMe) {
 	const res = await client.queries.blog({ relativePath: `${filename}.md` });
 	const footer = await getFooterData();
-	const isPreviewEnabled = getIsPreviewEnabled();
+	// const isPreviewEnabled = getIsPreviewEnabled();
 	return (
 		<LayoutRoot footer={footer}>
-			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
+			<PageClient {...res} />
 		</LayoutRoot>
 	);
 }
