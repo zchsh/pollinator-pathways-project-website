@@ -1,7 +1,7 @@
 import client from "@/../tina/__generated__/client";
-// import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
+import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
 import PageClient from "./page-client";
-// import PageServer from "./page-server";
+import PageServer from "./page-server";
 import getFooterData from "@/lib/get-footer-data";
 import LayoutRoot from "@/components/layout-root";
 
@@ -16,11 +16,10 @@ import LayoutRoot from "@/components/layout-root";
 export default async function Page() {
 	const res = await client.queries.photos({ relativePath: "photos.json" });
 	const footer = await getFooterData();
-	// const isPreviewEnabled = getIsPreviewEnabled();
+	const isPreviewEnabled = getIsPreviewEnabled();
 	return (
 		<LayoutRoot footer={footer}>
-			{/* {isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />} */}
-			<PageClient {...res} />
+			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
 		</LayoutRoot>
 	);
 }
