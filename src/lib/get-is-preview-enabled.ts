@@ -26,8 +26,11 @@ import { draftMode } from "next/headers";
 export default function getIsPreviewEnabled(): boolean {
 	// If the user is logged in to TinaCMS, as indicated by a "draftMode" cookie,
 	// then we'll enable the extra client code needed to support preview mode.
-	const { isEnabled } = draftMode();
+	// const { isEnabled } = draftMode();
 	// If we're in development mode, we'll also enable preview mode.
 	const isLocalDev = process.env.NODE_ENV === "development";
-	return isLocalDev || isEnabled;
+	// If we're in the "editable" deployment, then enable editing
+	const isEditable = process.env.NEXT_PUBLIC_EDITABLE === "true";
+	// Return true if we want to enable preview mode
+	return isLocalDev || isEditable;
 }
