@@ -7,28 +7,6 @@ const branch =
 	process.env.HEAD ||
 	"main";
 
-const enableEditing = process.env.NEXT_PUBLIC_EDITABLE;
-const adminConfig = enableEditing
-	? {
-			// This should match the value in your .env file
-			token: process.env.TINA_TOKEN,
-			// This should match the value in your .env file
-			clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-			auth: {
-				onLogin: async () => {
-					//  When the user logs, we in enter preview mode
-					// location.href =
-					// 	`/api/preview/enter?token=${token.id_token}&slug=` + location;
-					location.href = "/";
-				},
-				onLogout: async () => {
-					// When the user logs out, exit preview mode, and redirect to home
-					location.href = `/api/preview/exit`;
-				},
-			},
-	  }
-	: undefined;
-
 export default defineConfig({
 	branch,
 
@@ -36,8 +14,26 @@ export default defineConfig({
 	clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
 	// Get this from tina.io
 	token: process.env.TINA_TOKEN,
-	// @ts-expect-error - I don't think all properties are needed here?
-	admin: adminConfig,
+
+	admin: {
+		// This should match the value in your .env file
+		token: process.env.TINA_TOKEN,
+		// This should match the value in your .env file
+		clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+		// TODO: investigate whether all properties need to be defined here
+		// @ts-expect-error - I don't think all properties are needed here?
+		auth: {
+			onLogin: async ({ token }) => {
+				//  When the user logs, we in enter preview mode
+				location.href =
+					`/api/preview/enter?token=${token.id_token}&slug=` + location;
+			},
+			onLogout: async () => {
+				// When the user logs out, exit preview mode, and redirect to home
+				location.href = `/api/preview/exit`;
+			},
+		},
+	},
 	build: {
 		outputFolder: "admin",
 		publicFolder: "public",
