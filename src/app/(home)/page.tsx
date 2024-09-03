@@ -1,5 +1,5 @@
 import client from "@/../tina/__generated__/client";
-import EditablePage from "./editable-page";
+import TinaEditablePage from "../../components/tina-editable-page";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
@@ -13,11 +13,16 @@ import getFooterData from "@/lib/get-footer-data";
  * Seems to be necessary to use TinaCMS "visual editing" with `app` router
  */
 export default async function Page() {
-	const { data } = await client.queries.homepage({ relativePath: "home.json" });
+	const res = await client.queries.homepage({ relativePath: "home.json" });
 	const footer = await getFooterData();
 	return (
 		<LayoutRoot footer={footer}>
-			<EditablePage data={data} PageComponent={PageServer} />
+			<TinaEditablePage
+				tinaQueryResult={res}
+				renderPage={(data: $TSFixMe) => {
+					return <PageServer data={data} />;
+				}}
+			/>
 		</LayoutRoot>
 	);
 }

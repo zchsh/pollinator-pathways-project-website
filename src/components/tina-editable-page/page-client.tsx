@@ -10,7 +10,7 @@ export default function PageClient({
 	query,
 	variables,
 	data,
-	PageComponent,
+	renderPage,
 }: $TSFixMe) {
 	const { data: tinaData } = useTina({
 		query: query,
@@ -18,5 +18,5 @@ export default function PageClient({
 		data: data,
 	});
 
-	return <PageComponent data={tinaData} />;
+	return renderPage(tinaData);
 }
