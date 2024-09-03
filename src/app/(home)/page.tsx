@@ -1,26 +1,40 @@
+// Tina CMS Client
 import client from "@/../tina/__generated__/client";
+// Utilities
 import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
-import PageClient from "./page-client";
-import PageServer from "./page-server";
+// Layout
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
+// Page components
+import EditableClient from "./editable-client";
+import PageComponent from "./page-component";
 
 /**
- * TODO: investigate in more detail why this whole "page/-server/-client"
- * business is necessary. Seems related to TinaCMS not fully supporting
- * Next.js's `app` router.
- *
- * TODO: could this be abstracted into a shared component?
- * Seems to be necessary to use TinaCMS "visual editing" with `app` router
+ * This is the only part of the page we expect to be significantly different
+ * from page to page. The rest of this file is a pattern that enables TinaCMS
+ * hooks in client components in some environments, and server components in
+ * others, that I wish could be abstracted, but I can't seem to get right.
  */
-export default async function Page() {
-	const res = await client.queries.homepage({ relativePath: "home.json" });
-	const footer = await getFooterData();
+async function tinaQuery() {
+	return await client.queries.homepage({ relativePath: "home.json" });
+}
 
-	const isPreviewEnabled = getIsPreviewEnabled();
+/**
+ * Render the PageComponent component with data from the given Tina query.
+ * Switch between a client component for TinaCMS editing, and a server component
+ * for production rendering, where performance is more important.
+ */
+export default async function GenericPage() {
+	const res = await tinaQuery();
+	const footer = await getFooterData();
+	const isEditable = getIsPreviewEnabled();
 	return (
 		<LayoutRoot footer={footer}>
-			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
+			{isEditable ? (
+				<EditableClient tina={res} />
+			) : (
+				<PageComponent data={res.data} />
+			)}
 		</LayoutRoot>
 	);
 }
