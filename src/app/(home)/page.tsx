@@ -1,6 +1,5 @@
 import client from "@/../tina/__generated__/client";
-import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
-import PageClient from "./page-client";
+import EditablePage from "./editable-page";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
@@ -14,13 +13,11 @@ import getFooterData from "@/lib/get-footer-data";
  * Seems to be necessary to use TinaCMS "visual editing" with `app` router
  */
 export default async function Page() {
-	const res = await client.queries.homepage({ relativePath: "home.json" });
+	const { data } = await client.queries.homepage({ relativePath: "home.json" });
 	const footer = await getFooterData();
-
-	const isPreviewEnabled = getIsPreviewEnabled();
 	return (
 		<LayoutRoot footer={footer}>
-			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
+			<EditablePage data={data} PageComponent={PageServer} />
 		</LayoutRoot>
 	);
 }
