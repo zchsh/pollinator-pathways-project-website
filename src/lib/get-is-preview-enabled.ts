@@ -1,5 +1,3 @@
-import { draftMode } from "next/headers";
-
 /**
  * Preview mode allows TinaCMS to preview changes to the site as they're made.
  * However, it also means we ship a bunch of extra code to support this...
