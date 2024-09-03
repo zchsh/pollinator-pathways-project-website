@@ -1,5 +1,6 @@
 import client from "@/../tina/__generated__/client";
-import TinaEditablePage from "../../components/tina-editable-page";
+import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
+import PageClient from "./page-client";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
@@ -15,14 +16,11 @@ import getFooterData from "@/lib/get-footer-data";
 export default async function Page() {
 	const res = await client.queries.homepage({ relativePath: "home.json" });
 	const footer = await getFooterData();
+
+	const isPreviewEnabled = getIsPreviewEnabled();
 	return (
 		<LayoutRoot footer={footer}>
-			<TinaEditablePage
-				tinaQueryResult={res}
-				renderPage={(data: $TSFixMe) => {
-					return <PageServer data={data} />;
-				}}
-			/>
+			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
 		</LayoutRoot>
 	);
 }

@@ -1,7 +1,6 @@
 // Third-party
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 // Components
-import PrimaryButtonLink from "@/components/primary-button-link";
 import Spacer from "@/components/spacer";
 import SponsorsSection from "./components/sponsors-section";
 import TextImageSplit from "./components/text-image-split";
@@ -9,6 +8,7 @@ import ThreeFeatures from "./components/three-features";
 import VideoHero from "./components/video-hero";
 // Styles
 import s from "./page.module.css";
+import PrimaryButtonLink from "@/components/primary-button-link";
 
 export default function Home({ data }: $TSFixMe) {
 	const {
