@@ -24,7 +24,7 @@ async function tinaQuery() {
  * Switch between a client component for TinaCMS editing, and a server component
  * for production rendering, where performance is more important.
  */
-export default async function GenericPage() {
+export default async function Page() {
 	const res = await tinaQuery();
 	const footer = await getFooterData();
 	const isEditable = getIsPreviewEnabled();

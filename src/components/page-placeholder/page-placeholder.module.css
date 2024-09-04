@@ -13,10 +13,11 @@
 }
 
 .children {
+	width: 100%;
 	border: 1px solid #999;
 	border-radius: 1rem;
 	padding: 1rem;
-	max-width: 800px;
+	max-width: var(--content-max-width);
 }
 
 .underConstruction {

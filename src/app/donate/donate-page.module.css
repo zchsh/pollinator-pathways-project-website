@@ -1,0 +1,14 @@
+.title {
+	margin: 3rem 0;
+	text-align: center;
+}
+
+.subheading {
+	text-align: center;
+}
+
+.main {
+	width: 100%;
+	max-width: var(--content-max-width);
+	margin: auto;
+}
