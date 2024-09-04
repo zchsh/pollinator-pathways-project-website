@@ -8,7 +8,7 @@ import TextImageSplit from "./components/text-image-split";
 import ThreeFeatures from "./components/three-features";
 import VideoHero from "./components/video-hero";
 // Styles
-import s from "./home.module.css";
+import s from "./home-page.module.css";
 
 export default function Home({ data }: $TSFixMe) {
 	const {
