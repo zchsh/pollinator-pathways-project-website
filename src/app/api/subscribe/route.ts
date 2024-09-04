@@ -4,9 +4,7 @@ const SUBSCRIBE_ENDPOINT = "https://zchsh-emailsubscribedemo.web.val.run";
  * We expect either a "success" or "existingSubscriber" status in the response
  * from val.town. That's just a stopgap, of course!
  */
-interface ResponseData {
-	status: "success" | "existingSubscriber";
-}
+export type EmailResponseStatus = "success" | "existingSubscriber";
 
 export async function POST(request: Request) {
 	const { email, name } = await request.json();

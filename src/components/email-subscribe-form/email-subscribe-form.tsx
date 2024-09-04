@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import PrimaryButton from "../primary-button";
+import type { EmailResponseStatus } from "@/app/api/subscribe/route";
 import s from "./email-subscribe-form.module.css";
 
 interface ResponseData {
-	status: "success" | "existingSubscriber" | "error" | "idle" | "loading";
+	status: EmailResponseStatus | "error" | "idle" | "loading";
 	email?: string;
 }
 
