@@ -16,6 +16,16 @@ The follow tools and frameworks are used in this website:
 - [Tina CMS](https://tina.io/)
   - A content management system, intended to make it easier for folks who aren't into coding to edit the words and images shown on the website
 
+## Deploying to production
+
+The recommended deployment platform is [Vercel](https://vercel.com/). At present, this site is meant to be deployed in two separate instances:
+
+- Create a new project, to set up the production instance of the site. Add a `NEXT_PUBLIC_EDITABLE` environment variable and set it to `false`. This deployment will not allow edits through TinaCMS, as it will prioritize performance.
+- Create a second new project in Vercel, and set up an instance of the site that allows content edits. Add a `NEXT_PUBLIC_EDITABLE` environment variable and set it to `true`. This deployment will allow edits through TinaCMS, at the cost of a slightly slower experience.
+
+> [!NOTE]
+> This site has an unconventional approach to deployment, as I couldn't get TinaCMS to work as smoothly as I wanted with NextJS's new server-component-compatible app router. I found trying to toggle between "editable" mode (where a TinaCMS user is logged in, and pages load with client components for full interactivity) and "non-editable" mode (where we want pages to load with server components for better performance) didn't work as expected, with each edit session seemingly requiring authors to log out and log back in before being able to make further changes.
+
 ## Local development
 
 First, make sure you have [Node](https://nodejs.org/en) installed, version 18 or later. You'll need some experience with [command line interfaces](https://en.wikipedia.org/wiki/Command-line_interface) as well. Once Node is installed, [`cd`](https://en.wikipedia.org/wiki/Cd_(command)) into this project folder, and run [`npm i` to install dependencies](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager).
