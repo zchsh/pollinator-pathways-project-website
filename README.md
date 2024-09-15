@@ -32,4 +32,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to visit the site's local development server.
+Open [http://localhost:3000](http://localhost:3000) with your browser to visit the site's local development server. To make edits to the source code of the site, you'll need to get familiar with the [frameworks used for this site](#how-this-site-is-built).
+
+## How to edit content
+
+Content is stored in `.json` files in the `content` folder within this project. These files can be edited and committed to version control just as any other code file might be edited.
+
+This site uses [TinaCMS](https://pollinator-pathways-project-website.vercel.app/admin) with the intention of allowing folks who are unfamiliar with coding to edit content. This project could be set up with [Tina Cloud](https://tina.io/docs/tina-cloud/overview/). The free plan could be used with a single admin account, and credentials shared between editors, to allow anyone to edit the site from anywhere.
