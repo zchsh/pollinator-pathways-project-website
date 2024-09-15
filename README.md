@@ -1,5 +1,8 @@
 # Pollinator Pathways Website
 
+> [!WARNING]
+> This site is a work in progress. The framework has been roughed in, but there's still a lot of work to do to build the remaining pages from the [existing website](https://www.pollinatorpathwaysproject.com/).
+
 ## How this site is built
 
 The follow tools and frameworks are used in this website:
