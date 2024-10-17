@@ -19,6 +19,9 @@
  * cookie is set. If it is, we know the user is logged in and we should
  * enable preview mode, even if it'll slow down the site a bit.
  *
+ * TODO: may deprecate this in favour of "edit" routes.
+ * See `home` page for example... I think that pattern works a lil better?
+ *
  * @returns {boolean} Returns true if we should enable preview mode.
  */
 export default function getIsPreviewEnabled(): boolean {
