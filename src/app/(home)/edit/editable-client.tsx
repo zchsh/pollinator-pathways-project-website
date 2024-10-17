@@ -1,7 +1,7 @@
 "use client";
 
 import { useTina } from "tinacms/dist/react";
-import PageComponent from "./page-component";
+import PageComponent from "../page-component";
 
 /**
  * Note: this component is meant to be identical for any page editable with
