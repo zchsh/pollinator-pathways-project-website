@@ -11,6 +11,11 @@ export async function tinaQuery() {
 	return await client.queries.homepage({ relativePath: "home.json" });
 }
 
+/**
+ * Define the shape of this data in the CMS.
+ * This is the data that ultimately gets saved to a JSON file,
+ * and returned by the `tinaQuery` function above.
+ */
 export const homePageTinaConfig: Collection = {
 	label: "Home Page",
 	name: "homepage",
