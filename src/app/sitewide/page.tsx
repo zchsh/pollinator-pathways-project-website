@@ -1,5 +1,5 @@
 import client from "@/../tina/__generated__/client";
-import getIsPreviewEnabled from "@/lib/get-is-preview-enabled";
+import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
 import PageClient from "./page-client";
 import PageServer from "./page-server";
 
@@ -11,7 +11,7 @@ import PageServer from "./page-server";
 export default async function Page() {
 	// TODO: avoid publishing this page in production, unless logged in...
 	const res = await client.queries.sitewide({ relativePath: "sitewide.json" });
-	const isPreviewEnabled = getIsPreviewEnabled();
+	const isPreviewEnabled = getIsEditableDeployment();
 	return (
 		<>{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}</>
 	);
