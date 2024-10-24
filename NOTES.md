@@ -18,6 +18,20 @@
 - [ ] Continue work on page implementation
   - Once first cut is shared, may as well get ahead of it. Start with what you feel most sure of.
 
+### Blog post changes needed
+
+- [x] Model support for "cover image"
+- [x] Model support for "author" (exists on current blog, even if unused)
+  - For now, this can be text field I think... later could have author collection
+- [x] Render "author"
+- [x] Render "cover image"
+- [x] Model support for "category"
+- [x] Render "category" (link to category pages?)
+- [x] Model support for "date"
+- [x] Render "date"
+- [ ] Render captions for inline images
+  - Not sure how Tina's Rich Text UI is supposed to work... I can get this done in markdown, but if it has to be done in raw markdown only, then no one's going to do it.
+
 ### Blog post migration
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>

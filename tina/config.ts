@@ -291,6 +291,62 @@ export default defineConfig({
 						required: true,
 					},
 					{
+						type: "image",
+						name: "coverImage",
+						label: "Cover Image",
+						required: false,
+					},
+					{
+						type: "string",
+						name: "coverImageAlt",
+						label: "Cover Image Description",
+						required: false,
+					},
+					{
+						type: "datetime",
+						name: "date",
+						label: "Date",
+						required: false,
+					},
+					{
+						type: "string",
+						name: "author",
+						label: "Author",
+						required: false,
+					},
+					{
+						type: "string",
+						name: "category",
+						label: "Category",
+						options: [
+							{
+								value: "pollinators",
+								label: "Pollinators",
+							},
+							{
+								value: "recipes",
+								label: "Recipes",
+							},
+							{
+								value: "gardening",
+								label: "Gardening",
+							},
+							{
+								value: "flowers",
+								label: "Flowers",
+							},
+							{
+								value: "news",
+								label: "News",
+							},
+							{
+								value: "london",
+								label: "London",
+							},
+						],
+						required: false,
+					},
+					{
 						type: "rich-text",
 						name: "body",
 						label: "Body",
@@ -299,6 +355,25 @@ export default defineConfig({
 				],
 				ui: {
 					router: ({ document }) => `/blog/${document._sys.filename}`,
+					filename: {
+						// Disable slug editing, it causes more confusion than it's worth.
+						// If we ever need to change the slug of a post, we can do so
+						// manually... but it's rarely a good idea, because it breaks links.
+						readonly: true,
+						// Custom slugify function, default does not lower-case
+						slugify: (values) => {
+							const dateNow = new Date();
+							const yyyymmdd = dateNow.toISOString().substring(0, 10);
+							const hhmmss = dateNow
+								.toISOString()
+								.substring(11, 19)
+								.replace(/:/g, "-");
+							const slugFallback = `${yyyymmdd}-at-${hhmmss}`;
+							return `${(values?.title ?? slugFallback)
+								.toLowerCase()
+								.replace(/ /g, "-")}`;
+						},
+					},
 				},
 			},
 		],
