@@ -8,7 +8,7 @@
   - I've purchased `pollinatorpathwaysproject.ca` on NameCheap
   - Going forward, could redirect `pollinatorpathwaysproject.com` to `.ca`
   - Alternately, if it's an option, could transfer `pollinatorpathwaysproject.com` to some custom P3 account that I could make in NameCheap. Would also transfer `pollinatorpathwaysproject.ca` to that account.
-- [ ] Ensure custom domain actually works
+- [x] Ensure custom domain actually works
   - `pollinatorpathwaysproject.ca` should function as expected
 - [ ] Ensure non-editable build works as static pages, editable is editable
   - Can test this locally
@@ -29,13 +29,13 @@
 - [x] Render "category" (link to category pages?)
 - [x] Model support for "date"
 - [x] Render "date"
-- [ ] Render captions for inline images
-  - Not sure how Tina's Rich Text UI is supposed to work... I can get this done in markdown, but if it has to be done in raw markdown only, then no one's going to do it.
 
 ### Blog post migration
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
+Migration status: 2 / 33
+
+- [x] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
+- [x] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
