@@ -1,9 +1,11 @@
 import PagePlaceholder from "@/components/page-placeholder/page";
 import { fetchBlogList } from "./utils/fetch-blog-list";
 import Link from "next/link";
-import s from "./blog.module.css";
 import LayoutRoot from "@/components/layout-root";
 import getFooterData from "@/lib/get-footer-data";
+import { BlogEntriesList } from "./components/blog-entries-list";
+import { BLOG_CATEGORIES } from "../../../constants/blog-categories";
+import s from "./blog.module.css";
 
 export default async function Blog() {
 	const blogEntries = await fetchBlogList();
@@ -13,13 +15,15 @@ export default async function Blog() {
 		<LayoutRoot footer={footer}>
 			<PagePlaceholder name="Blog">
 				<main>
-					<ul>
-						{blogEntries.map((entry) => (
-							<li key={entry.filename}>
-								<Link href={`/blog/${entry.filename}`}>{entry.title}</Link>
-							</li>
-						))}
-					</ul>
+					<BlogEntriesList
+						blogEntries={blogEntries}
+						blogCategories={[
+							{ label: "All", value: "all" },
+							...BLOG_CATEGORIES,
+						].map((entry) => {
+							return { ...entry, isActive: entry.value === "all" };
+						})}
+					/>
 				</main>
 			</PagePlaceholder>
 		</LayoutRoot>
