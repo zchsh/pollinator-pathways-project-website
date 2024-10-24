@@ -1,7 +1,15 @@
 import client from "@/../tina/__generated__/client";
 
 export async function fetchBlogList() {
-	const blogListData = await client.queries.blogConnection();
+	/**
+	 * TODO: implement pagination. Since 2020, there have been
+	 * 30 blog entries. We can probably wait to implement pagination
+	 * until we have more than 50 blog entries.
+	 */
+	const blogListData = await client.queries.blogConnection({
+		sort: "date",
+		last: 50,
+	});
 	if (!blogListData?.data?.blogConnection?.edges) {
 		throw new Error("Failed to fetch blog list data");
 	}

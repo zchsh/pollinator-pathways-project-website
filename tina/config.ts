@@ -306,13 +306,13 @@ export default defineConfig({
 						type: "datetime",
 						name: "date",
 						label: "Date",
-						required: false,
+						required: true,
 					},
 					{
 						type: "string",
 						name: "author",
 						label: "Author",
-						required: false,
+						required: true,
 					},
 					{
 						type: "string",
@@ -344,7 +344,7 @@ export default defineConfig({
 								label: "London",
 							},
 						],
-						required: false,
+						required: true,
 					},
 					{
 						type: "rich-text",
@@ -371,7 +371,9 @@ export default defineConfig({
 							const slugFallback = `${yyyymmdd}-at-${hhmmss}`;
 							return `${(values?.title ?? slugFallback)
 								.toLowerCase()
-								.replace(/ /g, "-")}`;
+								.replace(/[^a-z0-9]/g, "-")
+								// Replace multiple dashes with a single dash
+								.replace(/-+/g, "-")}`;
 						},
 					},
 				},

@@ -3,15 +3,6 @@ import Link from "next/link";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import s from "./blog-entry.module.css";
 
-function Image({ url, alt, caption }: $TSFixMe) {
-	return (
-		<figure>
-			<img src={url} alt={alt} />
-			{caption && <figcaption>{caption}</figcaption>}
-		</figure>
-	);
-}
-
 export default function PageServer({ data }: $TSFixMe) {
 	const {
 		author,
@@ -44,7 +35,7 @@ export default function PageServer({ data }: $TSFixMe) {
 			<br />
 			{coverImage && <img src={coverImage} alt={coverImageDescription} />}
 			<div className={s.blogBody}>
-				<TinaMarkdown content={body} components={{ img: Image }} />
+				<TinaMarkdown content={body} />
 			</div>
 		</PagePlaceholder>
 	);
