@@ -7,9 +7,22 @@
 }
 
 .form {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 	max-width: calc(var(--content-max-width) * 0.6);
 	width: 100%;
+}
+
+.postSubmitOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid magenta;
+	z-index: 1;
+	background: white;
+	border-radius: 8px;
 }

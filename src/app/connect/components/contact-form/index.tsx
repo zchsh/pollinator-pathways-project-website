@@ -1,46 +1,105 @@
 "use client";
 
 import { Formik } from "formik";
+import { useId, useState } from "react";
 import s from "./style.module.css";
-import { useId } from "react";
 
 function validateContactForm(values: $TSFixMe) {
 	const errors: $TSFixMe = {};
-	if (!values.email) {
-		errors.email = "Required";
-	} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-		errors.email = "Invalid email address";
-	}
+	// if (!values.email) {
+	// 	errors.email = "Required";
+	// } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+	// 	errors.email = "Invalid email address";
+	// }
 	return errors;
 }
 
+async function sleep(ms: number) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export function ContactForm() {
+	const [afterSubmitData, setAfterSubmitData] = useState<
+		| null
+		| { status: "success"; email: string }
+		| { status: "error"; error: string }
+	>(null);
+
 	/**
-	 * TODO: actually submit values... "server action"?
-	 * Where to submit them to? Maybe val.town for now?
-	 * Kind of up to you to figure out where the contact form will go.
-	 * Can val.town turn this into an email? Maybe a starting point:
-	 * https://www.val.town/v/std/email
-	 * (I have a Val Town Pro account... so that's something!)
+	 * Submit values to API route, which in turn sends an email via SendGrid
 	 */
-	async function handleSubmit(values: $TSFixMe, { setSubmitting }: $TSFixMe) {
-		setTimeout(() => {
-			alert(JSON.stringify(values, null, 2));
-			setSubmitting(false);
-		}, 400);
+	async function sendContactForm(
+		values: $TSFixMe,
+		{ setSubmitting }: $TSFixMe
+	) {
+		const { email, name, message, reason, referralSource } = values;
+		let html = "";
+		html += `<p><strong>Name:</strong> ${name}</p>`;
+		html += `<p><strong>Email:</strong> ${email}</p>`;
+		html += `<p><strong>Why are you reaching out?:</strong> ${reason}</p>`;
+		html += `<p><strong>Message:</strong> ${message}</p>`;
+		html += `<p><strong>Where did you hear about us?:</strong> ${referralSource}</p>`;
+		const emailData = { subject: `P3 message from ${name}`, html };
+		// Send the email, make it take at least 500ms
+		const [_sleep, result] = await Promise.all([
+			sleep(500),
+			fetch("/api/send-mail", {
+				method: "POST",
+				body: JSON.stringify(emailData),
+				headers: {
+					"Content-Type": "application/json",
+				},
+			}),
+		]);
+		// Update with an error if there was one
+		if (result.status !== 200) {
+			setAfterSubmitData({
+				status: "error",
+				error: await result.text(),
+			});
+		} else {
+			// Otherwise, update with success
+			setAfterSubmitData({
+				status: "success",
+				email: values.email,
+			});
+		}
+		// Reset the form. Note it'll be over-layed, so the user won't see this.
+		// We could add some functionality to "dismiss" the overlay... but meh,
+		// for now people can reload the page.
+		setSubmitting(false);
 	}
 
 	return (
 		<div className={s.root}>
 			<Formik
-				initialValues={{ name: "", email: "" }}
+				initialValues={{
+					name: "",
+					email: "",
+					message: "",
+					reason: "",
+					referralSource: "",
+				}}
 				validate={validateContactForm}
-				onSubmit={handleSubmit}
+				onSubmit={sendContactForm}
 			>
 				{(formikBag) => {
-					const { handleSubmit } = formikBag;
+					const { handleSubmit, isSubmitting } = formikBag;
 					return (
 						<form onSubmit={handleSubmit} className={s.form}>
+							{afterSubmitData !== null ? (
+								<div className={s.postSubmitOverlay}>
+									<pre>
+										<code>{JSON.stringify(afterSubmitData, null, 2)}</code>
+									</pre>
+								</div>
+							) : isSubmitting ? (
+								<div className={s.postSubmitOverlay}>
+									<pre>
+										<code>LOADING...</code>
+									</pre>
+								</div>
+							) : null}
 							<TextInput id="name" label="Name" formikBag={formikBag} />
 							<TextInput
 								id="email"
@@ -48,7 +107,11 @@ export function ContactForm() {
 								type="email"
 								formikBag={formikBag}
 							/>
-							<TextInput id="reason" label="Reason" formikBag={formikBag} />
+							<TextInput
+								id="reason"
+								label="Why are you reaching out?"
+								formikBag={formikBag}
+							/>
 							<TextAreaInput
 								id="message"
 								label="Message"
@@ -56,10 +119,12 @@ export function ContactForm() {
 							/>
 							<TextInput
 								id="referralSource"
-								label="Referral Source"
+								label="Where did you hear about us?"
 								formikBag={formikBag}
 							/>
-							<button type="submit">Submit</button>
+							<button type="submit" disabled={isSubmitting}>
+								Submit
+							</button>
 						</form>
 					);
 				}}
