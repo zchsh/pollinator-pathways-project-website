@@ -3,10 +3,6 @@
 	flex-direction: column;
 }
 
-.placeholder {
-	border: 1px solid magenta;
-}
-
 .sectionPlaceholder {
 	display: flex;
 	flex-direction: column;

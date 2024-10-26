@@ -8,18 +8,6 @@
 	padding: 1rem;
 }
 
-.name {
-	border: 1px solid magenta;
-}
-
-.children {
-	width: 100%;
-	border: 1px solid #999;
-	border-radius: 1rem;
-	padding: 1rem;
-	max-width: var(--content-max-width);
-}
-
 .underConstruction {
 	padding: 1rem 2rem;
 	background: #efefef;
