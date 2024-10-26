@@ -13,13 +13,21 @@
 - [x] Ensure non-editable build works as static pages, editable is editable
   - Can test this locally
   - Or, should be able to go to `pollinatorpathwaysproject.ca/admin`, and be redirected
+
+## `/connect`
+
 - [ ] Build out functional contact form
   - Using [Formik](https://formik.org/docs/overview), familiar and I know it works
-  -
+  - Next step is to get a submission to val.town working, should send the contact form as an email to myself. Can later update this to be a pollinator pathways email... but that will come WAY later.
 - [ ] Continue work on page design, in Figma
   - Feels right to finish a first cut, and share that first cut, before implementing
 - [ ] Continue work on page implementation
   - Once first cut is shared, may as well get ahead of it. Start with what you feel most sure of.
+
+## Remaining pages
+
+- [ ] Plan out design and development tasks for remaining pages
+  - Component-by-component breakdown might be nice
 
 ### Blog post changes needed
 
