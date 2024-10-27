@@ -1,15 +1,31 @@
+"use server";
+
+// Third-party
+import clsx from "clsx";
+// Utils
+import { fetchBlogList } from "../../utils/fetch-blog-list";
+import { BLOG_CATEGORIES } from "../../../../../constants/blog-categories";
 import Link from "next/link";
 // Styles
 import s from "./style.module.css";
-import clsx from "clsx";
 
-export function BlogEntriesList({
-	blogCategories,
-	blogEntries,
-}: {
-	blogCategories: { label: string; value: string; isActive: boolean }[];
-	blogEntries: any[];
-}) {
+export async function BlogEntriesList({ category }: { category: string }) {
+	const allBlogEntries = await fetchBlogList();
+
+	const blogEntries =
+		category === "all"
+			? allBlogEntries
+			: allBlogEntries.filter((entry) => {
+					return entry.category === category;
+			  });
+
+	const blogCategories = [
+		{ label: "All", value: "all" },
+		...BLOG_CATEGORIES,
+	].map((entry) => {
+		return { ...entry, isActive: entry.value === category };
+	});
+
 	return (
 		<>
 			<ul className={s.categoriesList}>
@@ -31,7 +47,7 @@ export function BlogEntriesList({
 				))}
 			</ul>
 			{blogEntries.length > 0 ? (
-				<ul>
+				<ul className={s.blogEntriesList}>
 					{blogEntries.map((entry) => (
 						<li key={entry.filename}>
 							<Link href={`/blog/${entry.filename}`}>{entry.title}</Link>

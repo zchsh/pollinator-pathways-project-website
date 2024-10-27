@@ -2,9 +2,9 @@
 	display: flex;
 	list-style: none;
 	gap: 8px;
-	padding: 0;
+	padding: 1rem;
 	justify-content: center;
-	margin-bottom: 3rem;
+	border: 1px solid magenta;
 }
 
 .categoryLink {
@@ -16,4 +16,13 @@
 
 .noEntries {
 	text-align: center;
+	border: 1px solid magenta;
+	padding: 1rem;
+}
+
+.blogEntriesList {
+	text-align: center;
+	border: 1px solid magenta;
+	list-style: none;
+	padding: 1rem;
 }
