@@ -1,10 +1,19 @@
 .breadcrumbs {
 	display: flex;
 	gap: 4px;
+	justify-content: center;
+	padding: 1rem;
 }
 
 .blogBody {
+	max-width: 40em;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #444;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 2rem 0 8rem 0;
 	& p {
-		margin: 1rem 0;
+		margin: 1.2em 0;
 	}
 }
