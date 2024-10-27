@@ -39,7 +39,10 @@ export default function NavDropdown({
 			<button
 				aria-expanded={isOpen}
 				aria-controls={dropdownId}
-				className={clsx(s.trigger, { [s.isOpen]: isOpen })}
+				className={clsx(s.trigger, {
+					[s.isOpen]: isOpen,
+					[s.isCurrentPage]: items.some((item) => item.isCurrentPage),
+				})}
 				onClick={() => setIsOpen(!isOpen)}
 			>
 				{label}
@@ -49,12 +52,12 @@ export default function NavDropdown({
 			</button>
 			<ul id={dropdownId} className={clsx(s.list, { [s.isOpen]: isOpen })}>
 				{items.map((item) => {
-					const isCurrentPage = pathname === item.href;
-
 					return (
 						<li key={item.label}>
 							<NextLink
-								className={clsx(s.link, { [s.isCurrentPage]: isCurrentPage })}
+								className={clsx(s.link, {
+									[s.isCurrentPage]: item.isCurrentPage,
+								})}
 								href={item.href}
 								target={item.target}
 							>

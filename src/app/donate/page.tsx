@@ -12,7 +12,7 @@ const ZEFFY_FORM_EMBED = `<div style="position:relative;overflow:hidden;height:1
 export default async function Page() {
 	const footer = await getFooterData();
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/donate">
 			<div className={s.main}>
 				<h1 className={s.title}>Donate</h1>
 				<p className={s.subheading}>

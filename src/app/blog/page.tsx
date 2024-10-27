@@ -11,7 +11,7 @@ export default async function Blog() {
 	const footer = await getFooterData();
 
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/blog">
 			<PagePlaceholder name="Blog">
 				<main>
 					<PageTitle>Blog</PageTitle>

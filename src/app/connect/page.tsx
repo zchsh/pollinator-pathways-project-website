@@ -6,7 +6,7 @@ export default async function Page() {
 	const footer = await getFooterData();
 
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/connect">
 			<PageServer />
 		</LayoutRoot>
 	);

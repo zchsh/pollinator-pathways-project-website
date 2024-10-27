@@ -5,7 +5,7 @@ import getFooterData from "@/lib/get-footer-data";
 export default async function Placeholder() {
 	const footer = await getFooterData();
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/resources">
 			<PagePlaceholder name="Resources" />
 		</LayoutRoot>
 	);

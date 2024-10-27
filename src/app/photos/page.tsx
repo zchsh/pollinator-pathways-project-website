@@ -18,7 +18,7 @@ export default async function Page() {
 	const footer = await getFooterData();
 	const isPreviewEnabled = getIsEditableDeployment();
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/photos">
 			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
 		</LayoutRoot>
 	);

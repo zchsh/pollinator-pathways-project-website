@@ -27,7 +27,7 @@ export default async function Page() {
 	const footer = await getFooterData();
 	const isEditable = getIsEditableDeployment();
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/">
 			{isEditable ? (
 				<PageWithTinaHook tina={res} />
 			) : (

@@ -1,14 +1,16 @@
+// Components
 import NavDropdown from "./nav-dropdown/nav-dropdown";
+import NavLink from "./nav-link/nav-link";
+// Types
+import type { NavItem } from "./types";
+// Styles
 import s from "./nav-bar.module.css";
 
-import { NAV_BAR_ITEMS } from "./content";
-import NavLink from "./nav-link/nav-link";
-
-function NavBar() {
+function NavBar({ navBarItems }: { navBarItems: NavItem[] }) {
 	return (
 		<nav className={s.root} aria-label="Main navigation">
 			<ul className={s.navList}>
-				{NAV_BAR_ITEMS.map((item) => {
+				{navBarItems.map((item) => {
 					if ("items" in item) {
 						return (
 							<li key={item.label}>
@@ -22,6 +24,7 @@ function NavBar() {
 									href={item.href}
 									label={item.label}
 									target={item.target}
+									isCurrentPage={item.isCurrentPage}
 								/>
 							</li>
 						);

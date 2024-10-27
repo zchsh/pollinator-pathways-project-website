@@ -4,7 +4,6 @@
 	gap: 8px;
 	padding: 1rem;
 	justify-content: center;
-	border: 1px solid magenta;
 }
 
 .categoryLink {
@@ -16,13 +15,11 @@
 
 .noEntries {
 	text-align: center;
-	border: 1px solid magenta;
 	padding: 1rem;
 }
 
 .blogEntriesList {
 	text-align: center;
-	border: 1px solid magenta;
 	list-style: none;
 	padding: 1rem;
 }

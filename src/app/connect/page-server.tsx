@@ -7,28 +7,36 @@ import Spacer from "@/components/spacer";
 const ADMIN_EMAIL = "hi@zch.sh";
 const EMAIL_SUBJECT = "Hello from your website!";
 
-export default function PlaceholderPage() {
+export default function ConnectPage() {
 	return (
 		<>
 			<PagePlaceholder name="Connect">
-				<Placeholder>Contact Form</Placeholder>
-				<ContactForm />
-				<Placeholder>Volunteer With Us</Placeholder>
-				<Placeholder>Builders, Writes, Gardeners</Placeholder>
-				<Placeholder>
-					<>
-						<div>Questions? Email us</div>
-						<Spacer h="2rem" />
-						<hr />
-						<Spacer h="2rem" />
+				<Placeholder name="Contact Form">
+					<ContactForm />
+				</Placeholder>
+				<Placeholder name="Volunteer With Us" />
+				<Placeholder name="Builders, Writes, Gardeners" />
+				<Placeholder name="Questions? Email us">
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							maxWidth: "30rem",
+							margin: "0 auto",
+							padding: "1rem",
+						}}
+					>
+						<div style={{ textAlign: "center" }}>Questions? Email us</div>
+						<Spacer h="1rem" />
 						<PrimaryButtonLink
 							href={`mailto:${ADMIN_EMAIL}?subject=${EMAIL_SUBJECT}`}
 						>
 							Email us
 						</PrimaryButtonLink>
-					</>
+					</div>
 				</Placeholder>
-				<Placeholder>Participate in Pollinator Map</Placeholder>
+				<Placeholder name="Participate in Pollinator Map" />
 			</PagePlaceholder>
 		</>
 	);

@@ -16,7 +16,7 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 	const footer = await getFooterData();
 	const isPreviewEnabled = getIsEditableDeployment();
 	return (
-		<LayoutRoot footer={footer}>
+		<LayoutRoot footer={footer} pathname="/blog">
 			{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}
 		</LayoutRoot>
 	);

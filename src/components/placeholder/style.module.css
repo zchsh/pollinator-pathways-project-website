@@ -1,10 +1,15 @@
 .root {
-	border-bottom: 1px solid #999;
-	border-top: 1px solid #999;
+	background: lightgray;
+}
+
+.children {
+	background: #ffffff;
+}
+
+.text {
 	color: #999;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 0;
-	padding: 1rem;
 	align-items: center;
+	padding: 1rem 0;
 }
