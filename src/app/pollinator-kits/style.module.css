@@ -1,0 +1,40 @@
+.pageTitle {
+	text-align: center;
+}
+
+.introText {
+	margin: 0 auto;
+	max-width: 35em;
+}
+
+.pdfLink {
+	display: block;
+	margin: 0 auto;
+	max-width: 35em;
+}
+
+.kitEmbedHeading {
+	text-align: center;
+}
+
+.kitEmbedEntry {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 80em;
+	margin: 0 auto;
+
+	& > div {
+		min-width: 280px;
+		width: 50%;
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+}
+
+.kitEmbedImageAndText {
+	border: 1px solid #999;
+}
+
+.kitEmbedContainer {
+	border: 1px solid #999;
+}
