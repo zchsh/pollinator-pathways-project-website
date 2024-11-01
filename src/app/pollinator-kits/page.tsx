@@ -11,7 +11,7 @@ import { PropsWithChildren } from "react";
 const POLLINATOR_KIT_EMBEDS = [
 	{
 		title: "Flower Planter",
-		htmlEmbed: `<div style="position:relative;overflow:hidden;height:766px;width:100%;padding-top:766px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/e3b620a6-3a84-40c5-a38b-316cceb65f78' allowpaymentrequest allowTransparency="true"></iframe></div>`,
+		htmlEmbed: `<div style="position:relative;overflow:hidden;height:800px;width:100%;padding-top:800px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/e3b620a6-3a84-40c5-a38b-316cceb65f78' allowpaymentrequest allowTransparency="true"></iframe></div>`,
 		imageSrc: "/images/flower_planter.jpeg",
 		// TODO: convert to markdown, via TinaCMS
 		children: (
@@ -33,7 +33,7 @@ const POLLINATOR_KIT_EMBEDS = [
 	},
 	{
 		title: "Vegetable Planter",
-		htmlEmbed: `<div style="position:relative;overflow:hidden;height:766px;width:100%;padding-top:766px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/7920dc15-a36a-4b66-8f99-779da31d0d21' allowpaymentrequest allowTransparency="true"></iframe></div>`,
+		htmlEmbed: `<div style="position:relative;overflow:hidden;height:800px;width:100%;padding-top:800px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/7920dc15-a36a-4b66-8f99-779da31d0d21' allowpaymentrequest allowTransparency="true"></iframe></div>`,
 		imageSrc: "/images/vegetable_planter.jpeg",
 		// TODO: convert to markdown, via TinaCMS
 		children: (
@@ -57,7 +57,7 @@ const POLLINATOR_KIT_EMBEDS = [
 	},
 	{
 		title: "Bee Hotel",
-		htmlEmbed: `<div style="position:relative;overflow:hidden;height:766px;width:100%;padding-top:766px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/d52397df-4c24-4a8f-ac70-5194d4d7a2ae' allowpaymentrequest allowTransparency="true"></iframe></div>`,
+		htmlEmbed: `<div style="position:relative;overflow:hidden;height:800px;width:100%;padding-top:800px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/d52397df-4c24-4a8f-ac70-5194d4d7a2ae' allowpaymentrequest allowTransparency="true"></iframe></div>`,
 		imageSrc: "/images/bee_hotel.jpeg",
 		// TODO: convert to markdown, via TinaCMS
 		children: (
@@ -84,7 +84,7 @@ const POLLINATOR_KIT_EMBEDS = [
 	},
 	{
 		title: "Butterfly House",
-		htmlEmbed: `<div style="position:relative;overflow:hidden;height:766px;width:100%;padding-top:766px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/0fbccfd9-f6f1-48bd-8f86-b45fcd4d57ad' allowpaymentrequest allowTransparency="true"></iframe></div>`,
+		htmlEmbed: `<div style="position:relative;overflow:hidden;height:800px;width:100%;padding-top:800px;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' src='https://www.zeffy.com/embed/ticketing/0fbccfd9-f6f1-48bd-8f86-b45fcd4d57ad' allowpaymentrequest allowTransparency="true"></iframe></div>`,
 		imageSrc: "/images/butterfly_house.jpeg",
 		// TODO: convert to markdown, via TinaCMS
 		children: (
