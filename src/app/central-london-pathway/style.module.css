@@ -1,0 +1,17 @@
+.maxWidthBlock {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 40em;
+}
+
+.pathwayImage {
+	display: inline;
+	width: 200px;
+	height: auto;
+}
+
+.projectSponsors {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+}
