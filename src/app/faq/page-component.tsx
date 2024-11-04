@@ -21,6 +21,21 @@ export default function FaqPage({ data }: $TSFixMe) {
 						);
 				  })
 				: null}
+			<Placeholder name="FAQ Contact Form">
+				<div style={{ margin: "0 auto", maxWidth: "400px" }}>
+					<h2 style={{ textAlign: "center" }}>Ask us a question</h2>
+					<br />
+					<input style={{ width: "100%" }} placeholder="Name" />
+					<br />
+					<br />
+					<input style={{ width: "100%" }} placeholder="Email" />
+					<br />
+					<br />
+					<textarea style={{ width: "100%" }} placeholder="Message" />
+					<br />
+					<br />
+				</div>
+			</Placeholder>
 		</PagePlaceholder>
 	);
 }
