@@ -104,10 +104,10 @@ export default async function CentralLondonPathwayPage() {
 							collaborated with businesses, schools, and other organizations
 							along Dundas Street to install permanent native plant gardens and
 							planters on their property. By adding pollinator-friendly
-							vegetation to London's downtown core, we are building a corridor
-							for these species to navigate the most densely urbanized area of
-							the city. Our downtown focus for this project also helps us reach
-							a large audience to raise awareness of the importance of
+							vegetation to London&apos;s downtown core, we are building a
+							corridor for these species to navigate the most densely urbanized
+							area of the city. Our downtown focus for this project also helps
+							us reach a large audience to raise awareness of the importance of
 							pollinators.
 						</p>
 						<p>
