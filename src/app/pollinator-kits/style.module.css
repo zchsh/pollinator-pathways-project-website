@@ -28,6 +28,14 @@
 		width: 50%;
 		flex-shrink: 0;
 		flex-grow: 1;
+
+		&:first-child {
+			width: 40%;
+		}
+
+		&:second-child {
+			width: 60%;
+		}
 	}
 }
 
