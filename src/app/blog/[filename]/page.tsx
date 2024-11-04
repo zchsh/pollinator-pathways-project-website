@@ -9,6 +9,9 @@ import PagePlaceholder from "@/components/page-placeholder/page";
 import { Placeholder } from "@/components/placeholder";
 import Link from "next/link";
 
+/**
+ * TODO: actually implement recent posts
+ */
 const RECENT_POSTS = [
 	{
 		title: "Program Overview: Central London Pathway",

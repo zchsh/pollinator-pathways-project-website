@@ -1,6 +1,8 @@
+import { defineConfig } from "tinacms";
+import { photoSectionsTinaConfig } from "../src/app/photos/tina-config";
 import { homePageTinaConfig } from "../src/app/(home)/tina-config";
 import { faqPageTinaConfig } from "../src/app/faq/tina-config";
-import { defineConfig } from "tinacms";
+import { slugifyForTina } from "../src/lib/slugify-for-tina";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -33,8 +35,9 @@ export default defineConfig({
 	 */
 	schema: {
 		collections: [
-			homePageTinaConfig,
 			faqPageTinaConfig,
+			homePageTinaConfig,
+			photoSectionsTinaConfig,
 			{
 				label: "Site-wide",
 				name: "sitewide",
@@ -91,42 +94,6 @@ export default defineConfig({
 										name: "showIconOnly",
 									},
 								],
-							},
-						],
-					},
-				],
-			},
-
-			{
-				label: "Photos",
-				name: "photos",
-				path: "content/photos",
-				format: "json",
-				ui: {
-					allowedActions: {
-						create: true,
-						delete: false,
-					},
-					router: () => `/photos`,
-				},
-				fields: [
-					{
-						list: true,
-						type: "object",
-						label: "Photo Sections",
-						name: "photoSections",
-						ui: { itemProps: (item) => ({ label: item?.title }) },
-						fields: [
-							{
-								type: "string",
-								label: "Title",
-								name: "title",
-							},
-							{
-								type: "image",
-								label: "Images",
-								name: "images",
-								list: true,
 							},
 						],
 					},
@@ -215,20 +182,7 @@ export default defineConfig({
 						// manually... but it's rarely a good idea, because it breaks links.
 						readonly: true,
 						// Custom slugify function, default does not lower-case
-						slugify: (values) => {
-							const dateNow = new Date();
-							const yyyymmdd = dateNow.toISOString().substring(0, 10);
-							const hhmmss = dateNow
-								.toISOString()
-								.substring(11, 19)
-								.replace(/:/g, "-");
-							const slugFallback = `${yyyymmdd}-at-${hhmmss}`;
-							return `${(values?.title ?? slugFallback)
-								.toLowerCase()
-								.replace(/[^a-z0-9]/g, "-")
-								// Replace multiple dashes with a single dash
-								.replace(/-+/g, "-")}`;
-						},
+						slugify: (values) => slugifyForTina(values?.title),
 					},
 				},
 			},
