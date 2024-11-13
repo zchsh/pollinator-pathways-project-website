@@ -35,7 +35,6 @@ export const photoSectionsTinaConfig: Collection = {
 			type: "datetime",
 			name: "date",
 			label: "Date",
-			required: true,
 		},
 		{
 			type: "image",

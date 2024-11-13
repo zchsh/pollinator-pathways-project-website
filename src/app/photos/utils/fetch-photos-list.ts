@@ -7,9 +7,9 @@ export async function fetchPhotosList() {
 	 * until we have more than 50 photo albums.
 	 */
 	const photoListData = await client.queries.photosConnection({
-		sort: "date",
 		last: 50,
 	});
+
 	if (!photoListData?.data?.photosConnection?.edges) {
 		throw new Error("Failed to fetch photo list data");
 	}
@@ -20,9 +20,9 @@ export async function fetchPhotosList() {
 		if (!photoNode) {
 			throw new Error("Failed to grab node off blog entry");
 		}
-		const { title } = photoNode;
+		const { title, images } = photoNode;
 		const { filename } = photoNode._sys;
-		photoEntries.push({ title, filename });
+		photoEntries.push({ title, filename, images });
 	}
 
 	return photoEntries;
