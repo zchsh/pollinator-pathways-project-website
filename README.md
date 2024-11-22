@@ -45,6 +45,12 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to visit the site's local development server. To make edits to the source code of the site, you'll need to get familiar with the [frameworks used for this site](#how-this-site-is-built).
 
+### Environment variables
+
+```plaintext
+🚧 TODO: add some notes on environment variables.
+```
+
 ## How to edit content
 
 Content is stored in `.json` files in the `content` folder within this project. These files can be edited and committed to version control just as any other code file might be edited.
