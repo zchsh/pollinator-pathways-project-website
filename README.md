@@ -48,7 +48,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to visit t
 ### Environment variables
 
 ```plaintext
-🚧 TODO: add some notes on environment variables.
+🚧 TODO: add some notes on environment variables. An example file might be helpful.
 ```
 
 ## How to edit content
