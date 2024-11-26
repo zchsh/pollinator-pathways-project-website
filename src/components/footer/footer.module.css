@@ -3,7 +3,7 @@
 }
 
 .content {
-	padding: 40px 1rem 80px 1rem;
+	padding: 40px 1rem 60px 1rem;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
@@ -38,3 +38,31 @@
 	padding-left: 0.625rem !important;
 	padding-right: 0.625rem !important;
 }
+
+.lowerFooterBarRoot {
+	/* TODO: add this component in markup */
+	background: linear-gradient(
+		#3a650b33, 
+		#3a650b33
+	  ) var(--green-faded);
+	  background-blend-mode: darken;
+}
+
+.lowerFooterBar {
+	display: flex;
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	gap: 8px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 1rem 24px 1rem;
+}
+
+.lowerFooterBarLink {
+text-decoration: none;
+&:hover, &:visited {
+	color: unset;
+}
+}
+

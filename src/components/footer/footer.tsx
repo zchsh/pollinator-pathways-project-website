@@ -12,34 +12,35 @@ function Footer({
 	links = [],
 }: $TSFixMe) {
 	return (
-		<div className={s.root}>
-			<div className={s.content}>
-				<EmailSubscribeForm
-					subscribeHeading={subscribeHeading}
-					subscribePlaceholder={subscribePlaceholder}
-				/>
-				<ul className={s.list}>
-					{links.map(
-						({ text, url, icon, showIconOnly }: $TSFixMe, idx: number) => (
-							<li key={idx}>
-								<PrimaryButtonLink
-									href={url}
-									target="_blank"
-									className={showIconOnly ? s.iconOnlyButton : ""}
-								>
-									<span className={s.iconAndText}>
-										<img className={s.buttonIcon} src={icon} alt="" />
-										{showIconOnly ? (
-											<VisuallyHidden>{text}</VisuallyHidden>
-										) : (
-											text
-										)}
-									</span>
-								</PrimaryButtonLink>
-							</li>
-						)
-					)}
-					{/* <li>
+		<>
+			<div className={s.root}>
+				<div className={s.content}>
+					<EmailSubscribeForm
+						subscribeHeading={subscribeHeading}
+						subscribePlaceholder={subscribePlaceholder}
+					/>
+					<ul className={s.list}>
+						{links.map(
+							({ text, url, icon, showIconOnly }: $TSFixMe, idx: number) => (
+								<li key={idx}>
+									<PrimaryButtonLink
+										href={url}
+										target="_blank"
+										className={showIconOnly ? s.iconOnlyButton : ""}
+									>
+										<span className={s.iconAndText}>
+											<img className={s.buttonIcon} src={icon} alt="" />
+											{showIconOnly ? (
+												<VisuallyHidden>{text}</VisuallyHidden>
+											) : (
+												text
+											)}
+										</span>
+									</PrimaryButtonLink>
+								</li>
+							)
+						)}
+						{/* <li>
 						<PrimaryButtonLink
 							href="mailto:pollinatorpathwaysproject@gmail.com"
 							target="_blank"
@@ -72,9 +73,16 @@ function Footer({
 							</span>
 						</PrimaryButtonLink>
 					</li> */}
-				</ul>
+					</ul>
+				</div>
 			</div>
-		</div>
+			<div className={s.lowerFooterBarRoot}>
+			<div className={s.lowerFooterBar}>
+				<div>© 2024</div>
+				<a href="/admin/index.html" className={s.lowerFooterBarLink}>Edit the site</a>
+			</div>
+			</div>
+		</>
 	);
 }
 
