@@ -1,8 +1,27 @@
-.breadcrumbs {
+/* .breadcrumbs {
 	display: flex;
 	gap: 4px;
 	justify-content: center;
 	padding: 1rem;
+}
+
+.breadcrumbItemLinked {
+	color: magenta;
+}
+
+.breadcrumbItemUnlinked {
+	color: magenta;
+}
+
+.breadcrumbItemDivider  {
+	color: var(--black-text);
+} */
+
+.pageTitle {
+	text-align: center;
+	padding: 1rem;
+	font-size: 3rem;
+	font-family: var(--font-display);
 }
 
 .blogBody {
