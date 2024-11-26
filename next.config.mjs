@@ -10,6 +10,11 @@ const nextConfig = {
 				destination: "https://p3-website-editable.vercel.app/admin",
 				permanent: false,
 			});
+			redirectEntries.push({
+				source: "/admin/:path",
+				destination: "https://p3-website-editable.vercel.app/admin/:path",
+				permanent: false,
+			});
 		}
 		return redirectEntries;
 	},
