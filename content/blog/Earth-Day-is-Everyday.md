@@ -1,7 +1,7 @@
 ---
 title: Earth Day Is Everyday
 coverImage: /uploads/Blog Posts/nikola-jovanovic-OBok3F8buKY-unsplash.jpeg
-coverImageAlt: woman holding green leafed seedling
+coverImageAlt: Person holding seedling with green leaves
 date: 2022-04-21T04:00:00.000Z
 author: Daemon Dias
 category: news
