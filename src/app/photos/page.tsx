@@ -9,6 +9,8 @@ export default async function Page() {
 	const photoEntries = await fetchPhotosList();
 
 	const footer = await getFooterData();
+
+	
 	return (
 		<LayoutRoot footer={footer} pathname="/photos">
 			<PagePlaceholder name="Photos Landing">
@@ -23,9 +25,10 @@ export default async function Page() {
 				<br />
 				<br />
 				{photoEntries.map((entry) => {
+					const validImages: string[] = Array.isArray(entry.images) ? entry.images.filter((e) => typeof e === "string") as string[] : []
 					return <div key={entry.title} style={{ margin: '0 auto', maxWidth: '800px' }}>
 						<h2>{entry.title}</h2>
-						{Array.isArray(entry.images) ? <ImageGrid images={entry.images.filter((e) => typeof e === "string")} /> : null}
+						{validImages.length > 0 ? <ImageGrid images={validImages} /> : null}
 						{/* <pre>
 							<code>{JSON.stringify(entry, null, 2)}</code>
 						</pre> */}
