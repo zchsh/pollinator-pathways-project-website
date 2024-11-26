@@ -44,38 +44,36 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 
 	return (
 		<LayoutRoot footer={footer} pathname="/blog">
-			<PagePlaceholder name="Blog Entry">
-				{isPreviewEnabled ? (
-					<PageClient
-						query={res.query}
-						variables={res.variables}
-						data={res.data}
-					/>
-				) : (
-					<PageServer data={res.data} />
-				)}
-				<Placeholder name="<BlogRecentPosts />">
-					{recentPosts?.length ? (
-						<div
-							style={{
-								maxWidth: "30em",
-								textAlign: "center",
-								margin: "0 auto",
-								padding: "2rem 1rem",
-							}}
-						>
-							<h2>Recent Posts</h2>
-							<ul style={{ listStyle: "none", padding: "0" }}>
-								{recentPosts.map((post) => (
-									<li key={post.slug}>
-										<Link href={`/blog/${post.slug}`}>{post.title}</Link>
-									</li>
-								))}
-							</ul>
-						</div>
-					) : null}
-				</Placeholder>
-			</PagePlaceholder>
+			{isPreviewEnabled ? (
+				<PageClient
+					query={res.query}
+					variables={res.variables}
+					data={res.data}
+				/>
+			) : (
+				<PageServer data={res.data} />
+			)}
+			<Placeholder name="<BlogRecentPosts />">
+				{recentPosts?.length ? (
+					<div
+						style={{
+							maxWidth: "30em",
+							textAlign: "center",
+							margin: "0 auto",
+							padding: "2rem 1rem",
+						}}
+					>
+						<h2>Recent Posts</h2>
+						<ul style={{ listStyle: "none", padding: "0" }}>
+							{recentPosts.map((post) => (
+								<li key={post.slug}>
+									<Link href={`/blog/${post.slug}`}>{post.title}</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				) : null}
+			</Placeholder>
 		</LayoutRoot>
 	);
 }
