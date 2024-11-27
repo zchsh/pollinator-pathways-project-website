@@ -1,6 +1,5 @@
 # Website demo
 
-
 ## Introduction
 
 - Hi, I'm Zach
@@ -13,7 +12,6 @@
 - Difficult to use. As someone who writes website code for a living, I actually find a lot of website builders hard to use.
 - Guessing, but root cause is that platforms like Wix are trying to work for EVERYONE. So there can be an overwhelming number of little things you can change
 - In some cases, this can end up distracting from what you might actually want to focus on.
-
 - Usually, look & feel of the website aren't the most critical thing to get right... it's about communication
 - And to communicate, we need communicators. Which is folks who manage the content on the website.
 - If it's the case that P3 can imagine having a website that looks the same for a long time, but the content changes...
@@ -40,5 +38,16 @@
 
 ## Next steps
 
+- Open source the site. Share it ASAP in case anything happens or changes.
+- Content editing instructions. Writing things up makes sense.
 - Newsletter form. How do y'all currently manage this?
+    - We can take this out for now. Drop it! Easy.
 - Contact form. We can send an automatic reponse, it'll just look a little simpler.
+    - Contact form is definitely important
+- RSS - sounds good with folks, probably just the blog would make sense for now
+- Donate button, Education section - in the navigation would be nice
+    - April will work on this
+    - Nav might be worth surfacing as an editable area
+- Current Projects / Resource Kits - kind of like "Kits" / get involved
+- Volunteer information page - have signup form, but no info page. Need info page.
+- Blog posts are relatively high effort... sharing articles on some app (Carbon?)
