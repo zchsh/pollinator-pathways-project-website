@@ -36,7 +36,7 @@
 - Approach this proposed website takes is focus. We want folks contributing blog posts etc to be focused on the content.
 - There are website builders out there that focus on content as well. But then things like Zeffy integration, email newsletter, and contact form can become a little more difficult to do exaclty the way you might want to.
 
-## Next steps
+## Next steps, if going with this option
 
 - Open source the site. Share it ASAP in case anything happens or changes.
 - Content editing instructions. Writing things up makes sense.
@@ -51,3 +51,14 @@
 - Current Projects / Resource Kits - kind of like "Kits" / get involved
 - Volunteer information page - have signup form, but no info page. Need info page.
 - Blog posts are relatively high effort... sharing articles on some app (Carbon?)
+- I need to write code to build out the rest of the site. This takes time, and I'm using my spare time only, so it probably won't be done for a few months
+- But we can come up with another plan if that's too long.
+
+### Newsletter form
+
+
+- My understanding is you're currently using Wix to write newsletters.
+- We will need the list of subscribers, so that we can migrate that to the new platform.
+- One option might be to use standard email. I'd recommend this, as it'd be simplest.
+- Zeffy seems to have some email support as well.
+- Contact form. We can send an automatic reponse, it'll just look a little simpler.
