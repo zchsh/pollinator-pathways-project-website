@@ -5,7 +5,7 @@ export const NAV_BAR_ITEMS: NavItem[] = [
 	{ href: "/connect", label: "Connect" },
 	{
 		label: "What We Do",
-		items: [
+		links: [
 			{ href: "/central-london-pathway", label: "Central London Pathway" },
 			{
 				href: "https://www.google.com/maps/d/u/0/viewer?mid=16MEC2s6Poc1CXqyB0v0wRINtjc9VQDkR&ll=42.99879305728129%2C-81.2673045034648&z=12",
@@ -19,7 +19,7 @@ export const NAV_BAR_ITEMS: NavItem[] = [
 	},
 	{
 		label: "Get Involved",
-		items: [
+		links: [
 			{
 				href: "/donate",
 				label: "Donate",
