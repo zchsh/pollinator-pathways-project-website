@@ -13,10 +13,10 @@ import type { NavLink } from "../types";
 
 export default function NavDropdown({
 	label,
-	items,
+	links,
 }: {
 	label: string;
-	items: NavLink[];
+	links: NavLink[];
 }) {
 	const pathname = usePathname();
 	const rootRef = useRef<HTMLDivElement>(null);
@@ -41,7 +41,7 @@ export default function NavDropdown({
 				aria-controls={dropdownId}
 				className={clsx(s.trigger, {
 					[s.isOpen]: isOpen,
-					[s.isCurrentPage]: items.some((item) => item.isCurrentPage),
+					[s.isCurrentPage]: links.some((link) => link.isCurrentPage),
 				})}
 				onClick={() => setIsOpen(!isOpen)}
 			>
@@ -51,17 +51,17 @@ export default function NavDropdown({
 				</span>
 			</button>
 			<ul id={dropdownId} className={clsx(s.list, { [s.isOpen]: isOpen })}>
-				{items.map((item) => {
+				{links.map((link) => {
 					return (
-						<li key={item.label}>
+						<li key={link.label}>
 							<NextLink
 								className={clsx(s.link, {
-									[s.isCurrentPage]: item.isCurrentPage,
+									[s.isCurrentPage]: link.isCurrentPage,
 								})}
-								href={item.href}
-								target={item.target}
+								href={link.href}
+								target={link.target}
 							>
-								{item.label}
+								{link.label}
 							</NextLink>
 						</li>
 					);

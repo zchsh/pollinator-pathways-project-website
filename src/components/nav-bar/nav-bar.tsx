@@ -11,10 +11,10 @@ function NavBar({ navBarItems }: { navBarItems: NavItem[] }) {
 		<nav className={s.root} aria-label="Main navigation">
 			<ul className={s.navList}>
 				{navBarItems.map((item) => {
-					if ("items" in item) {
+					if ("links" in item) {
 						return (
 							<li key={item.label}>
-								<NavDropdown label={item.label} items={item.items} />
+								<NavDropdown label={item.label} links={item.links} />
 							</li>
 						);
 					} else {

@@ -5,9 +5,9 @@ export interface NavLink {
 	isCurrentPage?: boolean;
 }
 
-interface NavSubmenu {
+export interface NavSubmenu {
 	label: string;
-	items: NavLink[];
+	links: NavLink[];
 }
 
 export type NavItem = NavLink | NavSubmenu;
