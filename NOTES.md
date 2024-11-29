@@ -22,11 +22,11 @@
 
 ## Navigation editing
 
-- [ ] Test out wiring up the navigation to be editable
-- [ ] Implement editable top nav
+- [x] Test out wiring up the navigation to be editable
+- [ ] Implement editable top nav on all pages
 
 ## Remaining pages
- 
+
 - [ ] Get a rough implementation of all pages done
   - Goal is to have content on the page. Doesn't need to be editable. Doesn't need to look good. That can come later.
   - Already mostly done this, kind of "tracking" it in Figma
