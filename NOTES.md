@@ -20,14 +20,24 @@
   - Using [Formik](https://formik.org/docs/overview), familiar and I know it works
   - Next step is to get a submission to val.town working, should send the contact form as an email to myself. Can later update this to be a pollinator pathways email... but that will come WAY later.
 
-## Remaining pages
+## Navigation editing
 
-- [ ] Continue work on page design, in Figma
-  - Feels right to finish a first cut, and share that first cut, before implementing
+- [ ] Test out wiring up the navigation to be editable
+- [ ] Implement editable top nav
+
+## Remaining pages
+ 
+- [ ] Get a rough implementation of all pages done
+  - Goal is to have content on the page. Doesn't need to be editable. Doesn't need to look good. That can come later.
+  - Already mostly done this, kind of "tracking" it in Figma
+- [ ] Get a polished design done for each page
+  - Stay in Figma for now. You'll have wireframed everything out, screengrab the wireframes and reference them.
+  - Current goal is parity with the existing website. Can probably avoid review cycles by sticking to that.
 - [ ] Plan out design and development tasks for remaining pages
   - aka rough wire-framing, searching for potentially sharp edges
   - Component-by-component breakdown might be nice
   - Dropping placeholder components into the page might make sense as well. Could use this as a way to test the basic functionality... does it feel right? If so, then layer nicer design, then do final implementation. If not, iterate on the stubbed-in implementation till it feels right.
+
 - [ ] Continue work on page implementation
   - Once first cut is shared, may as well get ahead of it. Start with what you feel most sure of.
 
