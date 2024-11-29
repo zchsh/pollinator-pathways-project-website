@@ -2,7 +2,7 @@
 import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
 // Layout
 import LayoutRoot from "@/components/layout-root";
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 // Tina query
 import { tinaQuery } from "./tina-config";
 // Page components
@@ -24,7 +24,7 @@ import PageComponent from "./page-component";
  */
 export default async function Page() {
 	const res = await tinaQuery();
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 	const isEditable = getIsEditableDeployment();
 	return (
 		<LayoutRoot footer={footer} pathname="/">

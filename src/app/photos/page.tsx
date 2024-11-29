@@ -1,5 +1,5 @@
 // Layout
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 import LayoutRoot from "@/components/layout-root";
 // Utils
 import { fetchPhotosList } from "./utils/fetch-photos-list";
@@ -8,7 +8,7 @@ import PagePlaceholder from "@/components/page-placeholder/page";
 export default async function Page() {
 	const photoEntries = await fetchPhotosList();
 
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 
 	
 	return (

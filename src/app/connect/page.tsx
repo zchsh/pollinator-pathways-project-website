@@ -1,9 +1,9 @@
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 
 export default async function Page() {
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 
 	return (
 		<LayoutRoot footer={footer} pathname="/connect">

@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 import { photoSectionsTinaConfig } from "../src/app/photos/tina-config";
 import { homePageTinaConfig } from "../src/app/(home)/tina-config";
 import { faqPageTinaConfig } from "../src/app/faq/tina-config";
+import { sitewideTinaConfig } from "../src/app/sitewide/tina-config";
 import { slugifyForTina } from "../src/lib/slugify-for-tina";
 
 // Your hosting provider likely exposes this as an environment variable
@@ -38,67 +39,7 @@ export default defineConfig({
 			faqPageTinaConfig,
 			homePageTinaConfig,
 			photoSectionsTinaConfig,
-			{
-				label: "Site-wide",
-				name: "sitewide",
-				path: "content/sitewide",
-				format: "json",
-				ui: {
-					allowedActions: {
-						create: false,
-						delete: false,
-					},
-					router: () => `/sitewide`,
-				},
-				fields: [
-					{
-						type: "object",
-						label: "Footer",
-						name: "footer",
-						fields: [
-							{
-								type: "string",
-								label: "Subscribe Heading",
-								name: "subscribeHeading",
-							},
-							{
-								type: "string",
-								label: "Subscribe Placeholder",
-								name: "subscribePlaceholder",
-							},
-							{
-								list: true,
-								type: "object",
-								label: "Links",
-								name: "links",
-								ui: { itemProps: (item) => ({ label: item?.text }) },
-								fields: [
-									{
-										type: "string",
-										label: "Text",
-										name: "text",
-									},
-									{
-										type: "string",
-										label: "URL",
-										name: "url",
-									},
-									{
-										type: "image",
-										label: "Icon",
-										name: "icon",
-									},
-									{
-										type: "boolean",
-										label: "Show Icon Only",
-										name: "showIconOnly",
-									},
-								],
-							},
-						],
-					},
-				],
-			},
+			sitewideTinaConfig,
 			{
 				name: "blog",
 				label: "Blog",

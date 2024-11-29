@@ -4,7 +4,7 @@ import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
 import PageClient from "./page-client";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 import PagePlaceholder from "@/components/page-placeholder/page";
 import { Placeholder } from "@/components/placeholder";
 import Link from "next/link";
@@ -34,7 +34,7 @@ const RECENT_POSTS = [
  */
 export default async function Page({ params: { filename } }: $TSFixMe) {
 	const res = await client.queries.blog({ relativePath: `${filename}.md` });
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 	const isPreviewEnabled = getIsEditableDeployment();
 
 	/**

@@ -1,14 +1,14 @@
 import LayoutRoot from "@/components/layout-root";
 import PagePlaceholder from "@/components/page-placeholder/page";
 import { Placeholder } from "@/components/placeholder";
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 // Style
 import s from "./style.module.css";
 
 const GOOGLE_MAPS_EMBED_HTML = `<iframe src="https://www.google.com/maps/d/embed?mid=1aIPgbjac3YiVZggXbno0U4Mf1JaEsYE&ehbc=2E312F" width="640" height="480"></iframe>`;
 
 export default async function CentralLondonPathwayPage() {
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 	return (
 		<LayoutRoot footer={footer} pathname="/central-london-pathway">
 			<PagePlaceholder name="Central London Pathway">

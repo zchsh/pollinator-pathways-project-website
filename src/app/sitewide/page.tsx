@@ -9,10 +9,21 @@ import PageServer from "./page-server";
  * Next.js's `app` router.
  */
 export default async function Page() {
-	// TODO: avoid publishing this page in production, unless logged in...
+	/**
+	 * TODO: avoid publishing this page in production, unless editing...
+	 * Could probably hook in to `isEditable` to achieve this.
+	 * Or, could maybe put `no-index` stuff on this page instead?
+	 */
 	const res = await client.queries.sitewide({ relativePath: "sitewide.json" });
-	const isPreviewEnabled = getIsEditableDeployment();
+	const isEditable = getIsEditableDeployment();
+	// Note that `LayoutRoot` is used _within_ the component.
 	return (
-		<>{isPreviewEnabled ? <PageClient {...res} /> : <PageServer {...res} />}</>
+		<>
+			{isEditable ? (
+				<PageClient tina={res} />
+			) : (
+				<PageServer data={res.data} />
+			)}
+		</>
 	);
 }

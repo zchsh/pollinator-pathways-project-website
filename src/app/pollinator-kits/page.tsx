@@ -3,7 +3,7 @@ import LayoutRoot from "@/components/layout-root";
 import PagePlaceholder from "@/components/page-placeholder/page";
 import { Placeholder } from "@/components/placeholder";
 // Utils
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 // Styles
 import s from "./style.module.css";
 import { PropsWithChildren } from "react";
@@ -119,7 +119,7 @@ const POLLINATOR_KIT_EMBEDS = [
 ];
 
 export default async function PollinatorKitsPage() {
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 	return (
 		<LayoutRoot footer={footer} pathname="/pollinator-kits">
 			<PagePlaceholder name="Pollinator Kits">

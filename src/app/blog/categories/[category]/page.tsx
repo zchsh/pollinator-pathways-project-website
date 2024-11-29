@@ -6,12 +6,12 @@ import { PageTitle } from "../../components/page-title";
 // Constants
 // import { BLOG_CATEGORIES } from "../../../../../constants/blog-categories";
 // Utils
-import getFooterData from "@/lib/get-footer-data";
+import getSitewideData from "@/lib/get-sitewide-data";
 
 export default async function BlogCategoryPage({
 	params: { category },
 }: $TSFixMe) {
-	const footer = await getFooterData();
+	const { footer } = await getSitewideData();
 
 	// const matchedCategory = BLOG_CATEGORIES.find(
 	// 	(blogCategory) => blogCategory.value === category
