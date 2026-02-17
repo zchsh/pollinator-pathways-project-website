@@ -5,7 +5,7 @@
 ### Revisit priorities with simplified approach
 
 - Zeffy - should probably stay
-- Contact form - can be dropped in favour of `mailto:` link
+- Contact form - can be dropped in favour of `mailto:` link (though form is probably a good idea, definitely reduces friction eg for volunteer communication)
 - Mailing list - can be dropped in favour of blind-CC emails. Later, use Zeffy, it's free.
 - Home page - keep as-is for now, could revisit later
 
