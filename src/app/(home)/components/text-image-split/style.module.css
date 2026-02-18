@@ -2,6 +2,7 @@
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 16px;
 }
 
 .hideOverflow {
@@ -16,11 +17,13 @@
   right: 0;
   bottom: 0;
   background: var(--green-faded);
+  border-radius: 16px;
 }
 
 .stripeHeading {
   padding: 1rem 1rem 1rem 2rem;
   font-family: var(--font-display);
+  line-height: 1.2;
 }
 
 .children {
