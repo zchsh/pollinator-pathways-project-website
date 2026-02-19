@@ -1,6 +1,9 @@
 :root {
   /* Typography */
   /* Note that --font-body and --font-display are set in `layout.tsx` */
+  --font-system-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto,
+    helvetica, arial, sans-serif;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;

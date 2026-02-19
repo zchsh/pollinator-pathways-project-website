@@ -46,8 +46,13 @@ function Footer({
       <div className={s.lowerFooterBarRoot}>
         <div className={s.lowerFooterBar}>
           <div>© 2026</div>
-          <a href="/admin/index.html" className={s.lowerFooterBarLink}>
-            Admin
+          <a
+            className={s.lowerFooterBarLink}
+            href="/admin/index.html"
+            target="_blank"
+          >
+            Site admin&nbsp;
+            <span style={{ fontFamily: "var(--font-system-sans)" }}>↗</span>
           </a>
         </div>
       </div>

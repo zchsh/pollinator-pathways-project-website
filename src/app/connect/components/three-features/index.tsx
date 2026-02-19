@@ -2,7 +2,7 @@ import PrimaryButtonLink from "@/components/primary-button-link";
 import s from "./style.module.css";
 
 interface Item {
-  iconSrc: string;
+  iconSrc?: string;
   title: string;
   text: string;
   linkText?: string;
@@ -16,13 +16,15 @@ export default function ThreeFeatures({ items }: { items: Item[] }) {
         {items.map((item, idx) => {
           return (
             <div className={s.item} key={idx}>
-              <img
-                className={s.itemIcon}
-                width={64}
-                height={64}
-                src={item.iconSrc}
-                alt=""
-              />
+              {typeof item["iconSrc"] === "string" ? (
+                <img
+                  className={s.itemIcon}
+                  width={64}
+                  height={64}
+                  src={item.iconSrc}
+                  alt=""
+                />
+              ) : null}
               <h2 className={s.itemTitle}>{item.title}</h2>
               <p className={s.itemText}>{item.text}</p>
               {typeof item["linkText"] === "string" &&
