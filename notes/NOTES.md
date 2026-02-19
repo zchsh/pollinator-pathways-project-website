@@ -78,28 +78,30 @@ Notes from a couple years ago...
 
 Goal is to _download_ content, not to get the whole blog working.
 
-Migration status: 3 / 33
-
 #### Blog post download process
 
 - Visit the original URL
-- Drag and drop to download all images
 - Copy contents, paste into Obsidian to convert to Markdown
-- Place the markdown and images in a new folder in `blog-raw-data`
+- Save markdown file to Desktop, with URL "slug" as file name
+- Drag and drop to download all images
+- Take a screenshot of the page, save as well
+- Place the markdown and images in a new folder in `blog-raw-data`, name the folder after the URL "slug"
 
 #### Blog post download list
+
+Download status: 11 / 33
 
 - [x] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [x] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
 - [x] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
+- [x] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
+- [x] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-garden-at-western-fair-and-museum-london>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/new-year-new-environmental-actions>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/sowing-your-seeds-in-the-winter>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/getting-to-know-pollinators>
+- [x] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
+- [x] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-garden-at-western-fair-and-museum-london>
+- [x] <https://www.pollinatorpathwaysproject.com/post/new-year-new-environmental-actions>
+- [x] <https://www.pollinatorpathwaysproject.com/post/sowing-your-seeds-in-the-winter>
+- [x] <https://www.pollinatorpathwaysproject.com/post/getting-to-know-pollinators>
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/pollinator-in-a-box-an-environmentally-friendly-holiday-gift>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/winterizing-your-garden>
@@ -140,6 +142,8 @@ Migration status: 3 / 33
 - [ ] Compare the locally running post to the existing old blog post, to double-check everything looks right
 
 #### Blog post migration list
+
+Download status: 1 / 33
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
