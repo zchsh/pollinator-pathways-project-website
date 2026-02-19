@@ -80,20 +80,18 @@ Goal is to _download_ content, not to get the whole blog working.
 
 Migration status: 3 / 33
 
-#### Blog post migration process
+#### Blog post download process
 
 - Visit the original URL
 - Drag and drop to download all images
 - Copy contents, paste into Obsidian to convert to Markdown
 - Place the markdown and images in a new folder in `blog-raw-data`
 
-- 🚧 TODO - need to make sure downloaded data is sufficient for a publish-ready post that includes al lthe original content. will need to start by standardizing and cleaning up formatting
-
 #### Blog post download list
 
 - [x] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [x] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
+- [x] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
@@ -125,11 +123,21 @@ Migration status: 3 / 33
 - [ ] <https://www.pollinatorpathwaysproject.com/post/so-what-are-pollinator-pathways-anyway>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/community-engaged-learning-project>
 
+#### Blog post migration process
+
+- [ ] Open existing old blog post to compare as you go
+- [ ] For images, create new folder in `public/uploads/Blog Posts`, and move all images into the folder
+- [ ] Fix all image links within the markdown, to point to the images in the newly created folder
+- [ ] Add YAML front-matter to the markdown. Match the structure of an existing blog post
+- [ ] Skim through the markdown content and fix any other issues
+- [ ] Run the project locally in order to test the page's appearance. 
+- [ ] Compare the locally running post to the existing old blog post, to double-check everything looks right
+
 #### Blog post migration list
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
+- [x] <https://www.pollinatorpathwaysproject.com/post/pollinators-to-expect-in-your-garden-this-spring>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
