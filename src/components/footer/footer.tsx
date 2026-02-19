@@ -47,7 +47,7 @@ function Footer({
         <div className={s.lowerFooterBar}>
           <div>© 2026</div>
           <a href="/admin/index.html" className={s.lowerFooterBarLink}>
-            Edit
+            Admin
           </a>
         </div>
       </div>
