@@ -21,9 +21,9 @@ export default function ConnectPage() {
           <h2 className={s.connectWithUs_heading}>Connect with us!</h2>
           <Spacer h="1rem" />
           <p className={s.connectWithUs_text}>
-            If you want to get involved, sponsor us, need help planning a
-            pollinator garden, or have any questions for us, we’d love to hear
-            from you.
+            If you want to get involved, sponsor us, purchase a pollinator kit,
+            need help planning a pollinator garden, or have any questions for
+            us, we’d love to hear&nbsp;from&nbsp;you.
           </p>
           <Spacer h="1.5rem" />
           <PrimaryButtonLink href="https://example.com">
