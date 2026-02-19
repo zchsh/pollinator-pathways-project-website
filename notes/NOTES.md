@@ -109,11 +109,11 @@ Download status: 16 / 33
 - [x] <https://www.pollinatorpathwaysproject.com/post/eco-mimicry-an-alternative-to-blandscaping>
 - [x] <https://www.pollinatorpathwaysproject.com/post/pollination-with-purpose>
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-take-ecosystem-scientist-down-a-new-path>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/growing-a-community-withthe-pollinator-pathways-project>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/london-environmental-network-and-pollinator-pathways-project-are-launching-a-spring-giveaway>
+- [x] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-take-ecosystem-scientist-down-a-new-path>
+- [x] <https://www.pollinatorpathwaysproject.com/post/growing-a-community-withthe-pollinator-pathways-project>
+- [x] <https://www.pollinatorpathwaysproject.com/post/london-environmental-network-and-pollinator-pathways-project-are-launching-a-spring-giveaway>
 - [x] <https://www.pollinatorpathwaysproject.com/post/six-bees-to-look-out-for-this-spring-summer>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/dutch-ingenuity-leads-the-way-saving-pollinators-in-urban-environments>
+- [x] <https://www.pollinatorpathwaysproject.com/post/dutch-ingenuity-leads-the-way-saving-pollinators-in-urban-environments>
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/now-hiring-pollinator-pathways-communications-coordinator>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/monarch-butterflies-in-the-city>
