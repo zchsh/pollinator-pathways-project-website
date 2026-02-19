@@ -25,7 +25,8 @@ export default function ThreeFeatures({ items }: { items: Item[] }) {
               />
               <h2 className={s.itemTitle}>{item.title}</h2>
               <p className={s.itemText}>{item.text}</p>
-              {"linkText" in item && "linkUrl" in item ? (
+              {typeof item["linkText"] === "string" &&
+              typeof item["linkUrl"] === "string" ? (
                 <PrimaryButtonLink className={s.itemLink} href={item.linkUrl}>
                   {item.linkText}
                 </PrimaryButtonLink>
