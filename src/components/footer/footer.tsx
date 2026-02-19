@@ -15,10 +15,10 @@ function Footer({
     <>
       <div className={s.root}>
         <div className={s.content}>
-          <EmailSubscribeForm
+          {/*<EmailSubscribeForm
             subscribeHeading={subscribeHeading}
             subscribePlaceholder={subscribePlaceholder}
-          />
+          />*/}
           <ul className={s.list}>
             {links.map(
               ({ text, url, icon, showIconOnly }: $TSFixMe, idx: number) => (

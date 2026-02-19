@@ -3,15 +3,15 @@
 }
 
 .content {
-  padding: 40px 1rem 60px 1rem;
+  align-items: center;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 32px;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: var(--content-max-width);
+  gap: 32px;
+  justify-content: center;
   margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 40px 1rem 60px 1rem;
+  width: 100%;
 }
 
 .list {
