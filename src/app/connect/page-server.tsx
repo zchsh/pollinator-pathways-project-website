@@ -4,6 +4,7 @@ import PrimaryButtonLink from "@/components/primary-button-link";
 import { Placeholder } from "@/components/placeholder";
 import Spacer from "@/components/spacer";
 import ThreeFeatures from "./components/three-features";
+import s from "./connect-page.module.css";
 
 const ADMIN_EMAIL = "hi@zch.sh";
 const EMAIL_SUBJECT = "Hello from your website!";
@@ -16,8 +17,19 @@ export default function ConnectPage() {
 					<ContactForm />
 				</Placeholder>*/}
       <Placeholder name="Connect with us" />
-      <Placeholder name="Volunteer opportunities" />
-      <Placeholder name="Builders, Writes, Gardeners" />
+      <div className={s.volunteerOpportunities}>
+        <div className={s.volunteerOpportunities_contents}>
+          <h2 className={s.volunteerOpportunities_heading}>
+            Volunteer with us!
+          </h2>
+          <Spacer h="1rem" />
+          <p className={s.volunteerOpportunities_text}>
+            Looking for a way to get involved with the Pollinator Pathways
+            Project? We’d love your contribution! Contact us through the form
+            above.
+          </p>
+        </div>
+      </div>
       <ThreeFeatures
         items={[
           {
