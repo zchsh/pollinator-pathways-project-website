@@ -181,13 +181,6 @@ Download status: 11 / 33
 - [ ] <https://www.pollinatorpathwaysproject.com/post/so-what-are-pollinator-pathways-anyway>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/community-engaged-learning-project>
 
-
-## Future
-
-### Editable navigation
-
-- [ ] Implement editable top nav on all pages
-
 ## Done
 
 ### General
