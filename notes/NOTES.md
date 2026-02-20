@@ -22,10 +22,6 @@
   - Looking up `Contact form to email` services seems like a good direction. Examples... <https://web3forms.com>, <https://www.formspark.io>, <https://www.smtp2go.com/pricing/>
   - [Nodemailer](https://nodemailer.com/) might be a useful thing to look at
 
-### Drop blog from website display
-
-- [ ] Drop `blog` from navigation
-
 ### Test TinaCMS
 
 - Had a multi-deployment setup at some point... will probably make sense to do that again?
@@ -151,11 +147,11 @@ Download status: 6 / 33
 - [x] <https://www.pollinatorpathwaysproject.com/post/spring-is-near-time-to-start-planning-your-garden>
 - [x] <https://www.pollinatorpathwaysproject.com/post/why-pollinators-are-the-best-innovators>
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-garden-at-western-fair-and-museum-london>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/new-year-new-environmental-actions>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/sowing-your-seeds-in-the-winter>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/getting-to-know-pollinators>
+- [x] <https://www.pollinatorpathwaysproject.com/post/looking-out-for-the-little-guy>
+- [x] <https://www.pollinatorpathwaysproject.com/post/pollinator-pathways-garden-at-western-fair-and-museum-london>
+- [x] <https://www.pollinatorpathwaysproject.com/post/new-year-new-environmental-actions>
+- [x] <https://www.pollinatorpathwaysproject.com/post/sowing-your-seeds-in-the-winter>
+- [x] <https://www.pollinatorpathwaysproject.com/post/getting-to-know-pollinators>
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/pollinator-in-a-box-an-environmentally-friendly-holiday-gift>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/winterizing-your-garden>
