@@ -121,11 +121,11 @@ Download status: 16 / 33
 - [x] <https://www.pollinatorpathwaysproject.com/post/8-pollinator-favourite-spring-blooms>
 - [x] <https://www.pollinatorpathwaysproject.com/post/15-in-season-holiday-recipes>
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/boycott-plastic-with-these-bees-knees-food-wraps>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/bee-kind-helping-urban-pollinators>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/what-is-a-pollinator-species-how-does-pollination-work>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/bee-hotels-back-to-nature>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/the-importance-of-water-in-a-pollinator-garden>
+- [x] <https://www.pollinatorpathwaysproject.com/post/boycott-plastic-with-these-bees-knees-food-wraps>
+- [x] <https://www.pollinatorpathwaysproject.com/post/bee-kind-helping-urban-pollinators>
+- [x] <https://www.pollinatorpathwaysproject.com/post/what-is-a-pollinator-species-how-does-pollination-work>
+- [x] <https://www.pollinatorpathwaysproject.com/post/bee-hotels-back-to-nature>
+- [x] <https://www.pollinatorpathwaysproject.com/post/the-importance-of-water-in-a-pollinator-garden>
 
 - [ ] <https://www.pollinatorpathwaysproject.com/post/how-to-start-a-pollinator-garden>
 - [ ] <https://www.pollinatorpathwaysproject.com/post/so-what-are-pollinator-pathways-anyway>
