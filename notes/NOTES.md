@@ -89,7 +89,7 @@ Goal is to _download_ content, not to get the whole blog working.
 
 #### Blog post download list
 
-Download status: 16 / 33
+Download status: 33 / 33
 
 - [x] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [x] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
