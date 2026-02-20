@@ -139,7 +139,7 @@ Download status: 33 / 33
 
 #### Blog post migration list
 
-Download status: 6 / 33
+Download status: 11 / 33
 
 - [x] <https://www.pollinatorpathwaysproject.com/post/program-overview-central-london-pathway>
 - [x] <https://www.pollinatorpathwaysproject.com/post/earth-day-is-everyday>
