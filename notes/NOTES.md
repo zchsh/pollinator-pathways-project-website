@@ -127,9 +127,9 @@ Download status: 16 / 33
 - [x] <https://www.pollinatorpathwaysproject.com/post/bee-hotels-back-to-nature>
 - [x] <https://www.pollinatorpathwaysproject.com/post/the-importance-of-water-in-a-pollinator-garden>
 
-- [ ] <https://www.pollinatorpathwaysproject.com/post/how-to-start-a-pollinator-garden>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/so-what-are-pollinator-pathways-anyway>
-- [ ] <https://www.pollinatorpathwaysproject.com/post/community-engaged-learning-project>
+- [x] <https://www.pollinatorpathwaysproject.com/post/how-to-start-a-pollinator-garden>
+- [x] <https://www.pollinatorpathwaysproject.com/post/so-what-are-pollinator-pathways-anyway>
+- [x] <https://www.pollinatorpathwaysproject.com/post/community-engaged-learning-project>
 
 #### Blog post migration process
 
