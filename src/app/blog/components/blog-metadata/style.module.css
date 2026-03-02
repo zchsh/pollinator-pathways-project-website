@@ -2,7 +2,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .metadataDivider {
@@ -27,4 +27,5 @@
   justify-content: center;
   padding-top: 4px;
   border-radius: 50%;
+  flex-shrink: 0;
 }

@@ -28,7 +28,7 @@
   /*border: 1px solid magenta;*/
   font-family: var(--font-display);
   line-height: 1.1;
-  font-size: min(max(1.25rem, 3vw), 1.75rem);
+  font-size: 1.5rem;
 }
 
 /* CARDS */
@@ -51,10 +51,10 @@
 
 .cardSplit_sectionOne {
   flex-grow: 1;
-  flex-basis: 50%;
+  flex-basis: min(200px, 50%);
   flex-shrink: 0;
   min-width: min(200px, 100%);
-  max-width: 200px;
+  /*max-width: 200px;*/
 }
 
 .cardSplit_sectionTwo {

@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding: 3rem var(--content-padding-x) 0;
   max-width: var(--content-max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pageTitleContainer {
