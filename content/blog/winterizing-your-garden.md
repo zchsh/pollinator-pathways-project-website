@@ -14,18 +14,12 @@ Unfortunately, bees did not win the lottery, much like us, and they cannot migra
   
 
 1. Planting winter honeysuckle, aconite, or even snowdrop flowers, all of which provide food for bees.
-
-![](</uploads/blog/winterizing-your-garden/4edd67_8ac6b217ee674a6ebd4ec05c3fbee6d9~mv2.jpg>)
-
-  
+  ![](</uploads/blog/winterizing-your-garden/4edd67_8ac6b217ee674a6ebd4ec05c3fbee6d9~mv2.jpg>)
 
 2. Leaving dead plant stems and leaf litter piles, and avoiding digging in your garden, as bees may be nesting there.
 
-  
-
 3. Putting a bee hotel in your garden, or better yet, drilling into an existing tall tree stump to create a natural bee hotel.
-
-![](</uploads/blog/winterizing-your-garden/4edd67_13ca53053cff4546afa3f8f0ebfc904a~mv2.png>)
+  ![](</uploads/blog/winterizing-your-garden/4edd67_13ca53053cff4546afa3f8f0ebfc904a~mv2.png>)
 
   
 

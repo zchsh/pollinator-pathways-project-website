@@ -8,11 +8,7 @@ import PageServer from "./page-server";
  * Seems to be necessary to use TinaCMS with `app` router
  */
 export default function PageClient({ query, variables, data }: $TSFixMe) {
-	const { data: tinaData } = useTina({
-		query: query,
-		variables: variables,
-		data: data,
-	});
+  const { data: tinaData } = useTina({ query, variables, data });
 
-	return <PageServer data={tinaData} />;
+  return <PageServer data={tinaData} />;
 }

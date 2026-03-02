@@ -23,16 +23,34 @@
   & a {
     color: var(--color-blue-700);
 
+    & strong {
+      color: var(--color-blue-700);
+    }
+
     &:visited {
       color: var(--color-blue-700);
     }
   }
 
-  /* Inline elements */
+  /* Inline code */
+
+  & code {
+    background-color: var(--color-neutral-100);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.9375rem;
+  }
+
+  /* Bold and italic */
 
   & strong {
     font-weight: 700;
     color: var(--black);
+  }
+
+  & em {
+    font-style: italic;
   }
 
   /* Lists */

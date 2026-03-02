@@ -1,3 +1,4 @@
+import type { Metadata, ResolvingMetadata } from "next";
 import client from "@/../tina/__generated__/client";
 import { fetchBlogList } from "../utils/fetch-blog-list";
 import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
@@ -29,6 +30,25 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
       )}
     </LayoutRoot>
   );
+}
+
+export async function generateMetadata(
+  {
+    params,
+  }: {
+    params: Promise<{ filename: string }>;
+  },
+  _parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const { filename } = await params;
+  // optionally access and extend (rather than replace) parent metadata
+  // const previousImages = (await parent).openGraph?.images || []
+  // grab the blog data
+  const res = await client.queries.blog({ relativePath: `${filename}.md` });
+  const { title } = res.data.blog;
+  const titleSuffix = " | Pollinator Pathways Project";
+  return { title: title + titleSuffix };
 }
 
 export async function generateStaticParams() {

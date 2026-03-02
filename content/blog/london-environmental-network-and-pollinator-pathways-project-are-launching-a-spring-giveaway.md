@@ -15,21 +15,17 @@ We have the perfect giveaway and fun summer contest for you! We're launching a f
 
 The Contest is open to residents of Ontario of any age. An unlimited number of total entries in this Contest are available.
 
-1. **HOW TO ENTER THE CONTEST:**
-    
+**HOW TO ENTER THE CONTEST:**    
 
 To enter the Contest, participants are required to create a piece of artwork around a pollinator or pollinator-friendly plant and share that on their social media. **Participants must be following London Environmental Network and Pollinator Pathways Project on Facebook or Instagram, and share a photo of their pollinator or pollinator-friendly plant(s), using the hashtag,** `#pollinatorpathwaysproject`. **They must also tag our Social Media Channels (@pollinatorpathwaysproject and @londonenvironet for Facebook or Instagram) by 11:59pm Eastern Time on June 21, 2021.**
 
-1. **THE PRIZE AND APPROXIMATE RETAIL VALUE:**
+**THE PRIZE AND APPROXIMATE RETAIL VALUE:**
 
 Only one (1) Prize is available. The Prize has an approximate retail value of $80.00 CAD. Prize must be accepted as awarded and no substitutions or cash alternatives will be permitted. Prize value based on retail value at time of publication of the Contest Rules. Participants will be required to comply with all the Contest Rules and answer a simple mathematical skill testing question to be deemed a Contest winner and receive the Prize. Full details of the giveaway items can be seen below in the graphic:  
 
 ![](</uploads/blog/london-environmental-network-and-pollinator-pathways-project-are-launching-a-spring-giveaway/63d173_be6305aed8864f9288c0b1c9d096cdb0~mv2.png>)
 
-  
-
-1. **WINNER SELECTION:**
-    
+**WINNER SELECTION:**
 
 Chances of winning depend on the number of Participants.
 
@@ -37,11 +33,9 @@ The winner will be picked by a team of volunteers from both Pollinator pathways 
 
 2. **Originality** (how much did you think outside the box, is this a unique idea or way to express the artwork)
 
-3. **Relevance to native species (**the artwork needs to be of native species, both flora and fauna)
+3. **Relevance to native species** (the artwork needs to be of native species, both flora and fauna)
 
 4. **Colour palette** (the use of lots of colour is not exactly what we're looking for, more how your colours compliment each other)
-
-  
 
 ![](</uploads/blog/london-environmental-network-and-pollinator-pathways-project-are-launching-a-spring-giveaway/nsplsh_c09116bd43dd449292e2ef4b787d49bd~mv2.jpeg>)
 

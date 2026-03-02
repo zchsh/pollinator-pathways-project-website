@@ -50,7 +50,7 @@
 }
 
 .blogBody {
-  max-width: 40em;
+  max-width: 42em;
   margin: 0 auto;
   padding: 0 var(--content-padding-x) 8rem;
 }

@@ -60,7 +60,4 @@ Image source: [Canadian Wildlife Federation](https://cwf-fcf.org/)
 
 ## Connect with Pollinator Pathways Project
 
-Let us know if you spot any of these native bees this spring or summertime, be sure to tag us on social media @Pollinatorpathwaysproject if you want us to re-share it!
-
-- [Pollinator Pathways Project on Instagram](https://www.instagram.com/pollinatorpathwaysproject/)
-- [Pollinator Pathways Project on Facebook](https://www.facebook.com/pollinatorpathwaysproject)
+Let us know if you spot any of these native bees this spring or summertime, be sure to tag us on social media `@pollinatorpathwaysproject` if you want us to re-share it!
