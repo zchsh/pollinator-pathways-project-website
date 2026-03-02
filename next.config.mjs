@@ -27,6 +27,7 @@ const nextConfig = {
     return redirectEntries;
   },
   images: {
+    // See: https://github.com/tinacms/tinacms/discussions/4035
     domains: ["assets.tina.io"],
   },
   // TODO: figure out TinaCMS 500 errs
