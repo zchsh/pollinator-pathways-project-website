@@ -10,7 +10,7 @@ With spring just around the corner, it’s a great time to begin designing your 
 
 A common mistake of novice gardeners is planting the wrong plant species and seeing no results from their hard work. There are countless times where things like this have happened in my life, from building bat houses to growing crops. Although mistakes are a part of the learning process and can sometimes make an activity fun, let’s make sure we get things right the first time and greet some pollinators this season!
 
-![](/uploads/Blog%20Posts/pollinators-to-expect-in-your-garden-this-spring/butterfly.jpeg)
+![](/uploads/blog/pollinators-to-expect-in-your-garden-this-spring/butterfly.jpeg)
 
 Pollinators are active at different times of day and are attracted to several different plants. While not all pollinators are known for their smell, bees gravitate towards plants with a sugary scent like fruit or honey. Bees, in particular, are drawn to flowers with vibrant blue and yellow colouring.
 

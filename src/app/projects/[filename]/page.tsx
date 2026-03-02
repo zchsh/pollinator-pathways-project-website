@@ -52,7 +52,6 @@ export async function generateStaticParams() {
     return [{ filename: "not-found" }];
   }
   const staticParams = projectEntries.map(({ filename }) => ({ filename }));
-  console.log({ staticParams });
   return staticParams;
 }
 
