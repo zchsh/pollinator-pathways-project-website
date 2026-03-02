@@ -1,0 +1,30 @@
+.metadata {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.metadataDivider {
+  color: var(--color-green-300);
+}
+
+.author {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.authorIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: var(--color-green-300);
+  overflow: hidden;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  border-radius: 50%;
+}

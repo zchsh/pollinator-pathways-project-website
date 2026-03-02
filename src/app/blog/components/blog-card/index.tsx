@@ -1,7 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import s from "./style.module.css";
 import { PropsWithChildren } from "react";
+import { BlogMetadata } from "../blog-metadata";
+import Spacer from "@/components/spacer";
 
 export function BlogCard({ entry }: { entry: $TSFixMe }) {
   const hasImage =
@@ -14,16 +15,7 @@ export function BlogCard({ entry }: { entry: $TSFixMe }) {
           <CardSplit
             sectionOne={
               <div className={s.cardImageContainer}>
-                <Image
-                  fill={true}
-                  style={{ objectFit: "cover" }}
-                  src={entry.coverImage}
-                  alt={entry.coverImageAlt || ""}
-                />
-                {/*<img
-                src={entry.coverImage}
-                alt={entry.coverImageAlt || ""}
-              />*/}
+                <img src={entry.coverImage} alt={entry.coverImageAlt || ""} />
               </div>
             }
             sectionTwo={<BlogCardInfo entry={entry} />}
@@ -43,11 +35,18 @@ export function BlogCard({ entry }: { entry: $TSFixMe }) {
 }
 
 function BlogCardInfo({ entry }: { entry: $TSFixMe }) {
+  const { title, author, date } = entry;
   return (
     <div className={s.cardInfoContainer}>
-      <pre>
+      <div className={s.cardInfoMetadata}>
+        <BlogMetadata metadata={{ author, date }} />
+      </div>
+      <Spacer h="8px" />
+      <h2 className={s.cardTitle}>{title}</h2>
+      {/* TODO: grab "description" text, excerpt from content */}
+      {/*<pre>
         <code>{JSON.stringify(entry, null, 2)}</code>
-      </pre>
+      </pre>*/}
     </div>
   );
 }

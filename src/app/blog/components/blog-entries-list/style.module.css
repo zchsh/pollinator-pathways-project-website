@@ -14,6 +14,11 @@
   gap: 1rem;
   list-style: none;
   margin: 0 auto;
-  max-width: 42em;
+  max-width: 48em;
   padding: 0 var(--content-padding-x);
+
+  & li a {
+    text-decoration: none;
+    color: inherit;
+  }
 }

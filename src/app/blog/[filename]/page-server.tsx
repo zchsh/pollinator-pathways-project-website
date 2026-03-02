@@ -1,5 +1,6 @@
 // Components
 import { MarkdownContent } from "@/components/markdown-content";
+import { BlogMetadata } from "../components/blog-metadata";
 // Styles
 import s from "./blog-entry.module.css";
 // Types
@@ -8,26 +9,11 @@ import { PageTitle } from "@/components/page-title";
 
 export default function PageServer({ data }: { data: BlogQuery }) {
   const { author, body, coverImage, coverImageAlt, date, title } = data.blog;
-  const metadata = { author, date };
-  // Format the date as `Month DD, YYYY`
-  const dateObject = new Date(metadata.date);
-  const formattedDate = dateObject.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+
   return (
     <>
-      <div className={s.metadata}>
-        <div className={s.author}>
-          <div className={s.authorIcon}>🌻</div>
-          <div className={s.authorName}>{metadata.author}</div>
-        </div>
-        <div className={s.metadataDivider}>•</div>
-        <div className={s.date}>{formattedDate}</div>
-        {/* TODO: actually implement reading time */}
-        {/*<div className={s.metadataDivider}>•</div>*/}
-        {/*<div className={s.readingTime}>{`2 min read`}</div>*/}
+      <div className={s.blogMetadataContainer}>
+        <BlogMetadata metadata={{ author, date }} />
       </div>
       <div className={s.pageTitleContainer}>
         <PageTitle>{title}</PageTitle>
