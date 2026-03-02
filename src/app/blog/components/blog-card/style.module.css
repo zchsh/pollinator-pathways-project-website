@@ -28,7 +28,7 @@
   /*border: 1px solid magenta;*/
   font-family: var(--font-display);
   line-height: 1.1;
-  font-size: 1.5rem;
+  font-size: min(max(1.5rem, 3vw), 1.75rem);
 }
 
 /* CARDS */
