@@ -1,3 +1,7 @@
+.root {
+  padding-bottom: 8rem;
+}
+
 .noEntries {
   text-align: center;
   padding: 1rem;
@@ -5,8 +9,11 @@
 }
 
 .blogEntriesList {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   list-style: none;
-  padding: 1rem;
-  border: 2px solid magenta;
+  margin: 0 auto;
+  max-width: 42em;
+  padding: 0 var(--content-padding-x);
 }

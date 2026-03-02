@@ -20,9 +20,16 @@ export async function fetchBlogList() {
     if (!blogNode) {
       throw new Error("Failed to grab node off blog entry");
     }
-    const { title, categories } = blogNode;
+    const { title, categories, author, coverImage, coverImageAlt } = blogNode;
     const { filename } = blogNode._sys;
-    blogEntries.push({ title, filename, categories });
+    blogEntries.push({
+      title,
+      author,
+      filename,
+      categories,
+      coverImage,
+      coverImageAlt,
+    });
   }
 
   return blogEntries;

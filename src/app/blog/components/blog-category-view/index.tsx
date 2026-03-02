@@ -14,7 +14,7 @@ export default function BlogCategoryView({
     <main>
       <Spacer h="2rem" />
       <PageTitle>Blog</PageTitle>
-      <Spacer h="1rem" />
+      <Spacer h="2rem" />
       <BlogEntriesList allBlogEntries={allBlogEntries} category={category} />
     </main>
   );

@@ -5,6 +5,7 @@ import { Placeholder } from "@/components/placeholder";
 import Spacer from "@/components/spacer";
 import ThreeFeatures from "./components/three-features";
 import s from "./connect-page.module.css";
+import { PageTitle } from "@/components/page-title";
 
 const ADMIN_EMAIL = "hi@zch.sh";
 const EMAIL_SUBJECT = "Hello from your website!";
@@ -12,31 +13,27 @@ const EMAIL_SUBJECT = "Hello from your website!";
 export default function ConnectPage() {
   return (
     <>
-      {/*<PagePlaceholder name="Connect">*/}
-      {/*<Placeholder name="Contact Form">
-					<ContactForm />
-				</Placeholder>*/}
-      <div className={s.connectWithUs}>
-        <div className={s.connectWithUs_contents}>
-          <h2 className={s.connectWithUs_heading}>Connect with us!</h2>
-          <Spacer h="1rem" />
-          <p className={s.connectWithUs_text}>
-            If you want to get involved, sponsor us, purchase a pollinator kit,
-            need help planning a pollinator garden, or have any questions for
-            us, we’d love to hear&nbsp;from&nbsp;you.
-          </p>
-          <Spacer h="1.5rem" />
-          <PrimaryButtonLink href="https://example.com">
-            <span className={s.connectWithUs_button_iconAndText}>
-              <img
-                className={s.connectWithUs_button_icon}
-                src="/uploads/Site-wide/icon-email.png"
-                alt=""
-              />
-              Email us
-            </span>
-          </PrimaryButtonLink>
-        </div>
+      <div className={s.connectWithUs_contents}>
+        <Spacer h="2rem" />
+        <PageTitle>Connect with us!</PageTitle>
+        <Spacer h="2rem" />
+        <p className={s.connectWithUs_text}>
+          If you want to get involved, sponsor us, purchase a pollinator kit,
+          need help planning a pollinator garden, or have any questions for us,
+          we’d love to hear&nbsp;from&nbsp;you.
+        </p>
+        <Spacer h="1.5rem" />
+        <PrimaryButtonLink href="https://example.com">
+          <span className={s.connectWithUs_button_iconAndText}>
+            <img
+              className={s.connectWithUs_button_icon}
+              src="/uploads/Site-wide/icon-email.png"
+              alt=""
+            />
+            Email us
+          </span>
+        </PrimaryButtonLink>
+        <Spacer h="4rem" />
       </div>
       <div className={s.volunteerOpportunities}>
         <div className={s.volunteerOpportunities_contents}>

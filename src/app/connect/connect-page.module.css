@@ -3,17 +3,11 @@
 .connectWithUs_contents {
   margin: 0 auto;
   max-width: var(--content-max-width);
-  padding: 3rem var(--content-padding-x) 4rem var(--content-padding-x);
+  padding: 0 var(--content-padding-x);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.connectWithUs_heading {
-  font-family: var(--font-display);
-  font-size: 2.25rem;
-  text-align: center;
 }
 
 .connectWithUs_text {

@@ -1,4 +1,6 @@
 import Link from "next/link";
+// Components
+import { BlogCard } from "../blog-card";
 // Styles
 import s from "./style.module.css";
 
@@ -20,14 +22,14 @@ export async function BlogEntriesList({
         });
 
   return (
-    <>
+    <div className={s.root}>
       {/* Note: removed category display for now, not needed yet */}
       {/*<BlogCategoryLinks blogCategories={blogCategories} />*/}
       {blogEntries.length > 0 ? (
         <ul className={s.blogEntriesList}>
           {blogEntries.map((entry: $TSFixMe) => (
             <li key={entry.filename}>
-              <Link href={`/blog/${entry.filename}`}>{entry.title}</Link>
+              <BlogCard entry={entry} />
             </li>
           ))}
         </ul>
@@ -36,6 +38,6 @@ export async function BlogEntriesList({
           No blog entries found. <Link href="/blog">View all blog posts</Link>.
         </p>
       )}
-    </>
+    </div>
   );
 }
