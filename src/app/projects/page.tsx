@@ -17,3 +17,11 @@ export default async function Projects() {
     </LayoutRoot>
   );
 }
+
+const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+
+export const metadata = {
+  title: "Projects" + METADATA_TITLE_SUFFIX,
+  description:
+    "Pollinator Pathways Project is a grassroots community organization started in London, Canada that educates how to grow a pollinator garden.",
+};

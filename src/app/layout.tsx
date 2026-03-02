@@ -20,8 +20,10 @@ const fontFamilyCssVariables = {
   "--font-body": `${inter.style.fontFamily}`,
 } as CSSProperties;
 
+// const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+
 export const metadata = {
-  title: "Pollinator Pathways Project | London",
+  title: "Pollinator Pathways Project",
   description:
     "Pollinator Pathways Project is a grassroots community organization started in London, Canada that educates how to grow a pollinator garden.",
 };

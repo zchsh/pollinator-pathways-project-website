@@ -19,31 +19,20 @@ Once the materials are collected and you are ready for things to get a little me
 
 Now that you have successfully crafted a beeswax food wrap, you can feel good while keeping your food fresh. Similar to plastic cling-wrap, use your beeswax wraps to cover containers and swaddle your food in the fridge or on the go.
 
-  
+## Materials
 
-Materials:
+- Double Boiler
+- Parchment Paper
+- Thick Paintbrush
+- Scissors
+- Baking sheet
+- 2.5 tsp. pine resin
+- 1/8 cup beeswax pellets
+- 1 tbsp jojoba oil
+- Cooling rack
+- Cotton fabric
 
-· Double Boiler
-
-· Parchment Paper
-
-· Thick Paintbrush
-
-· Scissors
-
-· Baking sheet
-
-· 2.5 tsp. pine resin
-
-· 1/8 cup beeswax pellets
-
-· 1 tbsp jojoba oil
-
-· Cooling rack
-
-· Cotton fabric
-
-  
+## Directions
 
 1. Cut the cotton fabric into squares/circles to fit your kitchen’s bowls/plates/Tupperware.
 

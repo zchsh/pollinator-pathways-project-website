@@ -7,6 +7,8 @@ import PageClient from "./page-client";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getSitewideData from "@/lib/get-sitewide-data";
+// Types
+import type { Metadata, ResolvingMetadata } from "next";
 
 /**
  * TODO: investigate in more detail why this whole "page/-server/-client"
@@ -47,4 +49,20 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 export async function generateStaticParams() {
   const projectEntries = await fetchProjectsList();
   return projectEntries.map(({ filename }) => ({ params: { filename } }));
+}
+
+const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ filename: string }> },
+  _parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const { filename } = await params;
+  // optionally access and extend (rather than replace) parent metadata
+  // const previousImages = (await parent).openGraph?.images || []
+  // grab the blog data
+  const res = await client.queries.project({ relativePath: `${filename}.md` });
+  const { title } = res.data.project;
+  return { title: title + METADATA_TITLE_SUFFIX };
 }

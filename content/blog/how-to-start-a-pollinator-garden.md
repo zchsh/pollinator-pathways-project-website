@@ -56,6 +56,6 @@ I did this many years ago and now The only grass I have left is the dog run. One
 
 ![](</uploads/blog/how-to-start-a-pollinator-garden/63d173_aa858489740b41a6bb41a6705a8486af~mv2_d_4512_3000_s_4_2.jpeg>)
 
-- 📼 [Creating Pollinator Pathways - Gardening with Lori](https://www.facebook.com/watch/?ref=embed_video&v=281284063253099)
+- [Video - Creating Pollinator Pathways - Gardening with Lori](https://www.facebook.com/watch/?ref=embed_video&v=281284063253099)
 
-- 📼 [Creating Pollinator Pathways - Gardening with Lori E02](https://www.facebook.com/watch/?ref=embed_video&v=591537875111418)
+- [Video - Creating Pollinator Pathways - Gardening with Lori E02](https://www.facebook.com/watch/?ref=embed_video&v=591537875111418)

@@ -5,7 +5,7 @@ date: 2020-07-26T04:00:00.000Z
 author: Jude Dieleman
 ---
 
-“Water is the mother of the vine, the nurse and fountain of fecundity, the adorner and refresher of the world.” – Charles Mackay.
+> “Water is the mother of the vine, the nurse and fountain of fecundity, the adorner and refresher of the world.” – Charles Mackay.
 
 Nothing can survive without water. Not you, not me, not plants, not pollinators, nothing. This is a very important thing to consider if you want to survive. This is also important when you set up your pollinator garden. Life needs water, and it is for that reason that life is attracted to it. That is why it is so beneficial to put water in your pollinator garden however small it may be. Putting water in your pollinator garden will provide habitat for more types of plants, will give water to thirsty pollinators, and will overall attract more wildlife to your garden.
 
@@ -49,4 +49,4 @@ So I hope you are now convinced to go and add water in your garden. Whether it i
 
   
 
-"People say, what is the sense of our small effort? They cannot see that we must lay one brick at a time, take one step at a time. A pebble cast into a pond causes ripples that spread in all directions. Each one of our thoughts, words and deeds is like that.” -Dorothy Day
+> "People say, what is the sense of our small effort? They cannot see that we must lay one brick at a time, take one step at a time. A pebble cast into a pond causes ripples that spread in all directions. Each one of our thoughts, words and deeds is like that.” -Dorothy Day

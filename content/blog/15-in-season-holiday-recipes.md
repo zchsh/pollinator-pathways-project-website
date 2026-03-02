@@ -18,70 +18,55 @@ Although there is far less produce in-season in the winter, some local fruits an
 
 ![](</uploads/blog/15-in-season-holiday-recipes/ca3a2755f0ef491ca56c0aa610967d18.jpeg>)
 
-### **Start your meal off with one of these delicious appetizers or salads:**
+### Start your meal off with one of these delicious appetizers or salads:
 
 1. Onion tart appetizer:
-
-[https://www.seriouseats.com/recipes/2011/12/caramelized-onion-and-goat-cheese-tartlets-recipe.html](https://www.seriouseats.com/recipes/2011/12/caramelized-onion-and-goat-cheese-tartlets-recipe.html)
+  [https://www.seriouseats.com/recipes/2011/12/caramelized-onion-and-goat-cheese-tartlets-recipe.html](https://www.seriouseats.com/recipes/2011/12/caramelized-onion-and-goat-cheese-tartlets-recipe.html)
 
 1. Brie, apple and honey crostini by Two Peas and Their Pod:
-
-[https://www.twopeasandtheirpod.com/brie-apple-and-honey-crostini/](https://www.twopeasandtheirpod.com/brie-apple-and-honey-crostini/)
+  [https://www.twopeasandtheirpod.com/brie-apple-and-honey-crostini/](https://www.twopeasandtheirpod.com/brie-apple-and-honey-crostini/)
 
 1. Pear, cherry, and candied walnut salad:
-
-[https://minimalistbaker.com/pear-salad-dried-cherries-candied-walnuts/](https://minimalistbaker.com/pear-salad-dried-cherries-candied-walnuts/)
+  [https://minimalistbaker.com/pear-salad-dried-cherries-candied-walnuts/](https://minimalistbaker.com/pear-salad-dried-cherries-candied-walnuts/)
 
 1. Roasted butternut squash with warm apple cider vinaigrette:
-
-[https://www.foodnetwork.com/recipes/ina-garten/roasted-butternut-squash-salad-with-warm-cider-vinaigrette-recipe-1945748](https://www.foodnetwork.com/recipes/ina-garten/roasted-butternut-squash-salad-with-warm-cider-vinaigrette-recipe-1945748)
+  [https://www.foodnetwork.com/recipes/ina-garten/roasted-butternut-squash-salad-with-warm-cider-vinaigrette-recipe-1945748](https://www.foodnetwork.com/recipes/ina-garten/roasted-butternut-squash-salad-with-warm-cider-vinaigrette-recipe-1945748)
 
 1. Caramelized onion, mushroom, apple, and gruyere bites:
+  [https://www.tablefortwoblog.com/caramelized-onion-mushroom-apple-gruyere-bites/](https://www.tablefortwoblog.com/caramelized-onion-mushroom-apple-gruyere-bites/)
 
-[https://www.tablefortwoblog.com/caramelized-onion-mushroom-apple-gruyere-bites/](https://www.tablefortwoblog.com/caramelized-onion-mushroom-apple-gruyere-bites/)
-
-### **Or, try one of these root vegetable sides:**
+### Or, try one of these root vegetable sides:
 
 1. Roasted root vegetables:
-
-[https://toriavey.com/toris-kitchen/oven-roasted-root-vegetables/](https://toriavey.com/toris-kitchen/oven-roasted-root-vegetables/)
+  [https://toriavey.com/toris-kitchen/oven-roasted-root-vegetables/](https://toriavey.com/toris-kitchen/oven-roasted-root-vegetables/)
 
 1. Cookie and Kate's sweet potato mash:
-
-[https://cookieandkate.com/savory-mashed-sweet-potatoes/](https://cookieandkate.com/savory-mashed-sweet-potatoes/)
+  [https://cookieandkate.com/savory-mashed-sweet-potatoes/](https://cookieandkate.com/savory-mashed-sweet-potatoes/)
 
 1. Brown butter mashed turnip:
-
-[https://girlheartfood.com/mashed-turnip/](https://girlheartfood.com/mashed-turnip/)
+  [https://girlheartfood.com/mashed-turnip/](https://girlheartfood.com/mashed-turnip/)
 
 1. Yummy roasted carrots:
-
-[https://www.spendwithpennies.com/roasted-carrots/](https://www.spendwithpennies.com/roasted-carrots/)
+  [https://www.spendwithpennies.com/roasted-carrots/](https://www.spendwithpennies.com/roasted-carrots/)
 
 1. Perfect roasted potatoes:
+  [https://minimalistbaker.com/perfect-roasted-potatoes/](https://minimalistbaker.com/perfect-roasted-potatoes/)
 
-[https://minimalistbaker.com/perfect-roasted-potatoes/](https://minimalistbaker.com/perfect-roasted-potatoes/)
-
-### **Finish off your holiday meal with one of these yummy seasonal desserts:**
+### Finish off your holiday meal with one of these yummy seasonal desserts:
 
 1. Classic apple pie:
-
-[https://www.livewellbakeoften.com/classic-apple-pie/](https://www.livewellbakeoften.com/classic-apple-pie/)
+  [https://www.livewellbakeoften.com/classic-apple-pie/](https://www.livewellbakeoften.com/classic-apple-pie/)
 
 1. Apple pecan cheesecake:
-
-[https://www.monpetitfour.com/apple-pecan-cheesecake-2/](https://www.monpetitfour.com/apple-pecan-cheesecake-2/)
+  [https://www.monpetitfour.com/apple-pecan-cheesecake-2/](https://www.monpetitfour.com/apple-pecan-cheesecake-2/)
 
 1. Baked pears with honey, cranberries, and pecans:
-
-[https://www.thisgalcooks.com/baked-pears-with-honey-cranberries-pecans/](https://www.thisgalcooks.com/baked-pears-with-honey-cranberries-pecans/)
+  [https://www.thisgalcooks.com/baked-pears-with-honey-cranberries-pecans/](https://www.thisgalcooks.com/baked-pears-with-honey-cranberries-pecans/)
 
 1. Sugar spice pear galette:
-
-[https://tasty.co/recipe/sugar-spice-pear-galette](https://tasty.co/recipe/sugar-spice-pear-galette)
+  [https://tasty.co/recipe/sugar-spice-pear-galette](https://tasty.co/recipe/sugar-spice-pear-galette)
 
 1. Pear cranberry apple crisp:
-
-[https://thekitchengirl.com/pear-apple-cranberry-crisp/](https://thekitchengirl.com/pear-apple-cranberry-crisp/)
+  [https://thekitchengirl.com/pear-apple-cranberry-crisp/](https://thekitchengirl.com/pear-apple-cranberry-crisp/)
 
 Enjoy!!! 💛

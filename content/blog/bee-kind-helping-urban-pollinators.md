@@ -15,20 +15,13 @@ Now you might be wondering, why is this an issue? I would like to focus on a cou
 
 The Pollinator Pathways Project is a local initiative started in London. The project is focused on improving the health of pollinators and educating the community on environmental conservation. I'm fortunate to be a member of this dedicated group, where we work hard within our community to make a positive environmental impact. The main focus of our initiative is the creation of pollinator gardens. These are gardens specially made for pollinators to call home, and they are linked across urban areas to ease travelling. With the pressures of native habitat loss, creating designated areas for pollinators are critical in city survival. Pollinator gardens can be made in yards, boulevards, and allocated public spaces (schools, parks, business areas). They can be tended to by an individual, business, or an entire community. In London we have found a great amount of interest and consequently success in establishing gardens throughout the city.
 
-  
 
 Here are some guidelines to create your own pollinator garden:
 
-· use at least a 1m × 1m plot
-
-· choose native plant species (we emphasize the use of _native_ plants)
-
-· select flowering plants of different colour, size, and shape to accommodate all pollinator species needs
-
-· find plants which bloom at different times to provide home and an ample food source for the entire growing season
-
-· provide shallow water sources in your garden as these busy little workers do get thirsty (note: please _do not_ leave out sugar water regularly, I will touch upon the negative health implications another time)
-
-  
+- use at least a 1m × 1m plot
+- choose native plant species (we emphasize the use of _native_ plants)
+- select flowering plants of different colour, size, and shape to accommodate all pollinator species needs
+- find plants which bloom at different times to provide home and an ample food source for the entire growing season
+- provide shallow water sources in your garden as these busy little workers do get thirsty (note: please _do not_ leave out sugar water regularly, I will touch upon the negative health implications another time)
 
 Our project aims to empower communities so that people can self organize and enlarge the pathways, and we are always happy to assist with the preparation! Before you head outside, I do urge everyone to become educated. Try to become familiar with local species and the threats facing them, understand how humans are influencing not only pollinator habitat but the environment at large, and ask questions whenever necessary.

@@ -20,7 +20,7 @@ export default function PageServer({ data }: { data: ProjectQuery }) {
       <PageTitle>{title}</PageTitle>
       <Spacer h="2rem" />
 
-      {coverImage ? (
+      {/*{coverImage ? (
         <div className={s.coverImageContainer}>
           <img
             className={s.coverImage}
@@ -28,7 +28,7 @@ export default function PageServer({ data }: { data: ProjectQuery }) {
             alt={coverImageAlt || ""}
           />
         </div>
-      ) : null}
+      ) : null}*/}
       {hasBodyContent ? (
         <div className={s.projectBody}>
           <MarkdownContent content={body} />

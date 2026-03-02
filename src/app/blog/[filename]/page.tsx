@@ -1,4 +1,3 @@
-import type { Metadata, ResolvingMetadata } from "next";
 import client from "@/../tina/__generated__/client";
 import { fetchBlogList } from "../utils/fetch-blog-list";
 import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
@@ -6,6 +5,8 @@ import PageClient from "./page-client";
 import PageServer from "./page-server";
 import LayoutRoot from "@/components/layout-root";
 import getSitewideData from "@/lib/get-sitewide-data";
+// Types
+import type { Metadata, ResolvingMetadata } from "next";
 
 /**
  * TODO: investigate in more detail why this whole "page/-server/-client"
@@ -32,12 +33,10 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
   );
 }
 
+const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+
 export async function generateMetadata(
-  {
-    params,
-  }: {
-    params: Promise<{ filename: string }>;
-  },
+  { params }: { params: Promise<{ filename: string }> },
   _parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
@@ -47,8 +46,7 @@ export async function generateMetadata(
   // grab the blog data
   const res = await client.queries.blog({ relativePath: `${filename}.md` });
   const { title } = res.data.blog;
-  const titleSuffix = " | Pollinator Pathways Project";
-  return { title: title + titleSuffix };
+  return { title: title + METADATA_TITLE_SUFFIX };
 }
 
 export async function generateStaticParams() {

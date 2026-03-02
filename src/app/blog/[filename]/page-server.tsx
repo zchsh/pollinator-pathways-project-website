@@ -5,8 +5,6 @@ import s from "./blog-entry.module.css";
 // Types
 import type { BlogQuery } from "../../../../tina/__generated__/types";
 import { PageTitle } from "@/components/page-title";
-import Spacer from "@/components/spacer";
-import Link from "next/link";
 
 export default function PageServer({ data }: { data: BlogQuery }) {
   const { author, body, coverImage, coverImageAlt, date, title } = data.blog;
@@ -20,11 +18,6 @@ export default function PageServer({ data }: { data: BlogQuery }) {
   });
   return (
     <>
-      <Link
-        href={`https://www.pollinatorpathwaysproject.com/post/${data.blog._sys.filename}`}
-      >
-        {data.blog.title}
-      </Link>
       <div className={s.metadata}>
         <div className={s.author}>
           <div className={s.authorIcon}>🌻</div>

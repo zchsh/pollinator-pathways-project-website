@@ -10,7 +10,7 @@ import type { Collection } from "tinacms";
 export const tinaConfigProjects: Collection = {
   name: "project",
   label: "Projects",
-  path: "content/project",
+  path: "content/projects",
   fields: [
     {
       type: "string",
