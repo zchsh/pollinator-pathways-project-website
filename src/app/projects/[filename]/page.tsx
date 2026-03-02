@@ -48,7 +48,12 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 
 export async function generateStaticParams() {
   const projectEntries = await fetchProjectsList();
-  return projectEntries.map(({ filename }) => ({ params: { filename } }));
+  if (!Array.isArray(projectEntries) || projectEntries.length === 0) {
+    return [{ filename: "not-found" }];
+  }
+  const staticParams = projectEntries.map(({ filename }) => ({ filename }));
+  console.log({ staticParams });
+  return staticParams;
 }
 
 const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";

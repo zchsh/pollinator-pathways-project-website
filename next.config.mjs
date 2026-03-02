@@ -34,6 +34,7 @@ const nextConfig = {
   // experimental: {
   //   outputFileTracingRoot: path.join(__dirname, "../../"),
   // },
+  // output: "export",
 };
 
 export default nextConfig;

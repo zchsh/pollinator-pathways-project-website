@@ -5,15 +5,19 @@ import { PageTitle } from "@/components/page-title";
 // ...
 import getSitewideData from "@/lib/get-sitewide-data";
 import { ProjectEntriesList } from "./components/project-entries-list";
+import { fetchProjectsList } from "./utils/fetch-projects-list";
 
 export default async function Projects() {
   const { footer, nav } = await getSitewideData();
+
+  const projectEntries = await fetchProjectsList();
+
   return (
     <LayoutRoot footer={footer} pathname="/projects" navBarItems={nav.items}>
       <Spacer h="2rem" />
       <PageTitle>Projects</PageTitle>
       <Spacer h="1rem" />
-      <ProjectEntriesList />
+      <ProjectEntriesList projectEntries={projectEntries} />
     </LayoutRoot>
   );
 }

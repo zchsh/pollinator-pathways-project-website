@@ -51,5 +51,10 @@ export async function generateMetadata(
 
 export async function generateStaticParams() {
   const blogEntries = await fetchBlogList();
-  return blogEntries.map(({ filename }) => ({ params: { filename } }));
+  if (!Array.isArray(blogEntries) || blogEntries.length === 0) {
+    return [{ filename: "not-found" }];
+  }
+  const staticParams = blogEntries.map(({ filename }) => ({ filename }));
+  console.log({ staticParams });
+  return staticParams;
 }

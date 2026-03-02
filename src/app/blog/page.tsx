@@ -3,12 +3,15 @@ import LayoutRoot from "@/components/layout-root";
 import BlogCategoryView from "./components/blog-category-view";
 // ...
 import getSitewideData from "@/lib/get-sitewide-data";
+import { fetchBlogList } from "./utils/fetch-blog-list";
 
 export default async function Blog() {
   const { footer, nav } = await getSitewideData();
+  const allBlogEntries = await fetchBlogList();
+
   return (
     <LayoutRoot footer={footer} pathname="/blog" navBarItems={nav.items}>
-      <BlogCategoryView category="all" />
+      <BlogCategoryView allBlogEntries={allBlogEntries} category="all" />
     </LayoutRoot>
   );
 }
