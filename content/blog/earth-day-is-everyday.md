@@ -1,7 +1,7 @@
 ---
 title: Earth Day Is Everyday
 coverImage: /uploads/blog/earth-day-is-everyday/nikola-jovanovic-OBok3F8buKY-unsplash.jpeg
-coverImageAlt: Person holding seedling with green leaves
+coverImageAlt: Person holding seedling with green leaves in clump of dirt
 date: 2022-04-21T04:00:00.000Z
 author: Daemon Dias
 categories: []
