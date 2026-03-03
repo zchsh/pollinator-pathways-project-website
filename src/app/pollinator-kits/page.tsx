@@ -119,9 +119,13 @@ const POLLINATOR_KIT_EMBEDS = [
 ];
 
 export default async function PollinatorKitsPage() {
-  const { footer } = await getSitewideData();
+  const { footer, nav } = await getSitewideData();
   return (
-    <LayoutRoot footer={footer} pathname="/pollinator-kits">
+    <LayoutRoot
+      navBarItems={nav.items}
+      footer={footer}
+      pathname="/pollinator-kits"
+    >
       <PagePlaceholder name="Pollinator Kits">
         <Placeholder name="<PageTitle />">
           <h1 className={s.pageTitle}>Pollinator-In-A-Box Kits</h1>

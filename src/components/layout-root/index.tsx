@@ -6,22 +6,15 @@ import NavBar from "../nav-bar/nav-bar";
 import type { PropsWithChildren } from "react";
 import type { NavItem, NavSubmenu } from "../nav-bar/types";
 
-/**
- * TODO: move this into tina CMS somehow.
- * Already mostly moved in, but need to make sure LayoutRoot is
- * using it in all instances.
- */
-import { NAV_BAR_ITEMS } from "./content";
-
 export default function LayoutRoot({
   children,
   footer,
   pathname,
-  navBarItems = NAV_BAR_ITEMS,
+  navBarItems,
 }: PropsWithChildren<{
   footer: $TSFixMe;
   pathname: $TSFixMe;
-  navBarItems?: NavItem[];
+  navBarItems: NavItem[];
 }>) {
   const navBarItemsWithActive: NavItem[] = navBarItems.map((item) => {
     if ("links" in item) {
