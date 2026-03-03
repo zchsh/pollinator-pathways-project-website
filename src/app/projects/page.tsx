@@ -16,7 +16,7 @@ export default async function Projects() {
     <LayoutRoot footer={footer} pathname="/projects" navBarItems={nav.items}>
       <Spacer h="2rem" />
       <PageTitle>Projects</PageTitle>
-      <Spacer h="1rem" />
+      <Spacer h="2rem" />
       <ProjectEntriesList projectEntries={projectEntries} />
     </LayoutRoot>
   );

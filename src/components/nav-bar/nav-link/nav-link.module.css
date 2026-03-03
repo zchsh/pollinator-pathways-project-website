@@ -1,16 +1,18 @@
 .link {
-	align-items: center;
-	border-radius: 32px;
-	display: block;
-	padding: 8px 16px;
-	text-decoration: none;
-	color: var(--black);
+  align-items: center;
+  border-radius: 32px;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--color-neutral-700);
 
-	&:hover {
-		background: var(--nav-secondary-color);
-	}
+  &:hover {
+    background: var(--nav-secondary-color);
+    color: var(--black);
+  }
 
-	&.isCurrentPage {
-		background: var(--nav-secondary-color);
-	}
+  &.isCurrentPage {
+    background: var(--nav-secondary-color);
+    color: var(--black);
+  }
 }

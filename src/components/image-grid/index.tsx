@@ -12,14 +12,6 @@ export function ImageGrid({ images }: { images: (string | null)[] }) {
   const validImages = images.filter((image) => image !== null);
   const imageCount = validImages.length;
 
-  // const lightboxNext = () => {
-  //   setLightboxImageIdx((currentIdx) =>
-  //     Math.min(currentIdx + 1, validImages.length)
-  //   );
-  // };
-  // const lightboxPrev = () => {
-  //   setLightboxImageIdx((currentIdx) => Math.max(currentIdx - 1, 0));
-  // };
   const lightboxNext = useCallback(() => {
     setLightboxImageIdx((currentIdx) =>
       Math.min(currentIdx + 1, validImages.length - 1)

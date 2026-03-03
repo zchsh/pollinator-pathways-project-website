@@ -1,12 +1,24 @@
+.root {
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 0 var(--content-padding-x) 8rem;
+}
+
 .noEntries {
   text-align: center;
   padding: 1rem;
-  border: 2px solid magenta;
+  border: 2px solid var(--color-green-300);
+  border-radius: 8px;
 }
 
 .projectEntriesList {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   list-style: none;
-  padding: 1rem;
-  border: 2px solid magenta;
+
+  & li a {
+    text-decoration: none;
+    color: inherit;
+  }
 }

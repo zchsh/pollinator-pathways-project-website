@@ -34,9 +34,7 @@ export async function BlogEntriesList({
           ))}
         </ul>
       ) : (
-        <p className={s.noEntries}>
-          No blog entries found. <Link href="/blog">View all blog posts</Link>.
-        </p>
+        <p className={s.noEntries}>No blog posts yet. Check back soon!</p>
       )}
     </div>
   );

@@ -1,7 +1,6 @@
 ---
 title: 100 in 1 Day Community Event
 coverImage: /uploads/projects/photos-100-in-1-community-day-event/photos-100-in-1-community-day-event-00001.jpg
-date: 2026-02-28T21:52:06.847Z
 images:
   - /uploads/projects/photos-100-in-1-community-day-event/photos-100-in-1-community-day-event-00001.jpg
   - /uploads/projects/photos-100-in-1-community-day-event/photos-100-in-1-community-day-event-00002.jpg

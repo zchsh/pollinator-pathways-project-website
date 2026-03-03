@@ -35,7 +35,6 @@ export const tinaConfigProjects: Collection = {
       type: "datetime",
       name: "date",
       label: "Date",
-      required: true,
     },
     {
       type: "rich-text",

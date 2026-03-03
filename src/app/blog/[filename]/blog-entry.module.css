@@ -25,7 +25,8 @@
 }
 
 .blogBody {
-  max-width: 42em;
+  font-size: 1.125rem;
+  max-width: 40em;
   margin: 0 auto;
   padding: 0 var(--content-padding-x) 8rem;
 }
