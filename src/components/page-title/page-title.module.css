@@ -5,4 +5,5 @@
   line-height: 1;
   max-width: 20em;
   margin: 0 auto;
+  padding: 0 var(--content-padding-x);
 }

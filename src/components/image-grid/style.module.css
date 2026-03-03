@@ -1,6 +1,82 @@
-.root {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.photoGridRoot {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 8px;
+}
+
+.photoGridItem {
+  position: relative;
+  border: 1px solid var(--color-neutral-200);
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.photoGridItem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lightbox {
+  --button-spacing: 16px;
+  isolation: isolate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.lightboxImage {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.lightboxButton {
+  border-radius: 8px;
+  font-size: 1.5rem;
+  border: none;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  font-family: var(--font-system-sans);
+  background: var(--color-green-200);
+  &:hover {
+    background: var(--color-green-300);
+  }
+}
+
+.lightboxClose {
+  position: absolute;
+  top: var(--button-spacing);
+  right: var(--button-spacing);
+}
+
+.lightboxNext,
+.lightboxPrev {
+  position: absolute;
+  bottom: var(--button-spacing);
+}
+
+.lightboxNext {
+  right: var(--button-spacing);
+}
+
+.lightboxPrev {
+  left: var(--button-spacing);
 }
