@@ -36,7 +36,8 @@ export function ProjectCard({ entry }: { entry: $TSFixMe }) {
 
 function ProjectCardInfo({ entry }: { entry: $TSFixMe }) {
   const { title, date } = entry;
-  const hasValidDate = !isNaN(new Date(date).getTime());
+  const hasValidDate =
+    typeof date === "string" && date !== "" && !isNaN(new Date(date).getTime());
 
   return (
     <div className={s.cardInfoContainer}>

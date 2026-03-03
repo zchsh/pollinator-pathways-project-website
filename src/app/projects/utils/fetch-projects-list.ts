@@ -2,9 +2,9 @@ import client from "@/../tina/__generated__/client";
 
 export async function fetchProjectsList() {
   const projectsListData = await client.queries.projectConnection({
-    sort: "date",
     last: 50,
   });
+
   if (!projectsListData?.data?.projectConnection?.edges) {
     throw new Error("Failed to fetch blog list data");
   }
