@@ -7,13 +7,9 @@ import VisuallyHidden from "../visually-hidden";
  * TODO: remove placeholders once all pages are wired up
  */
 function Footer({
-  subscribeHeading = "Subscribe to our newsletter",
-  subscribePlaceholder = "you@mail.com",
   links = [],
   pathname,
 }: {
-  subscribeHeading: string;
-  subscribePlaceholder?: string;
   links?: $TSFixMe[];
   pathname?: string;
 }) {

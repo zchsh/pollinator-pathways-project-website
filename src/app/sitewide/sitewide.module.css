@@ -1,0 +1,11 @@
+.pageContent {
+  max-width: 40em;
+  padding: 0 var(--content-padding-x);
+  margin: 0 auto;
+  font-size: 1.125em;
+}
+
+.pageContent p {
+  margin: 1em 0;
+  text-align: center;
+}

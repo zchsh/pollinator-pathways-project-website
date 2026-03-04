@@ -1,26 +1,26 @@
 import LayoutRoot from "@/components/layout-root";
-import PagePlaceholder from "@/components/page-placeholder/page";
-import type { NavItem } from "@/components/nav-bar/types";
+// Types
+import { SitewideQuery } from "../../../tina/__generated__/types";
+import { PageTitle } from "@/components/page-title";
+import Spacer from "@/components/spacer";
+// Styles
+import s from "./sitewide.module.css";
 
-export default function Placeholder({ data }: { data: $TSFixMe }) {
+export default function Placeholder({ data }: { data: SitewideQuery }) {
   const { nav, footer } = data.sitewide;
 
-  /**
-   * Array of objects.
-   * Each object an either be:
-   * - `{ label, href }` (target: _blank added automatically for external URLs)
-   * - `{ label, items }`, where `items` is an array of `{ label, href }`.
-   * Note there are NO DEEPER LEVELS of nesting. Does NOT need to be arbitrary.
-   */
-  const navBarItems: NavItem[] = nav.items;
-
   return (
-    <LayoutRoot footer={footer} pathname="/" navBarItems={navBarItems}>
-      <PagePlaceholder name="Sitewide">
-        <pre>
-          <code>{JSON.stringify({ data }, null, 2)}</code>
-        </pre>
-      </PagePlaceholder>
+    <LayoutRoot footer={footer} pathname="/sitewide" navBarItems={nav.items}>
+      <Spacer h="2rem" />
+      <PageTitle>Sitewide Content</PageTitle>
+      <Spacer h="2rem" />
+      <div className={s.pageContent}>
+        <p>
+          This page gives content editors a way to edit site-wide content, and
+          to preview how those changes will affect the website. For example,
+          changes to the navigation and footer can be made by editing this page.
+        </p>
+      </div>
     </LayoutRoot>
   );
 }
