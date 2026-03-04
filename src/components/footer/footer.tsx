@@ -17,6 +17,9 @@ function Footer({
   links?: $TSFixMe[];
   pathname?: string;
 }) {
+  const isEditablePage =
+    typeof pathname === "string" && !["/projects", "/blog"].includes(pathname);
+
   return (
     <>
       <div className={s.root}>
@@ -55,11 +58,13 @@ function Footer({
           <a
             className={s.lowerFooterBarLink}
             href={
-              pathname ? `/admin/index.html#/~${pathname}` : "/admin/index.html"
+              isEditablePage
+                ? `/admin/index.html#/~${pathname}`
+                : "/admin/index.html"
             }
             target="_blank"
           >
-            Site admin&nbsp;
+            {isEditablePage ? "Edit this page" : "Site admin"}&nbsp;
             <span style={{ fontFamily: "var(--font-system-sans)" }}>↗</span>
           </a>
         </div>

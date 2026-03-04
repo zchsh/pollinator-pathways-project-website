@@ -23,7 +23,7 @@ export default function LayoutRoot({
         links: item.links.map((link) => {
           return {
             ...link,
-            isCurrentPage: link.href === pathname,
+            isCurrentPage: isActiveHref(link.href, pathname),
             target: link.href?.startsWith("http") ? "_blank" : undefined,
           };
         }),
@@ -32,7 +32,7 @@ export default function LayoutRoot({
     } else {
       const link: NavItem = {
         ...item,
-        isCurrentPage: item.href === pathname,
+        isCurrentPage: isActiveHref(item.href, pathname),
         target: item.href?.startsWith("http") ? "_blank" : undefined,
       };
       return link;
@@ -48,4 +48,8 @@ export default function LayoutRoot({
       <div style={{ zIndex: 0 }}>{children}</div>
     </Min100Layout>
   );
+}
+
+function isActiveHref(href: string, pathname: string): boolean {
+  return href === "/" ? href === pathname : pathname.startsWith(href);
 }

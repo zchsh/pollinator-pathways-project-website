@@ -32,7 +32,11 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
   const isPreviewEnabled = getIsEditableDeployment();
 
   return (
-    <LayoutRoot footer={footer} navBarItems={nav.items} pathname="/projects">
+    <LayoutRoot
+      footer={footer}
+      navBarItems={nav.items}
+      pathname={`/projects/${filename}`}
+    >
       {isPreviewEnabled ? (
         <PageClient
           query={res.query}

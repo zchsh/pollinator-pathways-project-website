@@ -96,16 +96,6 @@ export const sitewideTinaConfig: Collection = {
       name: "footer",
       fields: [
         {
-          type: "string",
-          label: "Subscribe Heading",
-          name: "subscribeHeading",
-        },
-        {
-          type: "string",
-          label: "Subscribe Placeholder",
-          name: "subscribePlaceholder",
-        },
-        {
           list: true,
           type: "object",
           label: "Links",

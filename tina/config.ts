@@ -1,6 +1,5 @@
 import { defineConfig } from "tinacms";
 import { homePageTinaConfig } from "../src/app/(home)/tina-config";
-import { faqPageTinaConfig } from "../src/app/faq/tina-config";
 import { sitewideTinaConfig } from "../src/app/sitewide/tina-config";
 import { tinaConfigBlog } from "@/app/blog/tina-config-blog";
 import { tinaConfigProjects } from "@/app/projects/tina-config-projects";
@@ -37,7 +36,6 @@ export default defineConfig({
    */
   schema: {
     collections: [
-      faqPageTinaConfig,
       homePageTinaConfig,
       sitewideTinaConfig,
       tinaConfigBlog,
