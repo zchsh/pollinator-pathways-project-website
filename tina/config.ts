@@ -4,6 +4,7 @@ import { faqPageTinaConfig } from "../src/app/faq/tina-config";
 import { sitewideTinaConfig } from "../src/app/sitewide/tina-config";
 import { tinaConfigBlog } from "@/app/blog/tina-config-blog";
 import { tinaConfigProjects } from "@/app/projects/tina-config-projects";
+import { tinaConfigConnect } from "@/app/connect/tina-config";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -41,6 +42,7 @@ export default defineConfig({
       sitewideTinaConfig,
       tinaConfigBlog,
       tinaConfigProjects,
+      tinaConfigConnect,
     ],
   },
 });

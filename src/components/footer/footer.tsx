@@ -10,7 +10,13 @@ function Footer({
   subscribeHeading = "Subscribe to our newsletter",
   subscribePlaceholder = "you@mail.com",
   links = [],
-}: $TSFixMe) {
+  pathname,
+}: {
+  subscribeHeading: string;
+  subscribePlaceholder?: string;
+  links?: $TSFixMe[];
+  pathname?: string;
+}) {
   return (
     <>
       <div className={s.root}>
@@ -48,7 +54,9 @@ function Footer({
           <div>© 2026</div>
           <a
             className={s.lowerFooterBarLink}
-            href="/admin/index.html"
+            href={
+              pathname ? `/admin/index.html#/~${pathname}` : "/admin/index.html"
+            }
             target="_blank"
           >
             Site admin&nbsp;

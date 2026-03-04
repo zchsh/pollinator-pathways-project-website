@@ -40,7 +40,7 @@ export default function LayoutRoot({
   });
 
   return (
-    <Min100Layout footer={<Footer {...footer} />}>
+    <Min100Layout footer={<Footer {...footer} pathname={pathname} />}>
       <SiteHeader />
       <div style={{ zIndex: 1 }}>
         <NavBar navBarItems={navBarItemsWithActive} />
