@@ -46,6 +46,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       title: siteTitle,
+      description: siteDescription,
       url: baseUrl,
       siteName: "Pollinator Pathways Project",
       images: [ogImage],
