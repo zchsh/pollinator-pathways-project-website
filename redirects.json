@@ -56,7 +56,7 @@
   },
   {
     "source": "/blank",
-    "destination": "/",
+    "destination": "/connect",
     "permanent": false
   },
   {
