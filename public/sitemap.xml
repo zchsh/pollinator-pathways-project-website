@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
-        <loc>https://www.pollinatorpathwaysproject.ca/sitemap-blog-posts.xml</loc>
+        <loc>https://www.pollinatorpathwaysproject.com/sitemap-blog-posts.xml</loc>
         <lastmod>2026-03-01</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://www.pollinatorpathwaysproject.ca/sitemap-pages.xml</loc>
+        <loc>https://www.pollinatorpathwaysproject.com/sitemap-pages.xml</loc>
         <lastmod>2026-03-01</lastmod>
     </sitemap>
 	<sitemap>
-	    <loc>https://www.pollinatorpathwaysproject.ca/sitemap-projects.xml</loc>
+	    <loc>https://www.pollinatorpathwaysproject.com/sitemap-projects.xml</loc>
 		<lastmod>2026-03-01</lastmod>
 	</sitemap>
 </sitemapindex>

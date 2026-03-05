@@ -7,39 +7,35 @@
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/central-london-pathway</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/central-london-pathway</loc>
 		<lastmod>2026-02-27T19:22:20.753Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/connect</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/connect</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/faq</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/faq</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca</loc>
+		<loc>https://www.pollinatorpathwaysproject.com</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/donate</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/donate</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/pollinator-kits</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/resources</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/resources</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/photos</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/photos</loc>
-		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
-	</url>
-	<url>
-		<loc>https://www.pollinatorpathwaysproject.ca/blog</loc>
+		<loc>https://www.pollinatorpathwaysproject.com/blog</loc>
 		<lastmod>2026-02-27T19:22:20.754Z</lastmod>
 	</url>
 </urlset>

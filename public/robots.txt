@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.pollinatorpathwaysproject.ca/
+Host: https://www.pollinatorpathwaysproject.com/
 
 # Sitemaps
-Sitemap: https://www.pollinatorpathwaysproject.ca/sitemap.xml
+Sitemap: https://www.pollinatorpathwaysproject.com/sitemap.xml

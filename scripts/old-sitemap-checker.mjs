@@ -4,27 +4,43 @@ import { gatherSitemapUrls } from "./gather-sitemap-urls.mjs";
 
 const PATH_CWD = process.cwd();
 const PATH_SITEMAPS = path.join(PATH_CWD, "old-sitemaps");
-const PATH_SITEMAP_PAGES = path.join(PATH_SITEMAPS, "pages-sitemap.xml");
-const PATH_SITEMAP_BLOG_POSTS = path.join(
-  PATH_SITEMAPS,
-  "blog-posts-sitemap.xml"
-);
-const PATH_SITEMAP_BLOG_CATEGORIES = path.join(
-  PATH_SITEMAPS,
-  "blog-categories-sitemap.xml"
-);
+
+const SITEMAP_PATHS_OLD = [
+  path.join(PATH_SITEMAPS, "blog-categories-sitemap.xml"),
+  path.join(PATH_SITEMAPS, "pages-sitemap.xml"),
+  path.join(PATH_SITEMAPS, "blog-posts-sitemap.xml"),
+];
+
+const SITEMAP_PATHS_NEW = [
+  path.join(PATH_CWD, "public", "sitemap-blog-posts.xml"),
+  path.join(PATH_CWD, "public", "sitemap-pages.xml"),
+  path.join(PATH_CWD, "public", "sitemap-projects.xml"),
+];
+
+async function gatherSitemapUrls_OLD() {
+  const urls = [];
+  for (const sitemapPath of SITEMAP_PATHS_OLD) {
+    const urlsForSitemap = await gatherSitemapUrls(sitemapPath);
+    urls.push(...urlsForSitemap);
+  }
+  return urls;
+}
+
+async function gatherSitemapUrls_NEW() {
+  const urls = [];
+  for (const sitemapPath of SITEMAP_PATHS_NEW) {
+    const urlsForSitemap = await gatherSitemapUrls(sitemapPath);
+    urls.push(...urlsForSitemap);
+  }
+  return urls;
+}
 
 main();
 
 async function main() {
-  const urlsPages = await gatherSitemapUrls(PATH_SITEMAP_PAGES);
-  const urlsBlogPosts = await gatherSitemapUrls(PATH_SITEMAP_BLOG_POSTS);
-  const urlsBlogCategories = await gatherSitemapUrls(
-    PATH_SITEMAP_BLOG_CATEGORIES
-  );
-  const urls = [...urlsPages, ...urlsBlogPosts, ...urlsBlogCategories];
+  // const urls = await gatherSitemapUrls_OLD();
+  const urls = await gatherSitemapUrls_NEW();
   // Check that all URLs are returning appropriate status codes
-
   const urlResults = [];
   for (const url of urls) {
     if (!("loc" in url) || typeof url.loc !== "string") {
@@ -46,9 +62,7 @@ async function main() {
     urlResults.push({ url: urlModified, statusCode });
   }
   // Write the URL results to a file
-  fs.writeFileSync(
-    path.join(PATH_SITEMAPS, "url-results.json"),
-    JSON.stringify(urlResults, null, 2),
-    "utf8"
-  );
+  const outFile = path.join(PATH_SITEMAPS, "url-results.json");
+  fs.writeFileSync(outFile, JSON.stringify(urlResults, null, 2), "utf8");
+  console.log(`✅ Wrote URL results to ${outFile}`);
 }
