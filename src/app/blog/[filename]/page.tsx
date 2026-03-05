@@ -63,7 +63,13 @@ export async function generateMetadata(
     height?: number;
   }[] = [];
   if (blogImage) {
-    const blogImageFilePath = path.join(process.cwd(), "public", blogImage);
+    const blogImageFilePathRaw = path.join(process.cwd(), "public", blogImage);
+    // Replace assets.tina.io URL
+    // https:/assets.tina.io/e5dfefc8-2897-4502-afe4-796304188e98
+    const blogImageFilePath = blogImageFilePathRaw.replace(
+      /https:\/\/assets\.tina\.io\/[^/]+/,
+      ""
+    );
     // Get the width and height of the image using sharp.js
     const { width, height } = await sharp(blogImageFilePath).metadata();
     // TODO: figure out width and height for blogImage, if applicable
