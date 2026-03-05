@@ -44,6 +44,7 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: {
       index: isEditable ? false : true,
     },
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: siteTitle,
       description: siteDescription,
