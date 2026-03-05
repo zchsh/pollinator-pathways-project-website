@@ -36,7 +36,7 @@ const ogImageFilePath = path.join(process.cwd(), "public", ogImageUrl);
 export async function generateMetadata(): Promise<Metadata> {
   // Get the width and height of the image using sharp.js
   const { width, height } = await sharp(ogImageFilePath).metadata();
-  const ogImage = { url: baseUrl + ogImageUrl, width, height };
+  const ogImage = { url: baseUrl + ogImageUrl + "#", width, height };
   //
   const metadata = {
     title: siteTitle,

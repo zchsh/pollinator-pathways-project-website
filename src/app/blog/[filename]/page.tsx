@@ -80,7 +80,7 @@ export async function generateMetadata(
     } catch (e) {}
     // TODO: figure out width and height for blogImage, if applicable
     console.log({ blogImageFilePath, width, height });
-    const blogImageUrl = `${BASE_URL}${blogImage}`;
+    const blogImageUrl = `${BASE_URL}${blogImage}#`;
     blogImagesOpenGraph.push({ url: blogImageUrl, width, height });
   }
   const openGraphImages = [...previousImages, ...blogImagesOpenGraph];
