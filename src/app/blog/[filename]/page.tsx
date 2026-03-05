@@ -68,7 +68,7 @@ export async function generateMetadata(
     // https:/assets.tina.io/e5dfefc8-2897-4502-afe4-796304188e98
     const blogImageFilePath = blogImageFilePathRaw.replace(
       /https:\/\/assets\.tina\.io\/[^/]+/,
-      ""
+      "/uploads"
     );
     // Get the width and height of the image using sharp.js
     const { width, height } = await sharp(blogImageFilePath).metadata();
