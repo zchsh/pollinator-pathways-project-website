@@ -18,7 +18,7 @@
     "@tinacms/auth": "^1.0.4",
     "clsx": "^2.1.1",
     "formik": "^2.4.6",
-    "next": "14.2.3",
+    "next": "^14.2.35",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.34.5",
@@ -35,7 +35,7 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "22.x",
-    "npm": "10.x"
+    "node": "24.x",
+    "npm": "11.x"
   }
 }
