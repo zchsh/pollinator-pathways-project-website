@@ -71,7 +71,13 @@ export async function generateMetadata(
       "/uploads"
     );
     // Get the width and height of the image using sharp.js
-    const { width, height } = await sharp(blogImageFilePath).metadata();
+    let width = undefined;
+    let height = undefined;
+    try {
+      const sharpMetadata = await sharp(blogImageFilePath).metadata();
+      width = sharpMetadata.width;
+      height = sharpMetadata.height;
+    } catch (e) {}
     // TODO: figure out width and height for blogImage, if applicable
     console.log({ blogImageFilePath, width, height });
     const blogImageUrl = `${BASE_URL}${blogImage}`;
