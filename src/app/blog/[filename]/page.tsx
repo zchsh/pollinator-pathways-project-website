@@ -38,19 +38,39 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 }
 
 const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+const BASE_URL = "https://www.pollinatorpathwaysproject.com";
 
 export async function generateMetadata(
   { params }: { params: Promise<{ filename: string }> },
-  _parent: ResolvingMetadata
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
   const { filename } = await params;
   // optionally access and extend (rather than replace) parent metadata
-  // const previousImages = (await parent).openGraph?.images || []
+  const previousImages = (await parent).openGraph?.images || [];
   // grab the blog data
   const res = await client.queries.blog({ relativePath: `${filename}.md` });
-  const { title } = res.data.blog;
-  return { title: title + METADATA_TITLE_SUFFIX };
+  const blogTitle = res.data.blog.title;
+  const blogImage = res.data.blog.coverImage;
+  const blogImageUrl = blogImage ? `${BASE_URL}${blogImage}` : null;
+  // TODO: figure out width and height for blogImage, if applicable
+  const blogImagesOpenGraph: {
+    url: string;
+    width?: number;
+    height?: number;
+  }[] = blogImageUrl ? [{ url: blogImageUrl }] : [];
+  const openGraphImages = [...previousImages, ...blogImagesOpenGraph];
+  return {
+    title: blogTitle + METADATA_TITLE_SUFFIX,
+    openGraph: {
+      title: blogTitle,
+      url: `${BASE_URL}/blog/${filename}`,
+      siteName: "Pollinator Pathways Project",
+      images: openGraphImages,
+      locale: "en_CA",
+      type: "website",
+    },
+  };
 }
 
 export async function generateStaticParams() {
