@@ -21,6 +21,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "sharp": "^0.34.5",
     "tinacms": "^3.5.0"
   },
   "devDependencies": {
