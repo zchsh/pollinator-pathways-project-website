@@ -1,17 +1,19 @@
-// Components
-import Footer from "@/components/footer/footer";
-import Min100Layout from "@/components/min-100-layout/min-100-layout";
-import NavBar from "@/components/nav-bar/nav-bar";
-import SiteHeader from "@/components/site-header/site-header";
+import path from "path";
+import sharp from "sharp";
 // Lib
 import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
+import { getBaseUrl } from "@/lib/get-base-url";
+// Types
+import type { CSSProperties } from "react";
+import type { Metadata } from "next";
 // Font faces
 import { Inter, Orelega_One, Lato } from "next/font/google";
 // Styles
 import "../styles/reset.css";
 import "../styles/custom-properties.css";
 import "../styles/globals.css";
-import { CSSProperties } from "react";
+
+const baseUrl = getBaseUrl();
 
 const inter = Inter({ subsets: ["latin"] });
 const gFontLato = Lato({ weight: "400", subsets: ["latin"] });
@@ -24,14 +26,35 @@ const fontFamilyCssVariables = {
 
 const isEditable = getIsEditableDeployment();
 
-export const metadata = {
-  title: "Pollinator Pathways Project",
-  description:
-    "Pollinator Pathways Project is a grassroots community organization started in London, Canada that educates how to grow a pollinator garden.",
-  robots: {
-    index: isEditable ? false : true,
-  },
-};
+const siteTitle = "Pollinator Pathways Project";
+const siteDescription =
+  "Pollinator Pathways Project is a grassroots community organization started in London, Canada that educates how to grow a pollinator garden.";
+
+const ogImageUrl = "/opengraph-image.jpeg";
+const ogImageFilePath = path.join(process.cwd(), "public", ogImageUrl);
+
+export async function generateMetadata(): Promise<Metadata> {
+  // Get the width and height of the image using sharp.js
+  const { width, height } = await sharp(ogImageFilePath).metadata();
+  const ogImage = { url: baseUrl + ogImageUrl, width, height };
+  //
+  const metadata = {
+    title: siteTitle,
+    description: siteDescription,
+    robots: {
+      index: isEditable ? false : true,
+    },
+    openGraph: {
+      title: siteTitle,
+      url: baseUrl,
+      siteName: "Pollinator Pathways Project",
+      images: [ogImage],
+      locale: "en_CA",
+      type: "website",
+    },
+  };
+  return metadata;
+}
 
 export default function RootLayout({
   children,

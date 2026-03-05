@@ -11,6 +11,7 @@ import path from "path";
 import sharp from "sharp";
 import { fetchBlogList } from "../utils/fetch-blog-list";
 import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
+import { getBaseUrl } from "@/lib/get-base-url";
 
 /**
  * TODO: investigate in more detail why this whole "page/-server/-client"
@@ -42,9 +43,7 @@ export default async function Page({ params: { filename } }: $TSFixMe) {
 }
 
 const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
-const BASE_URL_SHORT =
-  process.env.VERCEL_PROJECT_PRODUCTION_URL || "localhost:3000";
-const BASE_URL = `https://www.${BASE_URL_SHORT}`;
+const BASE_URL = getBaseUrl();
 
 export async function generateMetadata(
   { params }: { params: Promise<{ filename: string }> },
@@ -68,6 +67,7 @@ export async function generateMetadata(
     // Get the width and height of the image using sharp.js
     const { width, height } = await sharp(blogImageFilePath).metadata();
     // TODO: figure out width and height for blogImage, if applicable
+    console.log({ blogImageFilePath, width, height });
     const blogImageUrl = `${BASE_URL}${blogImage}`;
     blogImagesOpenGraph.push({ url: blogImageUrl, width, height });
   }
