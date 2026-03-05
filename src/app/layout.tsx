@@ -3,6 +3,8 @@ import Footer from "@/components/footer/footer";
 import Min100Layout from "@/components/min-100-layout/min-100-layout";
 import NavBar from "@/components/nav-bar/nav-bar";
 import SiteHeader from "@/components/site-header/site-header";
+// Lib
+import { getIsEditableDeployment } from "@/lib/get-is-editable-deployment";
 // Font faces
 import { Inter, Orelega_One, Lato } from "next/font/google";
 // Styles
@@ -20,12 +22,15 @@ const fontFamilyCssVariables = {
   "--font-body": `${inter.style.fontFamily}`,
 } as CSSProperties;
 
-// const METADATA_TITLE_SUFFIX = " | Pollinator Pathways Project";
+const isEditable = getIsEditableDeployment();
 
 export const metadata = {
   title: "Pollinator Pathways Project",
   description:
     "Pollinator Pathways Project is a grassroots community organization started in London, Canada that educates how to grow a pollinator garden.",
+  robots: {
+    index: isEditable ? false : true,
+  },
 };
 
 export default function RootLayout({
