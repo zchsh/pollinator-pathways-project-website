@@ -1,79 +1,80 @@
 .root {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	isolation: isolate;
-	overflow: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 
 .videoContainer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	aspect-ratio: 2 / 1;
-	min-height: 400px;
-	overflow: hidden;
-	position: relative;
-	min-width: 100%;
-	max-height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  aspect-ratio: 2 / 1;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  min-width: 100%;
+  max-height: 720px;
 }
 
 .video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
 }
 
 .pageContainer {
-	position: absolute;
-	width: 100%;
-	left: 50%;
-	height: 100%;
-	transform: translateX(-50%);
-	max-width: var(--content-max-width);
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  max-width: var(--content-max-width);
 }
 
 .text {
-	position: absolute;
-	top: 0;
-	left: 0;
-	color: var(--black);
-	font-family: var(--font-display);
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 1;
-	background: var(--yellow-primary);
-	padding: 1.5rem;
-	max-width: 8em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--black);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  background: var(--yellow-primary);
+  padding: 1.5rem;
+  max-width: 8em;
+  word-break: break-word;
 }
 
 .iconButtons {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	display: flex;
-	gap: 0.25rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.25rem;
 }
 
 .iconButton {
-	width: 2rem;
-	height: 2rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 1rem;
-	border: none;
-	cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
 
-	& svg {
-		width: 1rem;
-		height: 1rem;
-	}
+  & svg {
+    width: 1rem;
+    height: 1rem;
+  }
 }
